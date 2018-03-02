@@ -1,8 +1,11 @@
 # PokeMAC
 
-PokeMAC es el proyecto para la tarea 3 de Admisión Enero-Marzo 2018
+PokeMAC is a project for Tarea 3 Admisión Enero Marzo 2018.
 
-Se dividirá en dos secciones, la sección de script y la sección de la aplicación web.
+The project will be divided in two sections: Script and WebApp.
 
-1. Script: Genera los usuarios y demás configuraciones en las máquinas de sala A para la corrección de la tarea.
-2. Aplicación Web: Genera la interfaz de interacción con los prenewbies.
+1. **Script:** This will generate the users and configurations in Sala A pc's. 
+2. **WebApp:** Will generate the UI to authenticate some data and help the prenewbies to understand some concepts and guide them. 
+
+
+Here will be more information soon to provide a guide to future MAckenzies.
