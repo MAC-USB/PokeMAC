@@ -8,16 +8,15 @@
          @M7                                                        rM@                   
        .M@                                                            @M,                 
       ,MS                                                              SM,                
-      MX                 FELICIDADES HAS LOGRADO VENCER A               XM                
-     MM                        	     KAMEK                               MM               
+      MX                 FELICIDADES HAS LOGRADO RECUPERAR              XM                
+     MM                         A TODOS TUS POKEMON                      MM               
     .M                                                                    M.              
     ZM                                                                    M8              
-    MM                       Desbloqueaste el item                        M8              
-    MM                           "Mushroom Boo"                           M5              
-    ZM                    Ahora seras capaz de entrar al                  MZ              
-     M                          castillo King Boo                         M.              
-     MM                                                                  MM               
-      MZ                                                                aM                
+    MM                                                                    MM              
+    ZM                      Ahora debes derrotar a RED                    MZ              
+     M             para convertirte en el mejor entrenador Pokemon.       M.              
+     MM                    Pero eso no es tarea sencilla,                 MM               
+      MZ              debes encontrar su debilidad escondida...          aM                
        MZ                                                              ZM.                
         MM                                                            MM                  
          0MS                                                        2MB                   

@@ -30,15 +30,15 @@ function inicio {
     printf "\n\n\n"
     read -p "$MENSAJE_READ"
     clear
-    cat dibujos/toad.txt
+    cat drawings/meowth.txt
     printf "\n\n\n"
     read -p "$MENSAJE_READ"
     clear
-    cat dialogos/dialogo_inicio.txt
+    cat dialogues/dialogo_inicioPOKEMAC.txt
     printf "\n\n\n"
     read -p "$MENSAJE_READ"
     clear
-    cat dialogos/dialogo_inicio2.txt
+    cat dialogues/dialogo_inicioMeowth.txt
     printf "\n\n\n"
     read -p "$MENSAJE_READ"
     clear
@@ -46,7 +46,7 @@ function inicio {
     # printf "\n\n\n"
     # read -p "$MENSAJE_READ"
     # clear
-    cat dibujos/toad.txt
+    cat drawings/meowth.txt
 }
 
 function dormir {
@@ -57,13 +57,13 @@ function dormir {
 }
 
 function go_evil {
-    cat dibujos/bowser.txt
+    cat drawings/trainer.txt
     sleep 0.3
     trapear
     while true
     do
 	read -p ""
-	printf "\nTus palabras son insignificantes. Mejor vete a hacer admisión al otro laboratorio.\n"
+	printf "\nNo lograras derrotarme. Mejor vete a hacer admision al otro laboratorio.\n"
     done
 }
 
@@ -78,6 +78,7 @@ function insultar {
     sleep 0.3
 }
 
+#Esto es del de zelda
 function final {
     clear
     cat dialogos/dialogo_fintemplos.txt
@@ -119,44 +120,78 @@ function final {
 }
 
 function entregar_item {
+<<<<<<< HEAD:Script/meowth.sh
 
     case $1 in
 	"1604" )
+=======
+    
+    case $1 in 
+	"42" ) #Cuando encuentra a PIKACHU
+>>>>>>> features/dialogues__1:Script/Toad.sh
 	    clear
-	    chmod 777 -R /home/Mario/Castillo_de_KingBoo
-	    cat dialogos/dialogo_mascaraE.txt
+	    chmod 777 -R /home/entrenador/tunel_roca
+	    cat dialogues/dialogo_recupera_pikachu.txt
 	    printf "\n\n\n"
 	    read -p "$MENSAJE_READ"
 	    clear
+<<<<<<< HEAD:Script/meowth.sh
 	    cat dibujos/toad.txt
 	    ;;
 	"superstar" )
+=======
+	    cat drawings/meowth.txt
+	    ;;	
+	"atrapado" ) #Cuando encuentra a Blastoise
+>>>>>>> features/dialogues__1:Script/Toad.sh
 	    clear
-	    chmod 777 -R /home/Mario/Castillo_de_Bowser_jr
-	    cat dialogos/dialogo_mascaraF.txt
+	    chmod 777 -R /home/entrenador/islas_remolino
+	    cat dialogues/dialogo_recupera_blastoise.txt
 	    printf "\n\n\n"
 	    read -p "$MENSAJE_READ"
 	    clear
+<<<<<<< HEAD:Script/meowth.sh
 	    cat dibujos/toad.txt
 	    ;;
 	"plant" )
+=======
+	    cat drawings/meowth.txt
+	    ;;	
+	"nexplant" ) #Cuando recupera a Charizard
+>>>>>>> features/dialogues__1:Script/Toad.sh
 	    clear
-	    chmod 777 -R /home/Mario/Castillo_de_Pirana_plant
-	    cat dialogos/dialogo_mascaraET.txt
+	    chmod 777 -R /home/entrenador/monte_plateado
+	    cat dialogues/dialogo_recupera_charizard.txt
 	    printf "\n\n\n"
 	    read -p "$MENSAJE_READ"
 	    clear
+<<<<<<< HEAD:Script/meowth.sh
 	    cat dibujos/toad.txt
 	    ;;
 	"b0ws3r" )
+=======
+	    cat drawings/meowth.txt
+	    ;;	
+	"r3D" ) #Cuando recupera a Venusaur y va al final
+        clear
+        cat dialogues/dialogo_recupera_venusaur.txt
+        printf "\n\n\n"
+        read -p "$MENSAJE_READ"
+        clear
+        cat dialogues/dialogo_recupera_todos.txt
+        printf "\n\n\n"
+        read -p "$MENSAJE_READ"
+>>>>>>> features/dialogues__1:Script/Toad.sh
 	    clear
 	    go_evil
 	    ;;
 	* )
-	    echo "Lo siento, no te entiendo. Esa frase no corresponde a ninguna mascara"
+	    echo "¿Que dices? No te entiendo. Esa frase no corresponde a ningun item"
 	    ;;
     esac
 }
+
+#main
 
 inicio
 
@@ -170,8 +205,14 @@ do
 	continue
     else
 	clear
+<<<<<<< HEAD:Script/meowth.sh
 	printf "\n\n\n Whhhhuuuuuuusssshhhh..."
 	kill -20 $$
 	cat dibujos/toad.txt
+=======
+	printf "\n\n\n Meeeeeooooooooooooooowth..."
+	kill -20 $$ 
+	cat drawings/meowth.txt
+>>>>>>> features/dialogues__1:Script/Toad.sh
     fi
 done

@@ -4,21 +4,19 @@
                  i8MM0X:                                :X0MMZ:                           
               ,8M@2.                                        ,2@M0,                        
             ;MMa                                                aMM7                      
-          :MMX                                                    ;MMi                    
+          :MMX                       POKEMAC                      ;MMi                    
          @M7                                                        rM@                   
        .M@                                                            @M,                 
-      ,MS                                                              SM,                
-      MX                 FELICIDADES HAS LOGRADO VENCER A               XM                
-     MM                              KING BOO                            MM               
-    .M                                                                    M.              
-    ZM                                                                    M8              
-    MM                       Desbloqueaste el item                        M8              
-    MM                            "A.C.U.A.C."                            M5              
-    ZM                    Ahora seras capaz de entrar al                  MZ              
-     M                        castillo de Bowser Jr                       M.              
-     MM                                                                  MM               
-      MZ                                                                aM                
-       MZ                                                              ZM.                
+      ,MS                   Bienvenido al Pueblo Paleta                SM,                
+      MX                                                                XM                
+     MM         Magicamente has llegado a nuestro dimension en           MM               
+    .M       donde deberas atravezar 5 retos para lograr regresar         M.              
+    ZM        sar a tu propia dimension.  Debes derrotar a los 4          XD              
+    MM        bosses de cada región para recuperar a tus pokemon:         CS
+    .M            Pikachu, Blastoise, Charizard y Venusaur.               MM
+     MZ                                                                  MM              
+      AA                                                                CS
+       MZ       Una vez que lo logres, deberas enfrentarte a Red.      ZM.                
         MM                                                            MM                  
          0MS                                                        2MB                   
           .MMX                                                    XMM.                    
@@ -31,3 +29,4 @@
                    MB   r0M@a.                                                            
                    8MiBMWX                                                                
                    ,M8;                                                                   
+                                    

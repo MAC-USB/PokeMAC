@@ -8,17 +8,18 @@
          @M7                                                        rM@                   
        .M@                                                            @M,                 
       ,MS                                                              SM,                
-      MX              Para comenzar tu mision deberas ponerte           XM                
-     MM           la mascara de AA, el maestro del templo A, para        MM               
-    .M            esto utiliza el comando "mascara" con el nombre         M.              
-    ZM             del maestro, en este caso:                             M8             
-    MM                                                                    MM              
-    ZM                            "mascara AA"                            MZ              
-     M                                                                    M.              
-     MM               Necesitaras una clave para ponerte la              MM               
-      MZ            mascara, yo te indicare las claves conforme         aM                
-       MZ           vayas consoguiendo las mascaras. La primera        ZM.                
-        MM                    clave es: "chileabro"                   MM                  
+      MX                   Al fin recuperaste a PIKACHU                 XM                
+     MM                      	                                           MM               
+    .M                    Puedes buscar sus habilidades                   M.              
+    ZM                           en la Pokedex.                           M8              
+    MM                                                                    M8              
+    MM                  Intenta averiguar la habilidad de                 M5              
+    ZM             cada Pokemon, algunas pueden ser de utilidad           MZ              
+     M                 para los obstaculos que encontraras                M.              
+     MM                        en tu camino--¡Meowth!                    MM               
+      MZ                                                                aM                
+       MZ                                                              ZM.                
+        MM                                                            MM                  
          0MS                                                        2MB                   
           .MMX                                                    XMM.                    
             iWM0,                                              ,8MWi                      
