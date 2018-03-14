@@ -25,7 +25,7 @@ function trapear {
 
 function inicio {
 
-    clear
+    clear 
     echo "Hola preprador, mi PID es: $$"
     printf "\n\n\n"
     read -p "$MENSAJE_READ"
@@ -44,7 +44,7 @@ function inicio {
     clear
     # cat dialogos/dialogo_mascaraA.txt
     # printf "\n\n\n"
-    # read -p "$MENSAJE_READ"
+    # read -p "$MENSAJE_READ"       
     # clear
     cat drawings/meowth.txt
 }
@@ -59,20 +59,20 @@ function dormir {
 function go_evil {
     cat drawings/trainer.txt
     sleep 0.3
-    trapear
+    trapear    
     while true
     do
-	read -p ""
-	printf "\nNo lograras derrotarme. Mejor vete a hacer admision al otro laboratorio.\n"
+    read -p ""
+    printf "\nNo lograras derrotarme. Mejor vete a hacer admision al otro laboratorio.\n"
     done
 }
 
 function insultar {
-	if [ $((intentos % 5)) = 0 -a $intentos -ne 0 ]
-		then
-			printf "\nNo le soples tanto al cartucho... Todos sus intentos son INUTILES\n"
-		else
-    		printf "\nBuen intento. Pero eso solo funciona en el N64.\n"
+    if [ $((intentos % 5)) = 0 -a $intentos -ne 0 ]
+        then 
+            printf "\nNo le soples tanto al cartucho... Todos sus intentos son INUTILES\n"
+        else 
+            printf "\nBuen intento. Pero eso solo funciona en el N64.\n"
     fi
     intentos=$((intentos+1))
     sleep 0.3
@@ -80,7 +80,7 @@ function insultar {
 
 #Esto es del de zelda
 function final {
-    clear
+    clear 
     cat dialogos/dialogo_fintemplos.txt
     printf "\n\n\n"
     read -p "$MENSAJE_READ"
@@ -89,28 +89,28 @@ function final {
     sleep 5
     while true
     do
-	clear
-	cat dialogos/dialogo_ponersemascara.txt
-	printf "\n\n\n"
-	read -p "[SI/NO para continuar] " respuesta
+    clear
+    cat dialogos/dialogo_ponersemascara.txt
+    printf "\n\n\n"
+    read -p "[SI/NO para continuar] " respuesta
 
-	if [ $respuesta = "NO" -o  $respuesta = "no" ]
-	then
-	    clear
-	    cat dialogos/dialogo_ponersemascara_no.txt
-	    printf "\n\n\n"
-	    read -p "$MENSAJE_READ"
-	    break
-	elif [  $respuesta = "SI" -o $respuesta = "si" ]
-	then
-	    break
-	else
-	    clear
-	    echo $respuesta
-	    printf "\n\nNo entiendo lo que dices..."
-	    printf "\n\n\n"
-	    read -p "$MENSAJE_READ"
-	fi
+    if [ $respuesta = "NO" -o  $respuesta = "no" ]
+    then
+        clear
+        cat dialogos/dialogo_ponersemascara_no.txt
+        printf "\n\n\n"
+        read -p "$MENSAJE_READ"       
+        break
+    elif [  $respuesta = "SI" -o $respuesta = "si" ]
+    then
+        break
+    else
+        clear
+        echo $respuesta
+        printf "\n\nNo entiendo lo que dices..."
+        printf "\n\n\n"
+        read -p "$MENSAJE_READ"       
+    fi
     done
     clear
     printf "\n\nNavi se puso la mascara y se esta transformando!"
@@ -120,59 +120,36 @@ function final {
 }
 
 function entregar_item {
-<<<<<<< HEAD:Script/meowth.sh
-
-    case $1 in
-	"1604" )
-=======
     
     case $1 in 
-	"42" ) #Cuando encuentra a PIKACHU
->>>>>>> features/dialogues__1:Script/Toad.sh
-	    clear
-	    chmod 777 -R /home/entrenador/tunel_roca
-	    cat dialogues/dialogo_recupera_pikachu.txt
-	    printf "\n\n\n"
-	    read -p "$MENSAJE_READ"
-	    clear
-<<<<<<< HEAD:Script/meowth.sh
-	    cat dibujos/toad.txt
-	    ;;
-	"superstar" )
-=======
-	    cat drawings/meowth.txt
-	    ;;	
-	"atrapado" ) #Cuando encuentra a Blastoise
->>>>>>> features/dialogues__1:Script/Toad.sh
-	    clear
-	    chmod 777 -R /home/entrenador/islas_remolino
-	    cat dialogues/dialogo_recupera_blastoise.txt
-	    printf "\n\n\n"
-	    read -p "$MENSAJE_READ"
-	    clear
-<<<<<<< HEAD:Script/meowth.sh
-	    cat dibujos/toad.txt
-	    ;;
-	"plant" )
-=======
-	    cat drawings/meowth.txt
-	    ;;	
-	"nexplant" ) #Cuando recupera a Charizard
->>>>>>> features/dialogues__1:Script/Toad.sh
-	    clear
-	    chmod 777 -R /home/entrenador/monte_plateado
-	    cat dialogues/dialogo_recupera_charizard.txt
-	    printf "\n\n\n"
-	    read -p "$MENSAJE_READ"
-	    clear
-<<<<<<< HEAD:Script/meowth.sh
-	    cat dibujos/toad.txt
-	    ;;
-	"b0ws3r" )
-=======
-	    cat drawings/meowth.txt
-	    ;;	
-	"r3D" ) #Cuando recupera a Venusaur y va al final
+    "42" ) #Cuando encuentra a PIKACHU
+        clear
+        chmod 777 -R /home/entrenador/tunel_roca
+        cat dialogues/dialogo_recupera_pikachu.txt
+        printf "\n\n\n"
+        read -p "$MENSAJE_READ"             
+        clear
+        cat drawings/meowth.txt
+        ;;  
+    "atrapado" ) #Cuando encuentra a Blastoise
+        clear
+        chmod 777 -R /home/entrenador/islas_remolino
+        cat dialogues/dialogo_recupera_blastoise.txt
+        printf "\n\n\n"
+        read -p "$MENSAJE_READ"       
+        clear
+        cat drawings/meowth.txt
+        ;;  
+    "nexplant" ) #Cuando recupera a Charizard
+        clear
+        chmod 777 -R /home/entrenador/monte_plateado
+        cat dialogues/dialogo_recupera_charizard.txt
+        printf "\n\n\n"
+        read -p "$MENSAJE_READ"       
+        clear
+        cat drawings/meowth.txt
+        ;;  
+    "r3D" ) #Cuando recupera a Venusaur y va al final
         clear
         cat dialogues/dialogo_recupera_venusaur.txt
         printf "\n\n\n"
@@ -181,13 +158,12 @@ function entregar_item {
         cat dialogues/dialogo_recupera_todos.txt
         printf "\n\n\n"
         read -p "$MENSAJE_READ"
->>>>>>> features/dialogues__1:Script/Toad.sh
-	    clear
-	    go_evil
-	    ;;
-	* )
-	    echo "¿Que dices? No te entiendo. Esa frase no corresponde a ningun item"
-	    ;;
+        clear
+        go_evil
+        ;;
+    * )
+        echo "¿Que dices? No te entiendo. Esa frase no corresponde a ningun item"
+        ;;
     esac
 }
 
@@ -200,19 +176,13 @@ do
     printf "\n[Dime una contraseña para entregarte un item] "
     read -t 30 pregunta
     if [ ! -z $pregunta ]
-	then
-	entregar_item $pregunta
-	continue
+    then
+    entregar_item $pregunta
+    continue
     else
-	clear
-<<<<<<< HEAD:Script/meowth.sh
-	printf "\n\n\n Whhhhuuuuuuusssshhhh..."
-	kill -20 $$
-	cat dibujos/toad.txt
-=======
-	printf "\n\n\n Meeeeeooooooooooooooowth..."
-	kill -20 $$ 
-	cat drawings/meowth.txt
->>>>>>> features/dialogues__1:Script/Toad.sh
+    clear
+    printf "\n\n\n Meeeeeooooooooooooooowth..."
+    kill -20 $$ 
+    cat drawings/meowth.txt
     fi
 done
