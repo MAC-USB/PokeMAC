@@ -12,4 +12,20 @@
  *
  *= require_tree .
  *= require_self
+ *= require flexboxgrid
  */
+
+ .text-left{
+    text-align: left;
+}
+
+.form-control{
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    width: 100%;
+    display: block;
+    padding: 10px 0px;
+    font-size: 1.2em;
+}
+

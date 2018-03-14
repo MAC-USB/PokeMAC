@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
   get 'welcome/index'
   get "welcome/positions", to: "welcome#positions", as: :positions  
-  get "welcome/pokedex", to: "welcome#pokedex", as: :pokedex  
-  get "welcome/map", to: "welcome#map", as: :map  
-  get "welcome/challenges", to: "welcome#challenges", as: :challenges  
+  get "pokedex/quest", to: "pokedex#quest", as: :pokedex 
+  get "pokedex/pokemon", to: "pokedex#pokemons", as: :pokemons
 
   root 'welcome#index'
 
