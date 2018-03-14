@@ -8,14 +8,14 @@
          @M7                                                        rM@                   
        .M@                                                            @M,                 
       ,MS                                                              SM,                
-      MX                 FELICIDADES HAS RECUPERADO A                   XM                
-     MM                           BLASTOISE                              MM               
+      MX                   Recuperaste a Blastoise...                   XM                
+     MM                       ¡Meowth! ¿Ahora que?                       MM               
     .M                                                                    M.              
-    ZM                                                                    M8              
-    MM                   Desbloqueaste un nuevo ataque                    M8              
-    MM                             "surf"                                 M5              
-    ZM                    Ahora seras capaz de llegar a                   MZ              
-     M                        las Islas Remolino                          M.              
+    ZM                     ¿Ya revisaste sus ataques?                     M8              
+    MM                    Este seguro echa agua o nada                    M8              
+    MM                                                                    M5              
+    ZM                                                                    MZ              
+     M                                                                    M.              
      MM                                                                  MM               
       MZ                                                                aM                
        MZ                                                              ZM.                

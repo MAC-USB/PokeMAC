@@ -11,9 +11,9 @@
       MX                                                                XM                
      MM         Magicamente has llegado a nuestro dimension en           MM               
     .M       donde deberas atravezar 5 retos para lograr regresar         M.              
-    ZM       sar a tu propia dimension.  Debes derrotar a los 4           XD              
-    MM       bosses de cada región para recuperar a tus pokemon: Pikachu, CS
-    .M       Blastoise, Charizard y Venusaur.                             MM
+    ZM        sar a tu propia dimension.  Debes derrotar a los 4          XD              
+    MM        bosses de cada región para recuperar a tus pokemon:         CS
+    .M            Pikachu, Blastoise, Charizard y Venusaur.               MM
      MZ                                                                  MM              
       AA                                                                CS
        MZ       Una vez que lo logres, deberas enfrentarte a Red.      ZM.                

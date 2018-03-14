@@ -9,11 +9,11 @@
        .M@                                                            @M,                 
       ,MS                                                              SM,                
       MX                                                                XM                
-     MM                                                                  MM               
-    .M                                                                    M.              
-    ZM                                                                    M8              
-    MM                   FELICIDADES HAS RECUPERADO A                     M8              
-    MM                             VENUSAUR                               M5              
+     MM               Ya VENUSAUR es el ultimo, ¿no crees que            MM               
+    .M                   tardaste demasiado en recuperarlos?              M.              
+    ZM                    Al menos ya terminaremos con esto.              M8              
+    MM                   ¿Y este hace algo? Meowth... ¿o no?              M8              
+    MM                                                                    M5              
     ZM                                                                    MZ              
      M                                                                    M.              
      MM                                                                  MM               

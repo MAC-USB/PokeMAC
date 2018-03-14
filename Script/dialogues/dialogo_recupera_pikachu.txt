@@ -8,15 +8,15 @@
          @M7                                                        rM@                   
        .M@                                                            @M,                 
       ,MS                                                              SM,                
-      MX                  FELICIDADES HAS RECUPERADO A                  XM                
-     MM                      	     PIKACHU                               MM               
-    .M                                                                    M.              
-    ZM                                                                    M8              
-    MM                    Desbloqueaste un nuevo ataque                   M8              
-    MM                             "destello"                             M5              
-    ZM                    Ahora seras capaz de iluminar                   MZ              
-     M                          lugares oscuros                           M.              
-     MM                                                                  MM               
+      MX                   Al fin recuperaste a PIKACHU                 XM                
+     MM                      	                                           MM               
+    .M                    Puedes buscar sus habilidades                   M.              
+    ZM                           en la Pokedex.                           M8              
+    MM                                                                    M8              
+    MM                  Intenta averiguar la habilidad de                 M5              
+    ZM             cada Pokemon, algunas pueden ser de utilidad           MZ              
+     M                 para los obstaculos que encontraras                M.              
+     MM                        en tu camino--¡Meowth!                    MM               
       MZ                                                                aM                
        MZ                                                              ZM.                
         MM                                                            MM                  

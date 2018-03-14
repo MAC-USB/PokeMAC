@@ -80,7 +80,7 @@ for i in range(207):
 for i in range(307):
 	str0 = "".join(choice(lowercase) for j in range(24))
 	os.system('echo ":'+str(random_N_digitos(4))+str0+'" >>  /home/entrenador/kanto/bosque_verde/STAR')
-os.system('echo ":1352eccba aToadlegustanlasgalletas" >>  /home/entrenador/kanto/bosque_verde/STAR')
+os.system('echo ":1352eccba aMeowthlegustanlasgalletas" >>  /home/entrenador/kanto/bosque_verde/STAR')
 for i in range(300):
 	str0 = "".join(choice(lowercase) for j in range(27))
 	os.system('echo ":'+str(random_N_digitos(4))+str0+'" >>  /home/entrenador/kanto/bosque_verde/STAR')
@@ -112,8 +112,8 @@ os.system('chmod 000 /home/entrenador/tunel_roca/coin ; chown entrenador:entrena
 
 
 #Cosas de la pregunta 7
-masks=['oldtoad','castle','bill','balas','DK','wario','nintendo', 'sunshine',\
-           'smash','marioGolf','yoshi', 'brawl']
+masks=['oldpokeball','region','bicicleta','balas','repelente','misty','nintendo', 'sunshine',\
+           'brocoli','pokegym','mochila', 'ataque']
 
 words_from_masks = []
 for i in range(1,300):
@@ -147,7 +147,7 @@ os.system('mkdir -p /home/entrenador/tunel_roca/_Pipe')
 babymario='toad'
 babymario_l = map(''.join, itertools.product(*zip(babymario.upper(), babymario.lower())))
 ############No se que colocar aqui
-dir_babymario = ['_THE','_LEGEND','_OF','_SUPER','_MAC','_BROS']
+dir_babymario = ['_THE','_ADVENTURE','_OF','_SUPER','_POKEMAC','_TRAINERS']
 
 for z in babymario_l:  #Se mina todo el directorio _TINGLES (nivel 1)
 	os.system('touch /home/entrenador/tunel_roca/_Pipe/'+z)
@@ -162,23 +162,23 @@ for z in dir_babymario:
 			for a in babymario_l:  #Se minan todos los directorios del cuarto nivel
 				os.system('touch /home/entrenador/tunel_roca/_Pipe/'+z+'/'+x+'/'+y+'/'+a)
 
-os.system('touch /home/entrenador/tunel_roca/_Pipe/_THE/_LEGEND/Toad')
-os.system('touch /home/entrenador/tunel_roca/_Pipe/_OF/_THE/tOAd')
-os.system('touch /home/entrenador/tunel_roca/_Pipe/_SUPER/_MAC/toaD')
-os.system('touch /home/entrenador/tunel_roca/_Pipe/_BROS/_BROS/ToaD')
+os.system('touch /home/entrenador/tunel_roca/_Pipe/_THE/_ADVENTURE/Zubat')
+os.system('touch /home/entrenador/tunel_roca/_Pipe/_OF/_THE/zUBat')
+os.system('touch /home/entrenador/tunel_roca/_Pipe/_SUPER/_POKEMAC/zubaT')
+os.system('touch /home/entrenador/tunel_roca/_Pipe/_TRAINERS/_TRAINERS/zUbAt')
 
 #carpetas que comienzen con - para la pregunta (11)
 
 os.system('mkdir -p  /home/entrenador/tunel_roca/_GHOST')
-os.system('touch /home/entrenador/tunel_roca/_GHOST/-luigi')
-os.system('touch /home/entrenador/tunel_roca/-luigi')
-os.system('touch /home/entrenador/tunel_roca/-eas')
+os.system('touch /home/entrenador/tunel_roca/_GHOST/-ash')
+os.system('touch /home/entrenador/tunel_roca/-ash')
+os.system('touch /home/entrenador/tunel_roca/-profesorEAS')
 os.system('touch /home/entrenador/tunel_roca/-is')
 os.system('touch /home/entrenador/tunel_roca/-the')
-os.system('mkdir -p /home/entrenador/tunel_roca/-HERO')
-os.system('touch /home/entrenador/tunel_roca/-HERO/-of')
-os.system('touch /home/entrenador/tunel_roca/-HERO/-this')
-os.system('touch /home/entrenador/tunel_roca/-HERO/-world')
+os.system('mkdir -p /home/entrenador/tunel_roca/-TRAINER')
+os.system('touch /home/entrenador/tunel_roca/-TRAINER/-of')
+os.system('touch /home/entrenador/tunel_roca/-TRAINER/-this')
+os.system('touch /home/entrenador/tunel_roca/-TRAINER/-region')
 
 DirBasura('/home/entrenador/tunel_roca' , 800)
 print " --SE CARGO EL TUNEL ROCA"
@@ -269,6 +269,6 @@ for w in aux:
 
 
 print '---SE CARGO EL MONTE PLATEADO'
-DirBasura('/home/entrenador/monte_plateado/' , 800)
+DirBasura('/home/entrenador/monte_plateado' , 800)
 
 ######################## Fin del CASTILLO DE PIRANA_PLANT ###################################################################

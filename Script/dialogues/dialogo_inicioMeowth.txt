@@ -8,14 +8,14 @@
          @M7         Mi nombre es Meowth, el man y yo seremos        rM@                   
        .M@          tus guias en esta aventura. Cada Boss que          @M,                 
       ,MS            derrotes te entregara nuevo item que te            SM,                
-      MX       permitira entrar a la siguiente región. Te recomiendo     XM                
+      MX       permitira entrar a la siguiente region. Te recomiendo     XM                
      MM           que recorras Pueblo Paleta para obtener la guia         MM               
-    .M           sobre como atravesar las regiones, a ver si no eres      MM.              
+    .M            de como atravesar las regiones. A ver si no eres        MM.              
     ZM                       tan inutil como pareces...                   M8              
     MM                                                                    MM              
     ZM           Recuerda darme las claves que obtengas de los            MZ              
-     M         bosses para darte los items y debes poner en la guia      sMM
-      MM          la clave de cada reto para pasar al siguiente.        AA
+     M         bosses para darte los items, tambien debes poner en       MM
+      MM      la guia la clave de cada reto para pasar al siguiente.    AA
        MZ                                                              ZM.                
         MM                                                            MM                  
          0MS                                                        2MB                   
