@@ -5,12 +5,23 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
     <%= favicon_link_tag 'favicon.ico' %>
   </head>
 
   <body>
+
+    <% if notice %>
+      <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
+    
+<h1>prueba</h1>
     <%= yield %>
+
+
   </body>
 </html>

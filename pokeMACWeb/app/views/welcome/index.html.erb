@@ -1,0 +1,13 @@
+<h1>JK eres mi puta</h1>
+<p>MD tu también</p>
+
+<% if user_signed_in? %>
+            <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+          <% else %>
+            <li><%= link_to "Log In", new_user_session_path %></li>
+          <% end %>
+
+<p><%= link_to "Posiciones", positions_path %></p>
+<p><%= link_to "Pokedex", pokedex_path %></p>
+<p><%= link_to "Mapa", map_path %></p>
+<p><%= link_to "Retos", challenges_path %></p>

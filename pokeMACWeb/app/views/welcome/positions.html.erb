@@ -1,0 +1,17 @@
+<h1>Aquí va la tabla de posiciones</h1>
+
+<table>
+	<tr>
+		<th>Equipo</th>
+		<th>Puntos</th>
+		<th>Campo Prueba</th>
+	</tr>
+
+	<% @users.each do |user| %>
+	  <tr>
+	    <td><%= user.username %></td>
+	    <td>Maria Anders</td>
+	    <td>Germany</td>
+	  </tr>
+	<% end %>
+</table>
