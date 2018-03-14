@@ -95,7 +95,7 @@ DirBasura("/home/entrenador/kanto/bosque_verde" , 800)
 ##############################
 # CASTILLO NUMERO 2 (KINGBOO)#
 ##############################
-
+#DE AQUI EN ADELANTE TODAS ESTARAN EN OPT OCULTAS
 os.system('rm -rf /home/entrenadorCastillo_de_KingBoo/block')
 os.system('touch /home/entrenador/Castillo_de_KingBoo/block')
 for i in range(99):
