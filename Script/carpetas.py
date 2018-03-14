@@ -64,8 +64,8 @@ print 'CREANDO CARPETAS DE CASTILLOS'
 #Asignacion de aliases 
 
 os.system("echo \"alias destello='/home/meowth/scripts/pikachu.sh'\" >> /home/entrenador/.bashrc")
-os.system("echo \"alias surf='/home/meowth/scripts/blastoise.sh'\" >> /home/entrenador/.bashrc")
-os.system("echo \"alias vuelo='/home/meowth/scripts/charizard.sh'\" >> /home/entrenador/.bashrc")
+os.system("echo \"alias surf='source /home/meowth/scripts/blastoise.sh'\" >> /home/entrenador/.bashrc")
+os.system("echo \"alias vuelo='source /home/meowth/scripts/charizard.sh'\" >> /home/entrenador/.bashrc")
 os.system("echo \"alias pokeflauta='/home/meowth/scripts/snorlax.sh'\" >> /home/entrenador/.bashrc")
 os.system("echo \"alias instakillred='python /home/invitado/admision/credits.py'\" >> /home/entrenador/.bashrc")
 os.system('echo "" > /etc/motd')
