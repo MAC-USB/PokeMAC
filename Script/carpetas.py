@@ -54,10 +54,10 @@ print 'CREANDO USUARIO TOAD Y MARIO'
 
 #Se crean los directorios castillos principales
 
-os.system('mkdir /home/Mario/Castillo_de_Kamek; chmod 755  /home/Mario/Castillo_de_Kamek')
-os.system('mkdir /home/Mario/Castillo_de_KingBoo; chmod 700  /home/Mario/Castillo_de_KingBoo')
-os.system('mkdir /home/Mario/Castillo_de_Bowser_jr; chmod 700  /home/Mario/Castillo_de_Bowser_jr')
-os.system('mkdir /home/Mario/Castillo_de_Pirana_plant; chmod 700  /home/Mario/Castillo_de_Pirana_plant')
+os.system('mkdir /home/entrenador/bosque_verde; chmod 755  /home/entrenador/bosque_verde')
+os.system('mkdir /home/entrenador/tunel_roca; chmod 700  /home/entrenador/tunel_roca')
+os.system('mkdir /home/entrenador/islas_remolinos; chmod 700  /home/entrenador/islas_remolinos')
+os.system('mkdir /home/entrenador/monte_plateado; chmod 700  /home/entrenador/monte_plateado')
 
 print 'CREANDO CARPETAS DE CASTILLOS'
 
@@ -73,11 +73,11 @@ print 'ASIGNACION DE ALIASES y SUS RESPECTIVOS .bashrc'
 
 ###PUEBLO PALETA#####
 
-os.system('mkdir /home/Mario/World; chmod 755 /home/Mario/World')
-os.system('touch /home/Mario/World/.gombaa')
-os.system("echo \"159.90\" >> /home/Mario/World/.gombaa") #PRIMERA PARTE IP (CAT) XXX
-CrearArchivo('/home/Mario/World/jump',100)
-os.system("echo \"9.199\" >> /home/Mario/World/jump") #SEGUNDA PARTE IP (GREP) XXX.XXX
-CrearArchivo('/home/Mario/World/rock', 2019) #TERCERA PARTE IP XXX es el numero de lineas que es el num de ip XXX
+os.system('mkdir /home/entrenador/pueblo_paleta; chmod 755 /home/Mario/World')
+os.system('touch /home/entrenador/pueblo_paleta/.gombaa')
+os.system("echo \"159.90\" >> /home/entrenador/pueblo_paleta/.gombaa") #PRIMERA PARTE IP (CAT) XXX
+CrearArchivo('/home/entrenador/pueblo_paleta/jump',100)
+os.system("echo \"9.199\" >> /home/entrenador/pueblo_paleta/jump") #SEGUNDA PARTE IP (GREP) XXX.XXX
+CrearArchivo('/home/entrenador/pueblo_paleta/rock', 2019) #TERCERA PARTE IP XXX es el numero de lineas que es el num de ip XXX
 
 print 'SE CREO EL MUNDO LIBRE'
