@@ -6,10 +6,7 @@ import sys
 from random import choice, randint, shuffle
 from string import lowercase
 
-#FUNCIONES:
-
-# Crea la ruta y le mete n archivos y n carpetas
-# Se leen palabras de un diccionaro para crear las carpetas crap
+# FUNCTIONS
 
 f = open('/etc/dictionaries-common/words', 'r')
 
@@ -20,110 +17,125 @@ shuffle(crap)
 
 # Given a number, returns a random number of n digits
 def random_N_digitos(n):
-	rango_ini = 10**(n-1)
-	rango_fin = (10**n)-1
-	return randint(rango_ini, rango_fin)
+	range_ini = 10**(n-1)
+	range_fin = (10**n)-1
+	return randint(range_ini, range_fin)
 
-def DirBasura(ruta, n):
-	if not os.path.exists(ruta):
-		os.mkdir(ruta)
+def DirBasura(path, n):
+	if not os.path.exists(path):
+		os.mkdir(path)
 
 	for i in range(int(n)):
-		os.mkdir(ruta + '/' + crap.pop().strip() )
-		archivo = open(ruta + '/' + crap.pop().strip() , 'w', 0)
+		os.mkdir(path + '/' + crap.pop().strip() )
+		archivo = open(path + '/' + crap.pop().strip() , 'w', 0)
 
-# Crea archivo con N lineas basura
-def create_file(ruta, n,):
-    archivo = open(ruta, 'w', 0)
-    for i in range(int(n)):
-        archivo.write(crap.pop().strip() + '\n')
+# Create a file and fill it with n lines of random data
+def create_file(path, n):
+    with open(path, 'w') as f:
+        for i in range(int(n)):
+            f.write(crap.pop().strip() + '\n')
 
-######################## CONSTRUCCION CASTILLOS  ##############################
 
-################
-# bosque_verde #
-################
+########################
+# ZONE 0 - pueblo_paleta
+########################
 
-#Garantizo que no existan las siguienets carpetas y luego las creo
+# 1
+with open('/home/entrenador/kanto/pueblo_paleta/.ditto', 'a') as f:
+    f.write('Lo que buscas comienza con 159.90') # TODO
 
-os.system('find /home/entrenador/kanto/bosque_verde -name _ZOR | xargs rm -rf')
-os.system('find /home/entrenador/kanto/bosque_verde -name _DAE | xargs rm -rf')
-os.system('find /home/entrenador/kanto/bosque_verde -name STAR | xargs rm -rf')
+# 2
+create_file('/home/entrenador/kanto/pueblo_paleta/grimer', 100)
+with open('/home/entrenador/kanto/pueblo_paleta/grimer', 'a') as f:
+    f.write('9.199') # TODO
 
-os.system('mkdir -p /home/entrenador/kanto/bosque_verde/_ZOR/_REA')
-os.system('mkdir -p /home/entrenador/kanto/bosque_verde/_DAE/_KUL')
-os.system('touch /home/entrenador/kanto/bosque_verde/_ZOR/##PONME_TODO')
-os.system('touch /home/entrenador/kanto/bosque_verde/_ZOR/_REA/##ESO_PA_LANTE')
-os.system('touch /home/entrenador/kanto/bosque_verde/_DAE/##PONME_TODO')
-os.system('touch /home/entrenador/kanto/bosque_verde/_DAE/_KUL/##ESO_PA_LANTE')
+# 3
+create_file('/home/entrenador/kanto/pueblo_paleta/caterpie', 2019) # TODO
 
-os.system('touch /home/entrenador/kanto/bosque_verde/STAR')
-os.system('touch /home/entrenador/kanto/bosque_verde/mario_party')
+
+#######################
+# ZONE 1 - bosque_verde
+#######################
+
+# CHALLENGE 2 / 4
+# Guarantee that the dirs do not exist.
+os.system('find /home/entrenador/kanto/bosque_verde -name _ATK | xargs rm -rf')
+os.system('find /home/entrenador/kanto/bosque_verde -name _DEF | xargs rm -rf')
+
+# Now create them
+os.system('mkdir -p /home/entrenador/kanto/bosque_verde/_ATK/_LVL')
+os.system('mkdir -p /home/entrenador/kanto/bosque_verde/_DEF/_HP')
+os.system('touch /home/entrenador/kanto/bosque_verde/{_ATK,_DEF}/##PONME_TODO')
+os.system('touch /home/entrenador/kanto/bosque_verde/{_ATK/_LVL,_DEF/_HP}/##ESO_PA_LANTE')
+
+# CHALLENGE 5
+os.system('find /home/entrenador/kanto/bosque_verde -name POKE | xargs rm -rf')
+os.system('touch /home/entrenador/kanto/bosque_verde/POKE')
 lineas = respaldo
 
-#Creo el contenido del archivo STAR para su pregunta
-
+# Fill the file POKE
 for i in range(50):
-	os.system('echo "'+(((lineas.pop()).lower()).replace("'",":")).strip("\n")+'" >> /home/entrenador/kanto/bosque_verde/STAR')
-
+	os.system('echo "' + (((lineas.pop()).lower()).replace("'",":")).strip("\n") + '" >> /home/entrenador/kanto/bosque_verde/POKE')
 for i in range(207):
 	str0 = "".join(choice(lowercase) for j in range(45))
-	os.system('echo ":'+str(random_N_digitos(4))+str0+'" >> /home/entrenador/kanto/bosque_verde/STAR')
-os.system('echo ":5432accb seteacabaeltiempo" >> /home/entrenador/kanto/bosque_verde/STAR')
+	os.system('echo ":' + str(random_N_digitos(4)) + str0 + '" >> /home/entrenador/kanto/bosque_verde/POKE')
+os.system('echo ":5432accb se_te_acaba_el_tiempo_menor" >> /home/entrenador/kanto/bosque_verde/POKE')
 for i in range(207):
 	str0 = "".join(choice(lowercase) for j in range(30))
-	os.system('echo ":'+str(random_N_digitos(4))+str0+'" >>  /home/entrenador/kanto/bosque_verde/STAR')
-os.system('echo ":1322eccb acabasdeconseguirlaclave_babe" >>  /home/entrenador/kanto/bosque_verde/STAR')
+	os.system('echo ":' + str(random_N_digitos(4)) + str0 + '" >> /home/entrenador/kanto/bosque_verde/POKE')
+os.system('echo ":1322eccb acabas_de_conseguir_la_clave_babe" >> /home/entrenador/kanto/bosque_verde/POKE')
 for i in range(207):
 	str0 = "".join(choice(lowercase) for j in range(34))
-	os.system('echo ":'+str(random_N_digitos(4))+str0+'" >>  /home/entrenador/kanto/bosque_verde/STAR')
+	os.system('echo ":' + str(random_N_digitos(4)) + str0 + '" >> /home/entrenador/kanto/bosque_verde/POKE')
 for i in range(307):
 	str0 = "".join(choice(lowercase) for j in range(24))
-	os.system('echo ":'+str(random_N_digitos(4))+str0+'" >>  /home/entrenador/kanto/bosque_verde/STAR')
-os.system('echo ":1352eccba aToadlegustanlasgalletas" >>  /home/entrenador/kanto/bosque_verde/STAR')
+	os.system('echo ":' + str(random_N_digitos(4)) + str0 + '" >> /home/entrenador/kanto/bosque_verde/POKE')
+os.system('echo ":1352eccba Meowth_dice_que_la_clave_es_nxt" >> /home/entrenador/kanto/bosque_verde/POKE')
 for i in range(300):
 	str0 = "".join(choice(lowercase) for j in range(27))
-	os.system('echo ":'+str(random_N_digitos(4))+str0+'" >>  /home/entrenador/kanto/bosque_verde/STAR')
+	os.system('echo ":' + str(random_N_digitos(4)) + str0 + '" >>  /home/entrenador/kanto/bosque_verde/POKE')
 for i in range(50):
-	os.system('echo "'+(((lineas.pop()).lower()).replace("'",":")).strip("\n")+'" >>  /home/entrenador/kanto/bosque_verde/STAR')
+	os.system('echo "' + (((lineas.pop()).lower()).replace("'",":")).strip("\n") + '" >>  /home/entrenador/kanto/bosque_verde/POKE')
 
-print "Se generó bosque_verde"
 DirBasura("/home/entrenador/kanto/bosque_verde" , 800)
 
-######################## Fin del CASTILLO DE KAMEK ########################################################################
 
-##############################
-# CASTILLO NUMERO 2 (KINGBOO)#
-##############################
-#DE AQUI EN ADELANTE TODAS ESTARAN EN OPT OCULTAS
-os.system('rm -rf /home/entrenadorCastillo_de_KingBoo/block')
-os.system('touch /home/entrenador/Castillo_de_KingBoo/block')
-for i in range(99):
-	str0 = "".join(choice(lowercase) for j in range(6))
-	os.system('echo '+str0+' >>  /home/entrenador/Castillo_de_KingBoo/block')
-os.system('echo mushroom >>  /home/entrenador/Castillo_de_KingBoo/block')     #Essta es la linea del medio
-for i in range(100):
-	str0 = "".join(choice(lowercase) for j in range(6))
-	os.system('echo '+str0+' >>  /home/entrenador/Castillo_de_KingBoo/block')
+#####################
+# ZONE 2 - tunel_roca
+#####################
 
-os.system('rm -rf Taquirule/templo_E/coin')
-os.system('cp /home/entrenador/Castillo_de_KingBoo/block /home/entrenador/Castillo_de_KingBoo/coin')
-os.system('chmod 000 /home/entrenador/Castillo_de_KingBoo/coin ; chown entrenador:entrenador /home/entrenador/Castillo_de_KingBoo/coin')
+# CHALLENGE 8
+os.system('rm -rf /home/entrenador/kanto/tunel_roca/medium')
+os.system('touch /home/entrenador/kanto/tunel_roca/medium')
 
+# Deprecated. Remove on verification.
+# for i in range(99):
+# 	str0 = "".join(choice(lowercase) for j in range(6))
+# 	os.system('echo ' + str0 + ' >> /home/entrenador/kanto/tunel_roca/medium')
 
-#Cosas de la pregunta 7
-masks=['oldtoad','castle','bill','balas','DK','wario','nintendo', 'sunshine',\
-           'smash','marioGolf','yoshi', 'brawl']
+with open('/home/entrenador/kanto/tunel_roca/medium', 'a') as f:
 
-words_from_masks = []
-for i in range(1,300):
-    for m in masks:
-        num = i % 5
-        if num != 0:
-            words_from_masks.append(m + str(random_N_digitos(int(num))))
+    for i in range(99):
+        random_string = "".join(choice(lowercase) for j in range(6))
+        f.write(random_string)
 
-words_from_masks = list(set(words_from_masks))
-respaldo_wfms = words_from_masks
+    # Middle line
+    f.write('equilibrio')
+
+    for i in range(100):
+        random_string = "".join(choice(lowercase) for j in range(6))
+        f.write(random_string)
+
+# Deprecated. Remove on verification.
+# for i in range(100):
+# 	str0 = "".join(choice(lowercase) for j in range(6))
+# 	os.system('echo ' + str0 + ' >> /home/entrenador/kanto/tunel_roca/medium')
+
+# CHALLENGE 9
+os.system('rm -rf /home/entrenador/kanto/tunel_roca/medalla')
+os.system('cp /home/entrenador/kanto/tunel_roca/medium /home/entrenador/kanto/tunel_roca/medalla')
+os.system('chmod 000 /home/entrenador/kanto/tunel_roca/medalla')
+os.system('chown entrenador:entrenador /home/entrenador/kanto/tunel_roca/medalla')
 
 #Archivo en el que deberan mostrar el contenido de los archivos que esten
 #contenidos en el
@@ -138,7 +150,6 @@ for i in range(800):
 	os.system('echo "'+(((lineas.pop()).lower()).replace("'",":")).strip("\n")+'" >> /home/entrenador/Castillo_de_KingBoo/smash')
 os.system('touch /home/entrenador/Castillo_de_KingBoo/great_star')
 os.system('echo "superstar" >> /home/entrenador/Castillo_de_KingBoo/great_star')
-
 
 #_Pipe pregunta (12)
 
@@ -264,8 +275,6 @@ aux = words_from_masks + [palabra_distinta]
 shuffle(aux)
 for w in aux:
     	os.system('echo '+ w + '>> /home/entrenador/Castillo_de_Pirana_plant/mariotetris')
-
-
 
 print '---SE CARGO EL CASTILLO DE (PIRANA_PLANT)'
 DirBasura('/home/entrenador/Castillo_de_Pirana_plant/' , 800)
