@@ -8,7 +8,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = '9c2ed79ff7d17234e2e3bf0d8db31c8d1b131e4b28de5fde25ee03130f32391e4690ffea58477e4b4fe122f9b71fb45e873684559d4dbba74e4b9a314c40cd2e'
+  # config.secret_key = '3e374ecaa4be2652c2a58174996c0a201db42de5a8ead7e0aaac2fecd4c0d97f25566b4c63092507b5524fb66b6525f2fe28ce04647c9478b4e3b37f2703d64a'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -36,7 +36,7 @@ Devise.setup do |config|
   # session. If you need permissions, you should implement that in a before filter.
   # You can also supply a hash where the value is a boolean determining whether
   # or not authentication should be aborted when the value is not present.
-  # config.authentication_keys = [:email]
+  config.authentication_keys = [:username]
 
   # Configure parameters from the request object used for authentication. Each entry
   # given should be a request method and it will automatically be passed to the
@@ -48,12 +48,12 @@ Devise.setup do |config|
   # Configure which authentication keys should be case-insensitive.
   # These keys will be downcased upon creating or modifying a user and when used
   # to authenticate or find a user. Default is :email.
-  config.case_insensitive_keys = [:email]
+  config.case_insensitive_keys = [:username]
 
   # Configure which authentication keys should have whitespace stripped.
   # These keys will have whitespace before and after removed upon creating or
   # modifying a user and when used to authenticate or find a user. Default is :email.
-  config.strip_whitespace_keys = [:email]
+  config.strip_whitespace_keys = [:username]
 
   # Tell if authentication through request.params is enabled. True by default.
   # It can be set to an array that will enable params authentication only for the
@@ -110,7 +110,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
-  # config.pepper = '5fa28990d5d508fdefa43a10be00f6dbcc268cbde0ab1703e1d079ead20114a2718d88e2207c56ffb92eae189adb2c4aeff5a3e36fccc793c381584cc899924a'
+  # config.pepper = '65327fcb558f7a6d4c399ca2ba8292dc60355bfb8e354d553fbced805b189af63a66b93a4be19bb62b591c63f95fb5becafaa0d69cc16711f107adb68c9ed7bd'
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -225,7 +225,7 @@ Devise.setup do |config|
   # Turn scoped views on. Before rendering "sessions/new", it will first check for
   # "users/sessions/new". It's turned off by default because it's slower if you
   # are using only default views.
-  # config.scoped_views = false
+  config.scoped_views = true
 
   # Configure the default scope given to Warden. By default it's the first
   # devise role declared in your routes (usually :user).

@@ -1,0 +1,9 @@
+probando QUESTS
+<h1>links preguntas</h1>
+        <%= link_to 'Preguntas', controller: 'questions' %>
+
+<% content_for :image do %>
+  <div>
+  <%=image_tag(@map, alt: "Example Image", size: "250x170", :class => "rcorners2")%>
+  </div>
+<%end%>
