@@ -3,6 +3,9 @@ class WelcomeController < ApplicationController
   end
 
   def positions	
+  	@users = User.all.order("created_at DESC")
+
+  	render layout: false
   end
 
   def pokedex
