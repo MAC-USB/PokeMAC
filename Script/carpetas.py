@@ -71,7 +71,7 @@ os.system('echo "" > /var/run/motd.dynamic')
 
 print 'ASIGNACION DE ALIASES y SUS RESPECTIVOS .bashrc'
 
-###WORLD#####
+###PUEBLO PALETA#####
 
 os.system('mkdir /home/Mario/World; chmod 755 /home/Mario/World')
 os.system('touch /home/Mario/World/.gombaa')
