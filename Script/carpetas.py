@@ -63,13 +63,6 @@ print 'CREANDO CARPETAS DE CASTILLOS'
 
 #Asignacion de aliases 
 
-os.system("echo \"alias mamamia='su'\" >> /home/Mario/.bashrc")
-os.system("echo \"alias ls='ls --color'\" >> /home/Mario/.bashrc")
-os.system("echo \"alias instakillbowser='python /home/invitado/admision/credits.py'\" >> /home/Mario/.bashrc")
-os.system('echo "" > /etc/motd')
-os.system('echo "" > /var/run/motd.dynamic')
-
-print 'ASIGNACION DE ALIASES y SUS RESPECTIVOS .bashrc'
 
 ###PUEBLO PALETA#####
 
