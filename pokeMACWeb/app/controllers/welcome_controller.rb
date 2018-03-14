@@ -7,4 +7,10 @@ class WelcomeController < ApplicationController
 
   def pokedex
   end
+
+  def map
+  end
+
+  def challenges
+  end
 end
