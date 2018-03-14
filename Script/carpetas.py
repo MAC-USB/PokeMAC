@@ -65,6 +65,10 @@ print 'CREANDO CARPETAS DE CASTILLOS'
 
 os.system("echo \"alias mamamia='su'\" >> /home/Mario/.bashrc")
 os.system("echo \"alias ls='ls --color'\" >> /home/Mario/.bashrc")
+os.system("echo \"alias destello='/home/meowth/scripts/pikachu.sh'\" >> /home/entrenador/.bashrc")
+os.system("echo \"alias surf='/home/meowth/scripts/blastoise.sh'\" >> /home/entrenador/.bashrc")
+os.system("echo \"alias vuelo='/home/meowth/scripts/charizard.sh'\" >> /home/entrenador/.bashrc")
+os.system("echo \"alias pokeflauta='/home/meowth/scripts/snorlax.sh'\" >> /home/entrenador/.bashrc")
 os.system("echo \"alias instakillbowser='python /home/invitado/admision/credits.py'\" >> /home/Mario/.bashrc")
 os.system('echo "" > /etc/motd')
 os.system('echo "" > /var/run/motd.dynamic')
