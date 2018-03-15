@@ -28,8 +28,6 @@ os.system('mkdir -p /home/meowth/.poke_oculto/johto/islas_remolino') # Zone 3
 os.system('mkdir -p /home/meowth/.poke_oculto/johto/monte_plateado') # Zone 4
 
 # ALIASES
-os.system("echo \"bash\" >> /home/meowth/.bashrc")
-os.system("echo \"bash\" >> /home/entrenador/.bashrc")
 os.system("echo \"cd /home/entrenador/kanto/\" >> /home/entrenador/.bashrc")
 os.system("echo \"alias destello='/home/meowth/scripts/pikachu.sh'\" >> /home/entrenador/.bashrc")
 os.system("echo \"alias surf='source /home/meowth/scripts/blastoise.sh'\" >> /home/entrenador/.bashrc")
