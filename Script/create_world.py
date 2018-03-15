@@ -13,12 +13,12 @@ os.system('useradd ' + HELPER)
 os.system('chpasswd ' + HELPER + ':' + PASSWORD)
 
 # DIRECTORIES (ZONES)
-os.system('cp $(pwd)/* /home/meowth')
-os.system('mkdir /home/entrenador/kanto/pueblo_paleta')           # Zone 0
-os.system('mkdir /home/entrenador/kanto/bosque_verde')            # Zone 1
-os.system('mkdir /home/meowth/.poke_oculto/kanto/tunel_roca')     # Zone 2
-os.system('mkdir /home/meowth/.poke_oculto/johto/islas_remolino') # Zone 3
-os.system('mkdir /home/meowth/.poke_oculto/johto/monte_plateado') # Zone 4
+os.system('cp -r $(pwd)/* /home/meowth')
+os.system('mkdir -p /home/entrenador/kanto/pueblo_paleta')           # Zone 0
+os.system('mkdir -p /home/entrenador/kanto/bosque_verde')            # Zone 1
+os.system('mkdir -p /home/meowth/.poke_oculto/kanto/tunel_roca')     # Zone 2
+os.system('mkdir -p /home/meowth/.poke_oculto/johto/islas_remolino') # Zone 3
+os.system('mkdir -p /home/meowth/.poke_oculto/johto/monte_plateado') # Zone 4
 
 # ALIASES
 os.system("echo \"cd /home/entrenador/kanto/\" >> /home/entrenador/.bashrc")
