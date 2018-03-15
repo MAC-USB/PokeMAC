@@ -15,7 +15,7 @@
     MM                                                                    M8              
     MM                  Intenta averiguar la habilidad de                 M5              
     ZM             cada Pokemon, algunas pueden ser de utilidad           MZ              
-     M                 para los obstaculos que encontraras                M.              
+     M                 para los obstáculos que encontrarás                M.              
      MM                        en tu camino--¡Meowth!                    MM               
       MZ                                                                aM                
        MZ                                                              ZM.                
