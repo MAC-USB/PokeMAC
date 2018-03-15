@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180315122412) do
+ActiveRecord::Schema.define(version: 20180315170126) do
 
   create_table "answers", force: :cascade do |t|
     t.integer "question_id"
@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 20180315122412) do
     t.datetime "updated_at", null: false
     t.string "name"
     t.string "habilities"
+    t.string "imagelink"
+    t.string "image"
   end
 
 # Could not dump table "questions" because of following StandardError
