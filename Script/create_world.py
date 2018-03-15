@@ -33,5 +33,6 @@ os.system("echo \"alias surf='source /home/meowth/scripts/blastoise.sh'\" >> /ho
 os.system("echo \"alias vuelo='source /home/meowth/scripts/charizard.sh'\" >> /home/entrenador/.bashrc")
 os.system("echo \"alias pokeflauta='/home/meowth/scripts/snorlax.sh'\" >> /home/entrenador/.bashrc")
 os.system("echo \"alias instakillred='python /home/invitado/admision/credits.py'\" >> /home/entrenador/.bashrc")
+# alias instakill="pkill -u meowth -f meowth -KILL; python /home/invitado/admision.credits.py"
 os.system('echo "" > /etc/motd')
 os.system('echo "" > /var/run/motd.dynamic')
