@@ -184,8 +184,8 @@ do
     continue
     else
     clear
-    printf "\n\n\n Meeeeeooooooooooooooowth..."
-    kill -20 $$ 
+    printf "\n\n\n          Meeeeeooooooooooooooowth...\n\n\n"
+    #kill -20 $$ 
     cat drawings/meowth.txt
     fi
 done
