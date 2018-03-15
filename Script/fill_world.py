@@ -47,10 +47,10 @@ with open('/home/entrenador/kanto/pueblo_paleta/.ditto', 'a') as f:
 # 2
 create_file('/home/entrenador/kanto/pueblo_paleta/grimer', 100)
 with open('/home/entrenador/kanto/pueblo_paleta/grimer', 'a') as f:
-    f.write('9.199') # TODO
+    f.write('9.209') # TODO
 
 # 3
-create_file('/home/entrenador/kanto/pueblo_paleta/caterpie', 2019) # TODO
+create_file('/home/entrenador/kanto/pueblo_paleta/caterpie', 3000) # TODO
 
 print('pueblo_paleta created')
 
@@ -86,7 +86,7 @@ os.system('echo ":5432accb se_te_acaba_el_tiempo_menor" >> /home/entrenador/kant
 for i in range(207):
 	str0 = "".join(choice(lowercase) for j in range(30))
 	os.system('echo ":' + str(random_N_digitos(4)) + str0 + '" >> /home/entrenador/kanto/bosque_verde/POKE')
-os.system('echo ":1322eccb acabas_de_conseguir_la_clave_babe" >> /home/entrenador/kanto/bosque_verde/POKE')
+os.system('echo ":1322eccb acabas_de_conseguir_la_clave" >> /home/entrenador/kanto/bosque_verde/POKE')
 for i in range(207):
 	str0 = "".join(choice(lowercase) for j in range(34))
 	os.system('echo ":' + str(random_N_digitos(4)) + str0 + '" >> /home/entrenador/kanto/bosque_verde/POKE')
@@ -100,6 +100,7 @@ for i in range(300):
 for i in range(50):
 	os.system('echo "' + (((lineas.pop()).lower()).replace("'",":")).strip("\n") + '" >>  /home/entrenador/kanto/bosque_verde/POKE')
 
+# CHALLENGE 6
 DirBasura("/home/entrenador/kanto/bosque_verde" , 800)
 
 # CHALLENGE 7
