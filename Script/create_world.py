@@ -5,12 +5,18 @@ import os
 #HELPER = 'meowth'
 #PASSWORD = 'PokeMAC'
 
-# Create the Users and add their passwords
-os.system('useradd entrenador')
-os.system('chpasswd entrenador:PokeMAC')
+meowth_passwd = crypt.crypt('ayudame','22')
+entrenador_passwd = crypt.crypt('MIQUIMI','22')
 
-os.system('useradd meowth')
-os.system('chpasswd meowth:PokeMAC')
+os.system('useradd -s /bin/bash -p '+ meowth_passwd +' -m meowth')
+os.system('useradd -s /bin/bash -p '+ entrenador_passwd +' -m entrenador')
+
+# Create the Users and add their passwords
+# os.system('useradd entrenador')
+# os.system('chpasswd entrenador:PokeMAC')
+
+# os.system('useradd meowth')
+# os.system('chpasswd meowth:PokeMAC')
 
 # DIRECTORIES (ZONES)
 os.system('cp -r $(pwd)/* /home/meowth')
