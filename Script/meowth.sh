@@ -11,7 +11,6 @@ function trapear {
     trap insultar SIGABRT
     trap insultar SIGBUS
     trap insultar SIGFPE
-
     trap insultar SIGUSR1
     trap insultar SIGSEGV
     trap insultar SIGUSR2
@@ -20,13 +19,12 @@ function trapear {
     trap insultar SIGTERM
     trap insultar SIGSTOP
     trap insultar SIGTSTP
-    echo ""
+    echo ''
 }
 
 function inicio {
-
-    clear 
-    echo "Hola preprador, mi PID es: $$"
+    clear
+    echo "Hola $USER, mi PID es: $$"
     printf "\n\n\n"
     read -p "$MENSAJE_READ"
     clear
@@ -44,37 +42,33 @@ function inicio {
     clear
     # cat dialogos/dialogo_mascaraA.txt
     # printf "\n\n\n"
-    # read -p "$MENSAJE_READ"       
+    # read -p "$MENSAJE_READ"
     # clear
     cat drawings/meowth.txt
 }
 
 function dormir {
-    for i in `seq 1 100000`
+  for i in $(seq 1 100000)
     do
         p=""
     done
 }
 
-function musica {
-    nohup mplayer sounds/trainer.mp3 >/dev/null 2>/dev/null & 
-}
-
 function go_evil {
     cat drawings/trainer.txt
     sleep 0.3
-    trapear  
-    musica  
+    trapear
+    setsid mplayer sounds/trainer.mp3 > /dev/null 2> /dev/null &
     while true
     do
-    read -p ""
-    printf "\nNo lograras derrotarme. Mejor vete a hacer admision al otro laboratorio.\n"
+      read -p ""
+      printf "\nNo lograras derrotarme. Mejor vete a hacer admision al otro laboratorio.\n"
     done
 }
 
 function insultar {
     if [ $((intentos % 5)) = 0 -a $intentos -ne 0 ]
-        then 
+        then
             printf "\nAsh tiene más posibilidades de ganar la liga que tú.\n"
         else
             printf "\nBuen intento. Pero eso solo funciona en el GameBoy.\n"
@@ -85,7 +79,7 @@ function insultar {
 
 #Esto es del de zelda
 function final {
-    clear 
+    clear
     cat dialogos/dialogo_fintemplos.txt
     printf "\n\n\n"
     read -p "$MENSAJE_READ"
@@ -104,7 +98,7 @@ function final {
         clear
         cat dialogos/dialogo_ponersemascara_no.txt
         printf "\n\n\n"
-        read -p "$MENSAJE_READ"       
+        read -p "$MENSAJE_READ"
         break
     elif [  $respuesta = "SI" -o $respuesta = "si" ]
     then
@@ -114,7 +108,7 @@ function final {
         echo $respuesta
         printf "\n\nNo entiendo lo que dices..."
         printf "\n\n\n"
-        read -p "$MENSAJE_READ"       
+        read -p "$MENSAJE_READ"
     fi
     done
     clear
@@ -125,38 +119,38 @@ function final {
 }
 
 function entregar_item {
-    
-    case $1 in 
+
+    case $1 in
     "42" ) #Cuando encuentra a PIKACHU
         clear
         #chmod 777 -R /home/entrenador/tunel_roca
         chmod +x scripts/pikachu.sh
         cat dialogues/dialogo_recupera_pikachu.txt
         printf "\n\n\n"
-        read -p "$MENSAJE_READ"             
+        read -p "$MENSAJE_READ"
         clear
         cat drawings/meowth.txt
-        ;;  
+        ;;
     "atrapado" ) #Cuando encuentra a Blastoise
         clear
         #chmod 777 -R /home/entrenador/islas_remolino
         chmod +x scripts/blastoise.sh
         cat dialogues/dialogo_recupera_blastoise.txt
         printf "\n\n\n"
-        read -p "$MENSAJE_READ"       
+        read -p "$MENSAJE_READ"
         clear
         cat drawings/meowth.txt
-        ;;  
+        ;;
     "nexplant" ) #Cuando recupera a Charizard
         clear
         #chmod 777 -R /home/entrenador/monte_plateado
         chmod +x scripts/charizard.sh
         cat dialogues/dialogo_recupera_charizard.txt
         printf "\n\n\n"
-        read -p "$MENSAJE_READ"       
+        read -p "$MENSAJE_READ"
         clear
         cat drawings/meowth.txt
-        ;;  
+        ;;
     "r3D" ) #Cuando recupera a Venusaur y va al final
         clear
         cat dialogues/dialogo_recupera_venusaur.txt
@@ -180,8 +174,6 @@ function entregar_item {
     esac
 }
 
-#main
-
 inicio
 
 while true ;
@@ -190,14 +182,14 @@ do
     read -t 30 pregunta
     if [ ! -z $pregunta ]
     then
-    entregar_item $pregunta
-    continue
+      entregar_item $pregunta
+      continue
     else
-    clear
-    kill -20 $$ 
-    cat drawings/meowth.txt
-    echo " "
-    echo " "
-    echo "                 Meeeeeooooooooooooooowth..."
+      clear
+      kill -20 $$
+      cat drawings/meowth.txt
+      echo " "
+      echo " "
+      echo "                 Meeeeeooooooooooooooowth..."
     fi
 done
