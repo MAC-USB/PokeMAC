@@ -6,5 +6,5 @@ class MembershipsController < Devise::RegistrationsController
 
   def edit
   end
-  
+ 
 end
