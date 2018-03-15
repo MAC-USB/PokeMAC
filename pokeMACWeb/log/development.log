@@ -2120,3 +2120,175 @@ Processing by PokedexController#pokemons as HTML
 Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/users" for 127.0.0.1 at 2018-03-15 01:08:11 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hVAtHL17J4zcQ9gs8q0lckIGjGqz9jL2012ajJ0nbQedEB9q1V+abqOxIE3aYJYEW4POPLktHhjNWdBMfwEiuw==", "user"=>{"username"=>"manuel", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Crear usuario"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("encrypted_password", "created_at", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["encrypted_password", "$2a$11$XJ8j5b7MRpWloNhHMvAGMeGuAIBQ/C52JGQphohMC6DW/d2NeENzy"], ["created_at", "2018-03-15 05:08:11.462505"], ["updated_at", "2018-03-15 05:08:11.462505"], ["username", "manuel"]]
+  [1m[35m (138.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2018-03-15 05:08:11.619786"], ["last_sign_in_at", "2018-03-15 05:08:11.619786"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2018-03-15 05:08:11.621198"], ["id", 9]]
+  [1m[35m (134.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 460ms (ActiveRecord: 274.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-15 01:08:11 -0400
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (161.3ms)
+Completed 200 OK in 190ms (Views: 188.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-15 01:08:16 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-15 01:08:16 -0400
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2018-03-15 01:08:19 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-15 01:08:23 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9obAdbVlC+vV4cH59IjabqsjWBnSjz5yDtLUx9qxnmjZCC65iOJh6EsgBB6dc+L8jU5tDj5DrglF4+pd5HzCiQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-15 01:08:23 -0400
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-15 01:08:24 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-15 01:08:29 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lKpT4VozfQWxnQLmoiNm3G/fQBRaL5PFY+/IVZQi9POCkdIVY4HVmWG/eTK6y6W7LTMECmG1HkpM2uEOiXzaCw==", "user"=>{"username"=>"cdc", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Crear usuario"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("encrypted_password", "created_at", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["encrypted_password", "$2a$11$Xyj7g7dLOkh/7M9tIAJHYuFeDS6Zl4PwtE99tM.pXtzcXFQem7Th6"], ["created_at", "2018-03-15 05:08:29.602120"], ["updated_at", "2018-03-15 05:08:29.602120"], ["username", "cdc"]]
+  [1m[35m (108.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2018-03-15 05:08:29.713906"], ["last_sign_in_at", "2018-03-15 05:08:29.713906"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2018-03-15 05:08:29.715885"], ["id", 10]]
+  [1m[35m (221.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 467ms (ActiveRecord: 331.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-15 01:08:29 -0400
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 33ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-15 01:18:35 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+Redirected to http://localhost:3000/pokedex/quest
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 63ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-15 01:18:35 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (10.0ms)
+Completed 200 OK in 104ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-15 01:18:42 -0400
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 103ms (Views: 99.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2018-03-15 01:18:45 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 120ms (Views: 117.1ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-15 01:18:52 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qz3e0INJp3SPXXgh3qpGZRGUtWvhADjtl1XBuqLwu2S9Bl8kuvsP6F9/A/XGQoUCU3jxddqatWK4YOjhv66VnA=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 1.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-03-15 01:19:01 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qz3e0INJp3SPXXgh3qpGZRGUtWvhADjtl1XBuqLwu2S9Bl8kuvsP6F9/A/XGQoUCU3jxddqatWK4YOjhv66VnA=="}
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-15 01:19:01 -0400
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 87ms (Views: 83.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-15 01:19:04 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 107ms (Views: 103.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-15 01:19:16 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GcBRNNSP7fZhvgVNq/atiESRJH+kzPsKaxblMjZEM1p7Eo/CgqSANm7EdcnRDBfRSFMZ1CoAyC5j4/yHobNHqg==", "user"=>{"username"=>"fdfdfdfdfdf", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Crear usuario"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("encrypted_password", "created_at", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["encrypted_password", "$2a$11$.pRNMFgeKuBrvR3jcutLs.k6LHgZsTVhj0yCQehEV1oGf6JhXR1ka"], ["created_at", "2018-03-15 05:19:16.795177"], ["updated_at", "2018-03-15 05:19:16.795177"], ["username", "fdfdfdfdfdf"]]
+  [1m[35m (105.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2018-03-15 05:19:16.903916"], ["last_sign_in_at", "2018-03-15 05:19:16.903916"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", "2018-03-15 05:19:16.905113"], ["id", 11]]
+  [1m[35m (103.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pokedex/quest
+Completed 302 Found in 446ms (ActiveRecord: 209.8ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-15 01:19:17 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (6.5ms)
+Completed 200 OK in 69ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
