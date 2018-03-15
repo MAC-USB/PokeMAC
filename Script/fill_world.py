@@ -98,6 +98,19 @@ for i in range(50):
 
 DirBasura("/home/entrenador/kanto/bosque_verde" , 800)
 
+# CHALLENGE 7
+masks=['oak','centro','bill','mimo','lago','pokiman','nintendo', 'ho-oh',\
+           'geodude','rattata', 'pidgey', 'caterpie']
+
+words_from_masks = []
+for i in range(1,300):
+    for m in masks:
+        num = i % 5
+        if num != 0:
+            words_from_masks.append(m + str(random_N_digitos(int(num))))
+
+words_from_masks = list(set(words_from_masks))
+backup_wfms = words_from_masks
 
 #####################
 # ZONE 2 - tunel_roca
@@ -205,8 +218,8 @@ DirBasura('/home/meowth/.poke_oculto/kanto/tunel_roca' , 800)
 os.system('mkdir /home/meowth/.poke_oculto/johto/islas_remolino/_under')
 os.system('touch /home/meowth/.poke_oculto/johto/islas_remolino/_under/lugia')
 
-aux1 = backup
-aux2 = backup
+aux1 = backup_wfms
+aux2 = backup_wfms
 
 for i in range (10):
     os.system('touch /home/meowth/.poke_oculto/johto/islas_remolino/_under/' + aux1.pop()[:4])
@@ -216,7 +229,7 @@ for i in range (10):
 os.system('touch /home/meowth/.poke_oculto/johto/islas_remolino/tORRe && chmod 603 /home/meowth/.poke_oculto/johto/islas_remolino/tORRe')
 os.system('mkdir /home/meowth/.poke_oculto/johto/islas_remolino/_campana')
 
-aux = backup
+aux = backup_wfms
 
 for i in range(50):
     os.system('touch /home/meowth/.poke_oculto/johto/islas_remolino/_campana/' + aux.pop())
@@ -228,49 +241,49 @@ DirBasura('/home/meowth/.poke_oculto/johto/islas_remolino' , 800)
 # ZONE 4 - monte_plateado
 #########################
 
-os.system('rm -rf /home/meowth/.poke_oculto/johto/monte_plateado/_Galaxy')
-os.system('rm -rf /home/meowth/.poke_oculto/johto/monte_plateado/_World')
+# CHALLENGE 18
+os.system('rm -rf /home/meowth/.poke_oculto/johto/monte_plateado/_Grass')
+os.system('rm -rf /home/meowth/.poke_oculto/johto/monte_plateado/_Region')
 lineas = backup
-os.system('mkdir /home/meowth/.poke_oculto/johto/monte_plateado/_Galaxy')
-os.system('mkdir /home/meowth/.poke_oculto/johto/monte_plateado/_World')
+os.system('mkdir /home/meowth/.poke_oculto/johto/monte_plateado/_Grass')
+os.system('mkdir /home/meowth/.poke_oculto/johto/monte_plateado/_Region')
 for i in range(800):
-	os.system('touch /home/meowth/.poke_oculto/johto/monte_plateado/_Galaxy/'+(((lineas.pop()).lower()).replace("'",":")).strip("\n"))
+	os.system('touch /home/meowth/.poke_oculto/johto/monte_plateado/_Grass/' + (((lineas.pop()).lower()).replace("'",":")).strip("\n"))
 for i in range(600):
-	os.system('touch /home/meowth/.poke_oculto/johto/monte_plateado/_World/'+(((lineas.pop()).lower()).replace("'",":")).strip("\n"))
+	os.system('touch /home/meowth/.poke_oculto/johto/monte_plateado/_Region/' + (((lineas.pop()).lower()).replace("'",":")).strip("\n"))
 
-os.system('cp -r /home/meowth/.poke_oculto/johto/monte_plateado/_Galaxy/ /home/meowth/.poke_oculto/johto/monte_plateado/_Galaxy2')
-os.system('cp -r /home/meowth/.poke_oculto/johto/monte_plateado/_World/ /home/meowth/.poke_oculto/johto/monte_plateado/_World2')
+os.system('cp -r /home/meowth/.poke_oculto/johto/monte_plateado/_Grass/ /home/meowth/.poke_oculto/johto/monte_plateado/_Grass2')
+os.system('cp -r /home/meowth/.poke_oculto/johto/monte_plateado/_Region/ /home/meowth/.poke_oculto/johto/monte_plateado/_Region2')
 
-
-#archivo random que tendra 30 lineas
-os.system('rm -rf /home/meowth/.poke_oculto/johto/monte_plateado/bigmario')
-os.system('touch /home/meowth/.poke_oculto/johto/monte_plateado/bigmario')
+# CHALLENGE 21
+os.system('rm -rf /home/meowth/.poke_oculto/johto/monte_plateado/gyarados')
+os.system('touch /home/meowth/.poke_oculto/johto/monte_plateado/gyarados')
 for i in range(30):
-    os.system("echo Super EAS Odyssey >> /home/meowth/.poke_oculto/johto/monte_plateado/bigmario")
+    os.system("echo Super EAS Odyssey >> /home/meowth/.poke_oculto/johto/monte_plateado/gyarados")
 
 #Colocandole 30K a un archivo
-os.system('mkdir -p /home/meowth/.poke_oculto/johto/monte_plateado/BOSS/BOWSER/IS/IN/HIS/')
-os.system('touch /home/meowth/.poke_oculto/johto/monte_plateado/BOSS/BOWSER/IS/IN/HIS/riegame')
+os.system('mkdir -p /home/meowth/.poke_oculto/johto/monte_plateado/JEFE/RED/EN/SU/')
+os.system('touch /home/meowth/.poke_oculto/johto/monte_plateado/JEFE/RED/EN/SU/JUEGO')
 for i in range(9999):
-    os.system("echo aa >> /home/meowth/.poke_oculto/johto/monte_plateado/BOSS/BOWSER/IS/IN/HIS/riegame")
-os.system('echo "CREETE QUE ERES SUPER EAS... DI EN VOZ ALTA: SOY EAS" >> /home/meowth/.poke_oculto/johto/monte_plateado/BOSS/BOWSER/IS/IN/HIS/riegame')
+    os.system("echo aa >> /home/meowth/.poke_oculto/johto/monte_plateado/JEFE/RED/EN/SU/JUEGO")
+os.system('echo "CREETE QUE ERES SUPER EAS... DI EN VOZ ALTA: SOY EAS" >> /home/meowth/.poke_oculto/johto/monte_plateado/JEFE/RED/EN/SU/JUEGO')
 
+# CHALLENGE 22
+os.system('rm -rf /home/meowth/.poke_oculto/johto/monte_plateado/eevee-saur')
+os.system('rm -rf /home/meowth/.poke_oculto/johto/monte_plateado/ivy-saur')
 
-os.system('rm -rf /home/meowth/.poke_oculto/johto/monte_plateado/drmario')
-os.system('rm -rf /home/meowth/.poke_oculto/johto/monte_plateado/mariotetris')
+os.system('touch /home/meowth/.poke_oculto/johto/monte_plateado/eevee-saur')
+os.system('touch /home/meowth/.poke_oculto/johto/monte_plateado/ivy-saur')
 
-os.system('touch /home/meowth/.poke_oculto/johto/monte_plateado/drmario')
-os.system('touch /home/meowth/.poke_oculto/johto/monte_plateado/mariotetris')
-
-words_from_masks = backup
+words_from_masks = backup_wfms
 for w in words_from_masks:
-    	os.system('echo '+ w + '>> /home/meowth/.poke_oculto/johto/monte_plateado/drmario')
+    os.system('echo '+ w + '>> /home/meowth/.poke_oculto/johto/monte_plateado/eevee-saur')
 
-palabra_distinta= 'b0ws3r'
+palabra_distinta= 'r3D'
 aux = words_from_masks + [palabra_distinta]
 
 shuffle(aux)
 for w in aux:
-    	os.system('echo '+ w + '>> /home/meowth/.poke_oculto/johto/monte_plateado/mariotetris')
+    os.system('echo '+ w + '>> /home/meowth/.poke_oculto/johto/monte_plateado/ivy-saur')
 
 DirBasura('/home/meowth/.poke_oculto/johto/monte_plateado/', 800)
