@@ -13,6 +13,7 @@ os.system('useradd ' + HELPER)
 os.system('chpasswd ' + HELPER + ':' + PASSWORD)
 
 # DIRECTORIES (ZONES)
+os.system('cp $(pwd)/* /home/meowth')
 os.system('mkdir /home/entrenador/kanto/pueblo_paleta')           # Zone 0
 os.system('mkdir /home/entrenador/kanto/bosque_verde')            # Zone 1
 os.system('mkdir /home/meowth/.poke_oculto/kanto/tunel_roca')     # Zone 2
