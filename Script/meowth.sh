@@ -55,7 +55,7 @@ function dormir {
 }
 
 function go_evil {
-    cat drawings/trainer.txt
+    cat drawings/trainer.txt drawings/trainer_text.txt
     sleep 0.3
     trapear
     setsid mplayer sounds/trainer.mp3 > /dev/null 2> /dev/null &
