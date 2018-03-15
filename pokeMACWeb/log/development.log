@@ -5597,3 +5597,840 @@ Processing by PokedexController#quest as HTML
 Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 22:21:01 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (206.2ms)
+Completed 200 OK in 272ms (Views: 256.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-03-14 22:21:04 -0400
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 53ms (Views: 44.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-03-14 22:21:04 -0400
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (41.6ms)
+Completed 200 OK in 78ms (Views: 75.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 22:21:07 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (4.1ms)
+Completed 200 OK in 47ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 22:21:08 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (2.6ms)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions?utf8=%E2%9C%93&title=p2&commit=Enviar" for 127.0.0.1 at 2018-03-14 22:21:13 -0400
+Processing by QuestionsController#index as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"p2", "commit"=>"Enviar"}
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."title" = ? LIMIT ?[0m  [["title", "p2"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"questions", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/questions_controller.rb:6:in `index'
+Started GET "/questions" for 127.0.0.1 at 2018-03-14 22:21:16 -0400
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 59ms (Views: 56.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-03-14 22:21:16 -0400
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 22:21:18 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (3.5ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 22:21:18 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (2.5ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions?utf8=%E2%9C%93&title=preg2&commit=Enviar" for 127.0.0.1 at 2018-03-14 22:21:23 -0400
+Processing by QuestionsController#index as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"preg2", "commit"=>"Enviar"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."title" = ? LIMIT ?[0m  [["title", "preg2"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/questions/2
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2018-03-14 22:21:23 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/application
+  Rendered questions/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 37ms (Views: 33.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pokedex/quest/2" for 127.0.0.1 at 2018-03-14 22:26:59 -0400
+Processing by PokedexController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering pokedex/show.html.erb within layouts/app
+  Rendered pokedex/show.html.erb within layouts/app (0.5ms)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest/2" for 127.0.0.1 at 2018-03-14 22:26:59 -0400
+Processing by PokedexController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering pokedex/show.html.erb within layouts/app
+  Rendered pokedex/show.html.erb within layouts/app (0.5ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest/1" for 127.0.0.1 at 2018-03-14 22:27:03 -0400
+Processing by PokedexController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering pokedex/show.html.erb within layouts/app
+  Rendered pokedex/show.html.erb within layouts/app (0.6ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex" for 127.0.0.1 at 2018-03-14 22:32:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/pokedex"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 22:32:13 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (3.1ms)
+Completed 200 OK in 38ms (Views: 36.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-03-14 22:32:14 -0400
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 41ms (Views: 38.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-03-14 22:32:15 -0400
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/application
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 39ms (Views: 35.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 22:32:17 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (3.6ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 22:32:17 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (3.8ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest/2" for 127.0.0.1 at 2018-03-14 22:32:24 -0400
+Processing by PokedexController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering pokedex/show.html.erb within layouts/app
+  Rendered pokedex/show.html.erb within layouts/app (0.6ms)
+Completed 200 OK in 39ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2018-03-14 22:32:29 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/application
+  Rendered questions/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 43.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2018-03-14 22:32:55 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (2.0ms)
+Completed 200 OK in 54ms (Views: 33.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2018-03-14 22:51:37 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (2.3ms)
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2018-03-14 22:53:16 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (4.6ms)
+Completed 401 Unauthorized in 9ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (nil is not a valid asset source):
+    20: 
+    21:   <% content_for :image do %>
+    22:   <div>
+    23:     <%=image_tag(@map, alt: "Example Image", size: "250x170", :class => "rcorners2")%>
+    24:   </div>
+    25:   <%end%>
+  
+app/views/questions/show.html.erb:23:in `block in _app_views_questions_show_html_erb___1324179108135621142_70341633214080'
+app/views/questions/show.html.erb:21:in `_app_views_questions_show_html_erb___1324179108135621142_70341633214080'
+Started GET "/questions/1" for 127.0.0.1 at 2018-03-14 22:53:31 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (3.4ms)
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (nil is not a valid asset source):
+    20: 
+    21:   <% content_for :image do %>
+    22:   <div>
+    23:     <%=image_tag(@map, alt: "Example Image", size: "250x170")%>
+    24:   </div>
+    25:   <%end%>
+  
+app/views/questions/show.html.erb:23:in `block in _app_views_questions_show_html_erb___1324179108135621142_70341578242500'
+app/views/questions/show.html.erb:21:in `_app_views_questions_show_html_erb___1324179108135621142_70341578242500'
+Started GET "/questions/1" for 127.0.0.1 at 2018-03-14 22:53:32 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (3.0ms)
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (nil is not a valid asset source):
+    20: 
+    21:   <% content_for :image do %>
+    22:   <div>
+    23:     <%=image_tag(@map, alt: "Example Image", size: "250x170")%>
+    24:   </div>
+    25:   <%end%>
+  
+app/views/questions/show.html.erb:23:in `block in _app_views_questions_show_html_erb___1324179108135621142_70341532560400'
+app/views/questions/show.html.erb:21:in `_app_views_questions_show_html_erb___1324179108135621142_70341532560400'
+Started GET "/questions/1" for 127.0.0.1 at 2018-03-14 22:53:34 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (4.1ms)
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (nil is not a valid asset source):
+    20: 
+    21:   <% content_for :image do %>
+    22:   <div>
+    23:     <%=image_tag(@map, alt: "Example Image", size: "250x170")%>
+    24:   </div>
+    25:   <%end%>
+  
+app/views/questions/show.html.erb:23:in `block in _app_views_questions_show_html_erb___1324179108135621142_70341584572800'
+app/views/questions/show.html.erb:21:in `_app_views_questions_show_html_erb___1324179108135621142_70341584572800'
+Started GET "/questions/1" for 127.0.0.1 at 2018-03-14 22:54:09 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (4.3ms)
+Completed 200 OK in 59ms (Views: 35.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2018-03-14 22:54:28 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (4.6ms)
+Completed 200 OK in 60ms (Views: 57.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2018-03-14 22:54:41 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (4.7ms)
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2018-03-14 22:55:13 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (5.9ms)
+Completed 200 OK in 59ms (Views: 56.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2018-03-14 22:55:19 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (4.3ms)
+Completed 200 OK in 51ms (Views: 48.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pokedex/quest/2" for 127.0.0.1 at 2018-03-14 22:55:21 -0400
+Processing by PokedexController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering pokedex/show.html.erb within layouts/app
+  Rendered pokedex/show.html.erb within layouts/app (0.9ms)
+Completed 200 OK in 52ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest/2" for 127.0.0.1 at 2018-03-14 22:55:25 -0400
+Processing by PokedexController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering pokedex/show.html.erb within layouts/app
+  Rendered pokedex/show.html.erb within layouts/app (0.9ms)
+Completed 200 OK in 50ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest/1" for 127.0.0.1 at 2018-03-14 22:55:27 -0400
+Processing by PokedexController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering pokedex/show.html.erb within layouts/app
+  Rendered pokedex/show.html.erb within layouts/app (0.7ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2018-03-14 22:55:30 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (4.7ms)
+Completed 200 OK in 55ms (Views: 52.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2018-03-14 22:55:34 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (4.0ms)
+Completed 200 OK in 53ms (Views: 50.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-14 22:55:38 -0400
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 64ms (Views: 61.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/index" for 127.0.0.1 at 2018-03-14 22:55:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/pokedex/index"):
+  
+actionpack (5.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.5) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.5) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.5) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.5) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.5) lib/rails/engine.rb:522:in `call'
+puma (3.11.3) lib/puma/configuration.rb:225:in `call'
+puma (3.11.3) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.3) lib/puma/server.rb:438:in `process_client'
+puma (3.11.3) lib/puma/server.rb:302:in `block in run'
+puma (3.11.3) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/questions/new" for 127.0.0.1 at 2018-03-14 22:55:46 -0400
+Processing by QuestionsController#new as HTML
+  Rendering questions/new.html.erb within layouts/app
+  Rendered questions/new.html.erb within layouts/app (6.3ms)
+Completed 401 Unauthorized in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"pokedex"}, missing required keys: [:id]):
+    1: <h1>TEMPLATE INDEX DE QUESTIONS</h1>
+    2: 
+    3: <%= form_for :question, url: questions_path do |f| %>
+    4:   <p>
+    5:     <%= f.label :title %><br>
+    6:     <%= f.text_field :title %>
+  
+app/views/questions/new.html.erb:3:in `_app_views_questions_new_html_erb___2984181838769857499_70341575489660'
+Started GET "/pokedex/quest/2" for 127.0.0.1 at 2018-03-14 22:55:56 -0400
+Processing by PokedexController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering pokedex/show.html.erb within layouts/app
+  Rendered pokedex/show.html.erb within layouts/app (0.8ms)
+Completed 200 OK in 48ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 22:56:00 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (4.4ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-03-14 22:56:02 -0400
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/app
+  [1m[36mQuestion Load (0.8ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/app (4.9ms)
+Completed 200 OK in 60ms (Views: 56.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/questions" for 127.0.0.1 at 2018-03-14 22:56:38 -0400
+Processing by QuestionsController#index as HTML
+  Rendering questions/index.html.erb within layouts/app
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  Rendered questions/index.html.erb within layouts/app (4.7ms)
+Completed 200 OK in 61ms (Views: 58.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/questions/1" for 127.0.0.1 at 2018-03-14 22:56:40 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (6.9ms)
+Completed 200 OK in 71ms (Views: 67.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions?utf8=%E2%9C%93&title=preg2&commit=Enviar" for 127.0.0.1 at 2018-03-14 22:56:47 -0400
+Processing by QuestionsController#index as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"preg2", "commit"=>"Enviar"}
+  [1m[36mQuestion Load (0.4ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."title" = ? LIMIT ?[0m  [["title", "preg2"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/questions/2
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2018-03-14 22:56:47 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (4.5ms)
+Completed 200 OK in 60ms (Views: 56.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/2" for 127.0.0.1 at 2018-03-14 22:58:02 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (3.7ms)
+Completed 200 OK in 38ms (Views: 35.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 22:58:03 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (3.4ms)
+Completed 401 Unauthorized in 46ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"pokedex"}, missing required keys: [:id]):
+    90:     <!-- BOTON MAP Y QUESTS -->
+    91:     <div id="yellowBox1" align="center">Map & Quests</div>
+    92:     <%end%>
+    93:     <%= link_to questions_path do %>
+    94:     <!-- BOTON POKEMONS CARACTERISTICAS -->
+    95:     <div id="yellowBox2" align="center">Pokemons</div>
+    96:     <%end%>
+  
+app/views/layouts/app.html.erb:93:in `_app_views_layouts_app_html_erb___3222545263933738956_70341641474420'
+Started GET "/pokedex/quest/2" for 127.0.0.1 at 2018-03-14 22:58:13 -0400
+Processing by PokedexController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering pokedex/show.html.erb within layouts/app
+  Rendered pokedex/show.html.erb within layouts/app (0.7ms)
+Completed 200 OK in 39ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 22:58:14 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (4.4ms)
+Completed 401 Unauthorized in 54ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"pokedex"}, missing required keys: [:id]):
+    90:     <!-- BOTON MAP Y QUESTS -->
+    91:     <div id="yellowBox1" align="center">Map & Quests</div>
+    92:     <%end%>
+    93:     <%= link_to questions_path do %>
+    94:     <!-- BOTON POKEMONS CARACTERISTICAS -->
+    95:     <div id="yellowBox2" align="center">Pokemons</div>
+    96:     <%end%>
+  
+app/views/layouts/app.html.erb:93:in `_app_views_layouts_app_html_erb___3222545263933738956_70341585311180'
+Started GET "/pokedex/quest/2" for 127.0.0.1 at 2018-03-14 22:58:16 -0400
+Processing by PokedexController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering pokedex/show.html.erb within layouts/app
+  Rendered pokedex/show.html.erb within layouts/app (0.6ms)
+Completed 200 OK in 54ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest/2" for 127.0.0.1 at 2018-03-14 22:58:17 -0400
+Processing by PokedexController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering pokedex/show.html.erb within layouts/app
+  Rendered pokedex/show.html.erb within layouts/app (0.6ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest/2" for 127.0.0.1 at 2018-03-14 22:58:17 -0400
+Processing by PokedexController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering pokedex/show.html.erb within layouts/app
+  Rendered pokedex/show.html.erb within layouts/app (0.7ms)
+Completed 200 OK in 42ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest/2" for 127.0.0.1 at 2018-03-14 22:58:17 -0400
+Processing by PokedexController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering pokedex/show.html.erb within layouts/app
+  Rendered pokedex/show.html.erb within layouts/app (0.8ms)
+Completed 200 OK in 56ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest/2" for 127.0.0.1 at 2018-03-14 22:58:28 -0400
+Processing by PokedexController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering pokedex/show.html.erb within layouts/app
+  Rendered pokedex/show.html.erb within layouts/app (0.8ms)
+Completed 200 OK in 56ms (Views: 52.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 22:58:29 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (0.9ms)
+Completed 200 OK in 40ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 22:58:29 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (0.9ms)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 22:58:29 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (0.9ms)
+Completed 200 OK in 49ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 22:58:30 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (4.7ms)
+Completed 200 OK in 55ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 22:58:31 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (0.9ms)
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 22:58:32 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (6.1ms)
+Completed 200 OK in 53ms (Views: 50.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 22:58:32 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (0.8ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 22:58:33 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (3.8ms)
+Completed 200 OK in 49ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 22:58:33 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (0.9ms)
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 22:58:34 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (3.8ms)
+Completed 200 OK in 60ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 22:58:34 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (1.0ms)
+Completed 200 OK in 56ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 22:58:35 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (3.8ms)
+Completed 200 OK in 52ms (Views: 49.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 22:58:35 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (1.1ms)
+Completed 200 OK in 53ms (Views: 51.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 22:59:29 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (1.0ms)
+Completed 401 Unauthorized in 49ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"pokedex"}, missing required keys: [:id]):
+    86:     <div id="miniButtonGlass5"></div>
+    87:     <div id="barbutton3"></div>
+    88:     <div id="barbutton4"></div>
+    89:     <%= link_to questions_path do %>
+    90:     <!-- BOTON MAP Y QUESTS -->
+    91:     <div id="yellowBox1 " align="center">Map & Quests</div>
+    92:     <%end%>
+  
+app/views/layouts/app.html.erb:89:in `_app_views_layouts_app_html_erb___3222545263933738956_70341533837360'
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 22:59:41 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (3.7ms)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 23:00:32 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (4.4ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 23:07:15 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (3.1ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 23:07:26 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (4.4ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 23:09:38 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (3.8ms)
+Completed 200 OK in 50ms (Views: 48.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 23:09:44 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (0.9ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 23:09:45 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (4.6ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 23:09:45 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (1.0ms)
+Completed 200 OK in 60ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 23:09:46 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (4.4ms)
+Completed 200 OK in 52ms (Views: 50.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 23:09:46 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (1.0ms)
+Completed 200 OK in 54ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 23:09:47 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (5.5ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 23:09:48 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (0.9ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-14 23:09:48 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (6.3ms)
+Completed 200 OK in 54ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 23:09:49 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (0.9ms)
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 23:13:05 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (2.2ms)
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 23:13:41 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (1.5ms)
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 23:13:46 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (2.1ms)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 23:13:47 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (1.9ms)
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemon" for 127.0.0.1 at 2018-03-14 23:14:02 -0400
+Processing by PokedexController#pokemons as HTML
+  Rendering pokedex/pokemons.html.erb within layouts/app
+  Rendered pokedex/pokemons.html.erb within layouts/app (2.4ms)
+Completed 200 OK in 59ms (Views: 57.6ms | ActiveRecord: 0.0ms)
+
+

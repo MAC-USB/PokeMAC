@@ -1,5 +1,18 @@
-<p> Probando POKEMONS vonyrnioasd asdajsndajdbnasdjb<p>
-        
+<h2>Pokemon: <strong>JOSUE</strong></h2>
+<p><strong>Descripcion:</strong>  profesor pirata contratado por falta de proferosres en la usb. Estudio en la UNEFA 
+</p>
+<p> <strong>Habilidades:</strong>  Jugar con plastilina</p>
+        <%= link_to 'Lista Pokemones (esto solo lo vemos nosotros)', controller: 'questions' %>
+
+ <% content_for :input do %>
+  <div>
+  <%= form_tag("/questions", method: "get") do %>
+          <%= label_tag(:title, "Clave:") %>
+          <%= text_field_tag(:title) %>
+          <%= submit_tag("Enviar") %>
+        <% end %>
+  </div>
+  <%end%>
 <% content_for :image do %>
 <img src="https://vignette.wikia.nocookie.net/es.pokemon/images/0/00/Charizard_XY_%284%29.gif/revision/latest?cb=20131203210223" alt="charizar" height="170" />
 <%end%>
