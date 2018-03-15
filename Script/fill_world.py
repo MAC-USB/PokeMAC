@@ -65,8 +65,10 @@ os.system('find /home/entrenador/kanto/bosque_verde -name _DEF | xargs rm -rf')
 # Now create them
 os.system('mkdir -p /home/entrenador/kanto/bosque_verde/_ATK/_LVL')
 os.system('mkdir -p /home/entrenador/kanto/bosque_verde/_DEF/_HP')
-os.system('touch /home/entrenador/kanto/bosque_verde/{_ATK,_DEF}/##PONME_TODO')
-os.system('touch /home/entrenador/kanto/bosque_verde/{_ATK/_LVL,_DEF/_HP}/##ESO_PA_LANTE')
+os.system('touch /home/entrenador/kanto/bosque_verde/_ATK/##PONME_TODO')
+os.system('touch /home/entrenador/kanto/bosque_verde/_DEF/##PONME_TODO')
+os.system('touch /home/entrenador/kanto/bosque_verde/_ATK/_LVL/##ESO_PA_LANTE')
+os.system('touch /home/entrenador/kanto/bosque_verde/_DEF/_HP/##ESO_PA_LANTE')
 
 # CHALLENGE 5
 os.system('find /home/entrenador/kanto/bosque_verde -name POKE | xargs rm -rf')
