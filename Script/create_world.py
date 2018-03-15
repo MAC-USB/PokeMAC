@@ -33,6 +33,7 @@ print('Base directories created')
 
 # ALIASES
 os.system("echo \"cd /home/entrenador/kanto/\" >> /home/entrenador/.bashrc")
+os.system("echo \"alias ayudame='fg'\" >> /home/entrenador/.bashrc")
 os.system("echo \"alias destello='/home/meowth/scripts/pikachu.sh'\" >> /home/entrenador/.bashrc")
 os.system("echo \"alias surf='source /home/meowth/scripts/blastoise.sh'\" >> /home/entrenador/.bashrc")
 os.system("echo \"alias vuelo='source /home/meowth/scripts/charizard.sh'\" >> /home/entrenador/.bashrc")
