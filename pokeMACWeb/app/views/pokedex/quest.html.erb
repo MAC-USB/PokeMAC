@@ -1,7 +1,19 @@
-probando QUESTS
-<h1>links preguntas</h1>
-        <%= link_to 'Preguntas', controller: 'questions' %>
 
+<h2>Hola Prenuevo</h2>
+<p>Para iniciar tus aventuras escribe INICIO en la pokedex para empezar con la aventura, te sugiero
+  que te dirijas a pueblo paleta para comenzar nuestra aventura
+</p>
+        <%= link_to 'Preguntas (esto solo lo vemos nosotros)', controller: 'questions' %>
+
+ <% content_for :input do %>
+  <div>
+  <%= form_tag("/questions", method: "get") do %>
+          <%= label_tag(:title, "Clave:") %>
+          <%= text_field_tag(:title) %>
+          <%= submit_tag("Enviar") %>
+        <% end %>
+  </div>
+  <%end%>
 <% content_for :image do %>
   <div>
   <%=image_tag(@map, alt: "Example Image", size: "250x170", :class => "rcorners2")%>

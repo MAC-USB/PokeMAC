@@ -1,4 +1,5 @@
 class QuestionsController < ApplicationController
+    layout 'app'
     def new
     end
 
@@ -20,6 +21,7 @@ class QuestionsController < ApplicationController
     end
 
     def show
+        @map="kanto.jpg"
         @question = Question.find(params[:id])
     end
 
