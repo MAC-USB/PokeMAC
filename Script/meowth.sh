@@ -26,7 +26,7 @@ function trapear {
 function inicio {
 
     clear 
-    #echo "Hola preprador, mi PID es: $$"
+    echo "Hola preprador, mi PID es: $$"
     printf "\n\n\n"
     read -p "$MENSAJE_READ"
     clear
@@ -57,10 +57,10 @@ function dormir {
 }
 
 function go_evil {
+    mplayer sounds/trainer.mp3 >/dev/null 2>/dev/null &  
     cat drawings/trainer.txt
     sleep 0.3
     trapear  
-    mplayer sounds/trainer.mp3 >/dev/null 2>/dev/null &  
     while true
     do
     read -p ""
