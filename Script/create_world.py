@@ -6,8 +6,8 @@ import crypt
 #HELPER = 'meowth'
 #PASSWORD = 'PokeMAC'
 
-meowth_passwd = crypt.crypt('ayudame','22')
-entrenador_passwd = crypt.crypt('MIQUIMI','22')
+meowth_passwd = crypt.crypt('POKEMAC','22')
+entrenador_passwd = crypt.crypt('POKEMAC','22')
 
 os.system('useradd -s /bin/bash -p '+ meowth_passwd +' -m meowth')
 os.system('useradd -s /bin/bash -p '+ entrenador_passwd +' -m entrenador')
@@ -39,6 +39,9 @@ os.system("echo \"alias vuelo='source /home/meowth/scripts/charizard.sh'\" >> /h
 os.system("echo \"alias pokeflauta='/home/meowth/scripts/snorlax.sh'\" >> /home/entrenador/.bashrc")
 os.system("echo \"alias instakillred='python /home/invitado/admision/credits.py'\" >> /home/entrenador/.bashrc")
 # alias instakill="pkill -u meowth -f meowth -KILL; python /home/invitado/admision.credits.py"
+
+os.system("echo \"[[ -r ~/.bashrc  ]] && . ~/.bashrc\" >> /home/entrenador/.bash_profile")
+
 os.system('echo "" > /etc/motd')
 os.system('echo "" > /var/run/motd.dynamic')
 
