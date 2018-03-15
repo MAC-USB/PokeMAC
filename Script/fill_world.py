@@ -193,9 +193,6 @@ os.system('touch /home/meowth/.poke_oculto/kanto/tunel_roca/_Cascada/_SUPER/_MAC
 os.system('touch /home/meowth/.poke_oculto/kanto/tunel_roca/_Cascada/_BROS/_BROS/ZUBAT')
 
 # CHALLENGE 13
-# smash -> golpe
-# great_star -> master_ball
-# atrapado -> hidro
 os.system('rm -rf /home/meowth/.poke_oculto/kanto/tunel_roca/golpe')
 os.system('touch /home/meowth/.poke_oculto/kanto/tunel_roca/golpe')
 
