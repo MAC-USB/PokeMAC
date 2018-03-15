@@ -6,9 +6,9 @@
 
  <% content_for :input do %>
   <div>
-  <%= form_tag("/questions", method: "get") do %>
-          <%= label_tag(:title, "Clave:") %>
-          <%= text_field_tag(:title) %>
+  <%= form_tag({controller: "pokedex", action: "view_pokemon"}, method: "get") do %>
+          <%= label_tag(:name, "Clave:") %>
+          <%= text_field_tag(:name) %>
           <%= submit_tag("Enviar") %>
         <% end %>
   </div>

@@ -4,8 +4,18 @@ class QuestionsController < ApplicationController
     end
 
     def index
-        redirect_to question_path(Question.find_by(title:params[:title])) if params[:title]
+
         @questions = Question.all
+
+        render layout: false
+    end
+
+    def preg
+        if params[:title].eql? "huir"
+            
+        else
+            redirect_to preg_path(Question.find_by(title:params[:title])) if params[:title]
+        end
     end
 
 

@@ -1,0 +1,14 @@
+<h1>Ingresa el nombre de un pokemon</h1>
+
+<% content_for :input do %>
+  <div>
+  <%= form_tag({controller: "pokedex", action: "view_pokemon"}, method: "get") do %>
+          <%= label_tag(:name, "Clave:") %>
+          <%= text_field_tag(:name) %>
+          <%= submit_tag("Enviar") %>
+        <% end %>
+  </div>
+  <%end%>
+<% content_for :image do %>
+<img src="http://24.media.tumblr.com/5b94f3545e5e0afa339efe86b6f723f4/tumblr_mgxqxcFyJT1rmazn7o1_400.gif" alt="pokebola" height="170" />
+<%end%>

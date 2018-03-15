@@ -7,7 +7,7 @@
 
  <% content_for :input do %>
   <div>
-  <%= form_tag("/questions", method: "get") do %>
+  <%= form_tag({controller: "questions", action: "preg"}, method: "get") do %>
           <%= label_tag(:title, "Clave:") %>
           <%= text_field_tag(:title) %>
           <%= submit_tag("Enviar") %>
