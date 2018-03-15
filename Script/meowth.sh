@@ -59,7 +59,8 @@ function dormir {
 function go_evil {
     cat drawings/trainer.txt
     sleep 0.3
-    trapear    
+    trapear  
+    mplayer sounds/trainer.mp3 >/dev/null 2>/dev/null &  
     while true
     do
     read -p ""
@@ -70,8 +71,12 @@ function go_evil {
 function insultar {
     if [ $((intentos % 5)) = 0 -a $intentos -ne 0 ]
         then 
+            printf "\nAsh tiene más posibilidades de ganar la liga que tú.\n"
+        elif
+            printf "\nEres más lento que un Slowpoke...\n"
+        elif
             printf "\nNo le soples tanto al cartucho... Todos sus intentos son INUTILES\n"
-        else 
+        else
             printf "\nBuen intento. Pero eso solo funciona en el N64.\n"
     fi
     intentos=$((intentos+1))
@@ -165,7 +170,12 @@ function entregar_item {
         go_evil
         ;;
     * )
-        echo "¿Que dices? No te entiendo. Asi no puedo ayudarte"
+        clear
+        cat drawings/meowth.txt
+        echo " "
+        echo "                 Meeeeeooooooooooooooowth..."
+        echo " "
+        echo "      ¿Qué dices? No te entiendo. Así no puedo ayudarte."
         ;;
     esac
 }
@@ -184,8 +194,10 @@ do
     continue
     else
     clear
-    printf "\n\n\n          Meeeeeooooooooooooooowth...\n\n\n"
-    #kill -20 $$ 
+    kill -20 $$ 
     cat drawings/meowth.txt
+    echo " "
+    echo " "
+    echo "                 Meeeeeooooooooooooooowth..."
     fi
 done
