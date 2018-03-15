@@ -10,7 +10,7 @@
        ###############    ####################   ###############     
       ################    ####################   ################    
      ######################   ############   #####################   
-    ######################    ############   ######################  
+    ######################    ############    #####################  
    #######################    ############    ###################### 
    ####################                          ################### 
   #####################                          ################### 
@@ -18,13 +18,13 @@
   #################       ####           #####       ################
   #############                                          ############
   #############                                          ############
-  #############    ###                           ####    ############
+  #############    ###                            ###    ############
   #############   #####                          #####   ############
   #############   #####                          #####   ############
-  #############   #####   ####################   ####    ############
-   ############   ####    ####################   ####    ########### 
+  #############   #####   ####################   #####   ############
+   ############   #####   ####################   #####   ########### 
    ########################       ####       ####################### 
-    ######################        ####       ######################  
+    #######################       ####       ######################  
     ####################### ##### #### ##### ######################  
      #############################################################   
       ###########################################################    
@@ -184,7 +184,7 @@ DIRECCION DEL SEBIN Y FILOSOFIA
 MARICO QUE CONIO ESTAN HACIENDO
 
 |\/| /\
-|  |/~~\
+ |  |/~~\
 
 
 
@@ -205,6 +205,58 @@ _| ||  _/
 
 
 DIRECCION DE RESCATE
+
+                               ````.:o+odmdmmmmNNNNmdhdddddddhdddddhhs-`                   ``      `
+        `                     ````.-+yyymmmNNNNNNMMMMNNmmmdmmmdddddddhy:```                `        
+ `                         ```-:/++oshddmmmNNNNNMNMMMMNMMNmdmmmmmmddddddy/-``                       
+                          `.:+o+/ossydmmNNNNNMNMMNNMMMMNNNNNmmmNNNmmddddhhyo/`` ``                  
+                        ``::oo/+syyhdmNNNNNNNNNNMMMMMMMMMMNNNmmmNNNmmmmmmddhyo-`            ````    
+    ``                 ``.:-+osyhhdmmNNNNNNNNNNNNNMMMMMMMMNNNNmmmmmmmmmmmmmmdhs.``          ```` ```
+ ```                   ``..:ohddhdmNNNNNNNNNNNNNNNNNNMMMMMMMNNNNmmmddddmddmmmdh+````        ``` ``` 
+````                   ``.-ohddddmNNNNNNmdddddddddmmmNNNMMMMNNNNNNmNmmddddmmddddy:``    ````````````
+  `                 `````./ydmmmmmNmmmmhyyssssssyyhhdddmmNNNNNNMNNNNNmmmmmdmmmmmmh/```  ``````      
+          `     `     ` ``+hmmmmNNNmmdhssooooooooossyyhdddddmmNNNNNNNNNNmmmdddmdddo``    ````` ``` `
+          ` `          ```sddmmmNNNNmdysoooooooooooosyyyhhddddmmNNNNNNNNNNmmmmmdddy-````````````````
+                      ````ohdmmNNNNNmyssoooo+++ooooosssyyyhhhddmmNNNNNNNNNNNNNmmmdds:```````````````
+```                     ``/hmmmNNNNmdyssoooo++++oooooosssyyhhdddmmNNNNNNNNNNNNNNNmdh+```````````````
+`````                 ````:hmNNNNNNmhssoo+++++++++++oooossyyhhhddmmmNNNNNNNNNNNNmmdho```````  ``````
+``` `           ``    ````-hmNNNNNmhyssoo+++++++++++++ooossyyyhhddmmmNNNNNNNmmmmmdhds```````````````
+```````````` `  ``    ````:dmNNNNNdysoooo+++++++++++++oooosssyyhhhddmmmNNNmmmmmmdmddh-``````````````
+``````````````````````````/dmNNNNmyooosyyyysssssoooooooooosssyyyyhhddddmmmmmNNNNmmmdh+``````````````
+``````````````````````````+mNNMMNyoshdmmNNmmmdddhhysssssssyyyyyhhhhhddddhhddmNNNNNmmh/``````````````
+``````````````````````````/mNMMNhoshdmmmNNNNNMNNNmdhyssssyhhdmmmmmmmmmmmhyyydNNNNNmdo```````````````
+`````````````````````````.omNMMdoosyyhhdddmmmmNmmmmdysossydmNNNMMMNNNNNNmdyoyNNNNNmdo```````````````
+`````````````````````````-hNNNmo+osyhdmmmNNNNNNmmddyo++ooyhdmmNNNNmmmdddddyoomMNNNmdo```````````````
+````````````````````````.smNmmy+++osyhddhmNNNdmNmdhs+///+shdmNNNMNNNmmdhyys++hMMNNmd:```````````````
+````````````````````````:hmmmmo++++++osyyhhhhhhhhhs++////ohdmmmmNNNmhmddhso++sNNNNmm:```````````````
+````````````````````````+ddmNd++++/////++ooossssoo++/:::/+oyhhdddddhhssooo++/ommNNmd/```````````````
+````````````````````````-yymNdo+++/////////+++++++++/:::/+++ossssssso++//////+mmmmmd:```````````````
+`````````````````````````+sdNdo++++++/+++/////+++++/:::::/++++++++++////////+ommdddy.```````````````
+`````````````````````````:symmsooo+++////////++oo+++////:/+++///+++++////++++ymmyyy:````````````````
+`````````````````````````.ohdmhsoo++++///++++osoosyyssssoo++o++++//+++++++++odmdso+`````````````````
+`````````````````````````.-ymmdsooo+++++++ooooosymNmhhyhddsoooo++++++++++oooymmhoo.`````````````````
+``````````````````````````./hdmyssooooooossoo++ohddhhdhhdhyo++oo+++++++ooooyddhs+-``````````````````
+``````````````````````````.-smmhyssooossssoo+oooydddddddhs+++/++oo++++ooosydmmh+-```````````````````
+```````````````````````````.+dNdhyyssssyyssyyhddmmmmmmmmmdyyso+++oo++oossydmmd+.````````````````````
+```````````````````````````./hNmdhhyssyyhdddddmmmNmdhydNNmdddhhyoooooosyhhdmmy:`````````````````````
+```````````````````````````./ymNmmdhyyhdmNNmmdmmmmmddddmmmddddmmdysoosyddmmmd+:.````````````````````
+``````````````````````````..:odNNNmdhyhdNNNmmmdddmmmmmmmdddddmmmmdysyydmmNmmho.`````````````````````
+`````````````````````````...-/smNNNmdddmmdhhhhyyyyyyyyyyyyyhhhdddhyyhdmNNNmdy/.`````````````````````
+``````````````````````.......-/dNNNNmmmmmdhyyhhhhddddhhhhyyyyyyhddhhdmNNNNmh+-``````````````````````
+``````````````````````........-+dNNNNNmmmdhhhhddmmmNmmmddhhyyyyhddddmNNNNmyo:.``````````````````````
+`````````````````````..........-/dNMNNNNNmdhhhdddmmNNmmdddhhhhhdddmNNNNNms:..```````````````````````
+`````````````````````...........-sdNMNNNNmmdhhhyhhdmmdhyhhhhhhddmNNNNNmds:..````````````````````````
+`````````````````````.......-/oyhdmNNNNNNNNmmdhhhhhddhhhyyhhhddmNNNNNho/-..`````````````````````````
+``````````````````.........+dmNMMMddNNNNNNNNNNmmmmmmmmmmmmmmmmmmNNNNmdhs:.``````````````````````````
+`````````````````........:ymmNMMNmshmMMNNNNNNNNNNNNNNNNNNNmmNNNNNNNNmNNNmy:`````````````````````````
+``````````````..`......./hmmNNMNyssyhNNMNMNMMMMMMMMMMNNNNNNNNNNNNNmdhhMMNNd/.```````````````````````
+````````..............:ydmmNNNNhssssyhmNNMMMMMMMMMMMMMMMNNNNMNNNNmdyooNMMNNmo.``````````````````````
+``````.............:oydmmmmNNNNhsssssyhdmNNMMMMMMMMMMMMMMMMNNNNmdyso++sNMNNNmy:..```````````````````
+............:+ossydmmmmmmmNNNNNhssssyyyhhddmmNNMMMMMMMMMMNNmmdhssooo++ohMNNNmmdhs:.`````````````````
+.........:sdNNmmmNNmmmmNNNNNNNNmyssssyyyyhhhdddmmNNNNNNmddhyyyssooooooohMMNNmmmmmds:..``````````````
+..-//+osymNNNNmmNNNNNmNNNNNNNNNNdssssyyyyhhhhhhddddddddhhhyyyssoooooooohMMNNNmmmmmmmdy:.````````````
+yyhddddmNNNNNNmmNNNNNNNNNNNNNNNNNhssssyyyyyhhhhhdddhdhhhhyyysooooooooosdMNNNNmmmmNmNmmmy+:..````````
+dddddmNNNNNNNNmmNNNNNNNNNNNNNNNNNNdssssyyyyyyhhhhhhhhhhhyysssoooooooosymMNNNNmmNNNNNNNNNmmdyo/-`````
 
       .o.             .o.      
      .888.           .888.     
