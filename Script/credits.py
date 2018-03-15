@@ -25,16 +25,16 @@ credFile.close()
 numlineas = len(lineas)
 
 try:
-    while True:
-        p_id = os.system('pgrep -f meowth > /dev/null')
-        if p_id == 0:
-            sys.stdout.write('meowth running' + "\n")
-            print('print')
-            time.sleep(1)
-        else:
-            sys.stderr.write('meowth not running' + "\n")
-            print('ROLL CREDITS' + "\n")
-            break
+    # while True:
+    #     p_id = os.system('pgrep -f meowth > /dev/null')
+    #     if p_id == 0:
+    #         sys.stdout.write('meowth running' + "\n")
+    #         print('print')
+    #         time.sleep(1)
+    #     else:
+    #         sys.stderr.write('meowth not running' + "\n")
+    #         print('ROLL CREDITS' + "\n")
+    #         break
 
     for i in range(0, numlineas+maxx):
         pantalla.refresh()
