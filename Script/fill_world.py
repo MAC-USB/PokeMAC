@@ -6,28 +6,27 @@ import sys
 from random import choice, randint, shuffle
 from string import lowercase
 
-# FUNCTIONS
-
 f = open('/etc/dictionaries-common/words', 'r')
-
 crap = f.readlines()
-respaldo = crap
+backup = crap
 f.close()
 shuffle(crap)
 
+# FUNCTIONS
+
 # Given a number, returns a random number of n digits
 def random_N_digitos(n):
-	range_ini = 10**(n-1)
-	range_fin = (10**n)-1
-	return randint(range_ini, range_fin)
+    range_ini = 10**(n-1)
+    range_fin = (10**n)-1
+    return randint(range_ini, range_fin)
 
 def DirBasura(path, n):
-	if not os.path.exists(path):
-		os.mkdir(path)
+    if not os.path.exists(path):
+        os.mkdir(path)
 
-	for i in range(int(n)):
-		os.mkdir(path + '/' + crap.pop().strip() )
-		archivo = open(path + '/' + crap.pop().strip() , 'w', 0)
+    for i in range(int(n)):
+        os.mkdir(path + '/' + crap.pop().strip() )
+        archivo = open(path + '/' + crap.pop().strip() , 'w', 0)
 
 # Create a file and fill it with n lines of random data
 def create_file(path, n):
@@ -71,7 +70,7 @@ os.system('touch /home/entrenador/kanto/bosque_verde/{_ATK/_LVL,_DEF/_HP}/##ESO_
 # CHALLENGE 5
 os.system('find /home/entrenador/kanto/bosque_verde -name POKE | xargs rm -rf')
 os.system('touch /home/entrenador/kanto/bosque_verde/POKE')
-lineas = respaldo
+lineas = backup
 
 # Fill the file POKE
 for i in range(50):
@@ -89,13 +88,8 @@ for i in range(207):
 	os.system('echo ":' + str(random_N_digitos(4)) + str0 + '" >> /home/entrenador/kanto/bosque_verde/POKE')
 for i in range(307):
 	str0 = "".join(choice(lowercase) for j in range(24))
-<<<<<<< HEAD:Script/fill_world.py
 	os.system('echo ":' + str(random_N_digitos(4)) + str0 + '" >> /home/entrenador/kanto/bosque_verde/POKE')
 os.system('echo ":1352eccba Meowth_dice_que_la_clave_es_nxt" >> /home/entrenador/kanto/bosque_verde/POKE')
-=======
-	os.system('echo ":'+str(random_N_digitos(4))+str0+'" >>  /home/entrenador/kanto/bosque_verde/STAR')
-os.system('echo ":1352eccba aMeowthlegustanlasgalletas" >>  /home/entrenador/kanto/bosque_verde/STAR')
->>>>>>> features/dialogues__1:Script/gen_world.py
 for i in range(300):
 	str0 = "".join(choice(lowercase) for j in range(27))
 	os.system('echo ":' + str(random_N_digitos(4)) + str0 + '" >>  /home/entrenador/kanto/bosque_verde/POKE')
@@ -104,7 +98,6 @@ for i in range(50):
 
 DirBasura("/home/entrenador/kanto/bosque_verde" , 800)
 
-<<<<<<< HEAD:Script/fill_world.py
 
 #####################
 # ZONE 2 - tunel_roca
@@ -114,219 +107,170 @@ DirBasura("/home/entrenador/kanto/bosque_verde" , 800)
 os.system('rm -rf /home/entrenador/kanto/tunel_roca/medium')
 os.system('touch /home/entrenador/kanto/tunel_roca/medium')
 
-# Deprecated. Remove on verification.
-# for i in range(99):
-# 	str0 = "".join(choice(lowercase) for j in range(6))
-# 	os.system('echo ' + str0 + ' >> /home/entrenador/kanto/tunel_roca/medium')
-
 with open('/home/entrenador/kanto/tunel_roca/medium', 'a') as f:
-
+    # First half of the lines
     for i in range(99):
         random_string = "".join(choice(lowercase) for j in range(6))
         f.write(random_string)
-
     # Middle line
     f.write('equilibrio')
-
+    # Second half of the lines
     for i in range(100):
         random_string = "".join(choice(lowercase) for j in range(6))
         f.write(random_string)
-
-# Deprecated. Remove on verification.
-# for i in range(100):
-# 	str0 = "".join(choice(lowercase) for j in range(6))
-# 	os.system('echo ' + str0 + ' >> /home/entrenador/kanto/tunel_roca/medium')
 
 # CHALLENGE 9
 os.system('rm -rf /home/entrenador/kanto/tunel_roca/medalla')
 os.system('cp /home/entrenador/kanto/tunel_roca/medium /home/entrenador/kanto/tunel_roca/medalla')
 os.system('chmod 000 /home/entrenador/kanto/tunel_roca/medalla')
 os.system('chown entrenador:entrenador /home/entrenador/kanto/tunel_roca/medalla')
-=======
-######################## Fin del bosque_verde ########################################################################
 
-###############################
-# REGION NUMERO 2 (TUNEL_ROCA)#
-###############################
-#DE AQUI EN ADELANTE TODAS ESTARAN EN OPT OCULTAS
-os.system('rm -rf /home/entrenador/tunel_roca/block')
-os.system('touch /home/entrenador/tunel_roca/block')
-for i in range(99):
-	str0 = "".join(choice(lowercase) for j in range(6))
-	os.system('echo '+str0+' >>  /home/entrenador/tunel_roca/block')
-os.system('echo mushroom >>  /home/entrenador/tunel_roca/block')     #Essta es la linea del medio
-for i in range(100):
-	str0 = "".join(choice(lowercase) for j in range(6))
-	os.system('echo '+str0+' >>  /home/entrenador/tunel_roca/block')
+# CHALLENGE 11
+os.system('mkdir -p /home/entrenador/kanto/tunel_roca/_MGKRP')
+os.system('touch /home/entrenador/kanto/tunel_roca/_MGKRP/-gary')
+os.system('touch /home/entrenador/kanto/tunel_roca/-gary')
+os.system('touch /home/entrenador/kanto/tunel_roca/-EAS')
+os.system('touch /home/entrenador/kanto/tunel_roca/-is')
+os.system('touch /home/entrenador/kanto/tunel_roca/-the')
+os.system('mkdir -p /home/entrenador/kanto/tunel_roca/-HERO')
+os.system('touch /home/entrenador/kanto/tunel_roca/-HERO/-of')
+os.system('touch /home/entrenador/kanto/tunel_roca/-HERO/-this')
+os.system('touch /home/entrenador/kanto/tunel_roca/-HERO/-world')
 
-os.system('rm -rf Taquirule/templo_E/coin')
-os.system('cp /home/entrenador/tunel_roca/block /home/entrenador/tunel_roca/coin')
-os.system('chmod 000 /home/entrenador/tunel_roca/coin ; chown entrenador:entrenador /home/entrenador/tunel_roca/coin')
+# CHALLENGE 12
+os.system('rm -rf /home/entrenador/kanto/tunel_roca/_Cascada')
+os.system('mkdir -p /home/entrenador/kanto/tunel_roca/_Cascada')
 
+KEY_WORD='zubat'
+conjugates = map(''.join, itertools.product(*zip(KEY_WORD.upper(), KEY_WORD.lower())))
+special_dirs = ['_THE', '_LEGEND', '_OF', '_SUPER','_MAC','_BROS']
 
-#Cosas de la pregunta 7
-masks=['oldpokeball','region','bicicleta','balas','repelente','misty','nintendo', 'sunshine',\
-           'brocoli','pokegym','mochila', 'ataque']
+# Fill level 1 (_Cascada) with KEY_WORD
+for word in conjugates:
+    os.system('touch /home/entrenador/kanto/tunel_roca/_Cascada/' + word)
 
-words_from_masks = []
-for i in range(1,300):
-    for m in masks:
-        num = i % 5
-        if num != 0:
-            words_from_masks.append(m + str(random_N_digitos(int(num))))
+for d2 in special_dirs:
+    # Generate level 2 directories
+    os.system('mkdir -p /home/entrenador/kanto/tunel_roca/_Cascada/' + d2)
 
-words_from_masks = list(set(words_from_masks))
-respaldo_wfms = words_from_masks
->>>>>>> features/dialogues__1:Script/gen_world.py
+    # Fill level 2 with KEY_WORD
+    for w2 in conjugates:
+        os.system('touch /home/entrenador/kanto/tunel_roca/_Cascada/' + d2 + '/' + w2)
 
-#Archivo en el que deberan mostrar el contenido de los archivos que esten
-#contenidos en el
+    for d3 in special_dirs:
+        # Generate level 3 directories
+        os.system('mkdir -p /home/entrenador/kanto/tunel_roca/_Cascada/' + d2 + '/' + d3)
 
-os.system('rm -rf /home/entrenador/tunel_roca/smash')
-os.system('touch /home/entrenador/tunel_roca/smash')
+        # If you payed attention, you will realise that level 3 is the only one
+        # isn't filled with random files. We will add the key files later. This
+        # is what we want the prenewbies to find.
+
+        for d4 in special_dirs:
+            # Generate level 4 directories
+            os.system('mkdir -p /home/entrenador/kanto/tunel_roca/_Cascada/' + d2 + '/' + d3 + '/' + d4)
+
+            # Fill level 4 with KEY_WORD
+            for w4 in conjugates:
+                os.system('touch /home/entrenador/kanto/tunel_roca/_Cascada/' + d2 + '/' + d3 + '/' + d4 + '/' + w4)
+
+# These are the level 3 files that we want the prenewbies to find
+os.system('touch /home/entrenador/kanto/tunel_roca/_Cascada/_THE/_LEGEND/zubat')
+os.system('touch /home/entrenador/kanto/tunel_roca/_Cascada/_OF/_THE/ZuBaT')
+os.system('touch /home/entrenador/kanto/tunel_roca/_Cascada/_SUPER/_MAC/zUbAt')
+os.system('touch /home/entrenador/kanto/tunel_roca/_Cascada/_BROS/_BROS/ZUBAT')
+
+# CHALLENGE 13
+# smash -> golpe
+# great_star -> master_ball
+# atrapado -> hidro
+os.system('rm -rf /home/entrenador/kanto/tunel_roca/golpe')
+os.system('touch /home/entrenador/kanto/tunel_roca/golpe')
 
 for w in words_from_masks:
-	os.system('echo '+ w + ' >> /home/entrenador/tunel_roca/smash')
-os.system('echo great_star >> /home/entrenador/tunel_roca/smash')
+	os.system('echo '+ w + ' >> /home/entrenador/kanto/tunel_roca/golpe')
+os.system('echo master_ball >> /home/entrenador/kanto/tunel_roca/golpe')
 for i in range(800):
-	os.system('echo "'+(((lineas.pop()).lower()).replace("'",":")).strip("\n")+'" >> /home/entrenador/tunel_roca/smash')
-os.system('touch /home/entrenador/tunel_roca/great_star')
-os.system('echo "superstar" >> /home/entrenador/tunel_roca/great_star')
+	os.system('echo "'+(((lineas.pop()).lower()).replace("'",":")).strip("\n")+'" >> /home/entrenador/kanto/tunel_roca/golpe')
+os.system('touch /home/entrenador/kanto/tunel_roca/master_ball')
+os.system('echo "hidro" >> /home/entrenador/kanto/tunel_roca/master_ball')
 
-#_Pipe pregunta (12)
+DirBasura('/home/entrenador/kanto/tunel_roca' , 800)
 
-os.system('rm -rf /home/entrenador/tunel_roca/_Pipe')
-os.system('mkdir -p /home/entrenador/tunel_roca/_Pipe')
-babymario='toad'
-babymario_l = map(''.join, itertools.product(*zip(babymario.upper(), babymario.lower())))
-############No se que colocar aqui
-dir_babymario = ['_THE','_ADVENTURE','_OF','_SUPER','_POKEMAC','_TRAINERS']
 
-for z in babymario_l:  #Se mina todo el directorio _TINGLES (nivel 1)
-	os.system('touch /home/entrenador/tunel_roca/_Pipe/'+z)
-for z in dir_babymario:
-	os.system('mkdir -p /home/entrenador/tunel_roca/_Pipe/'+z)
-	for a in babymario_l:  #Se minan todos los directorios del segundo nivel
-		os.system('touch /home/entrenador/tunel_roca/_Pipe/'+z+'/'+a)
-	for x in dir_babymario:
-		os.system('mkdir -p /home/entrenador/tunel_roca/_Pipe/'+z+'/'+x)
-		for y in dir_babymario:
-			os.system('mkdir -p /home/entrenador/tunel_roca/_Pipe/'+z+'/'+x+'/'+y)
-			for a in babymario_l:  #Se minan todos los directorios del cuarto nivel
-				os.system('touch /home/entrenador/tunel_roca/_Pipe/'+z+'/'+x+'/'+y+'/'+a)
+#########################
+# ZONE 3 - islas_remolino
+#########################
 
-os.system('touch /home/entrenador/tunel_roca/_Pipe/_THE/_ADVENTURE/Zubat')
-os.system('touch /home/entrenador/tunel_roca/_Pipe/_OF/_THE/zUBat')
-os.system('touch /home/entrenador/tunel_roca/_Pipe/_SUPER/_POKEMAC/zubaT')
-os.system('touch /home/entrenador/tunel_roca/_Pipe/_TRAINERS/_TRAINERS/zUbAt')
+# CHALLENGE 14
+os.system('mkdir /home/entrenador/johto/islas_remolino/_under')
+os.system('touch /home/entrenador/johto/islas_remolino/_under/lugia')
 
-#carpetas que comienzen con - para la pregunta (11)
-
-os.system('mkdir -p  /home/entrenador/tunel_roca/_GHOST')
-os.system('touch /home/entrenador/tunel_roca/_GHOST/-ash')
-os.system('touch /home/entrenador/tunel_roca/-ash')
-os.system('touch /home/entrenador/tunel_roca/-profesorEAS')
-os.system('touch /home/entrenador/tunel_roca/-is')
-os.system('touch /home/entrenador/tunel_roca/-the')
-os.system('mkdir -p /home/entrenador/tunel_roca/-TRAINER')
-os.system('touch /home/entrenador/tunel_roca/-TRAINER/-of')
-os.system('touch /home/entrenador/tunel_roca/-TRAINER/-this')
-os.system('touch /home/entrenador/tunel_roca/-TRAINER/-region')
-
-DirBasura('/home/entrenador/tunel_roca' , 800)
-print " --SE CARGO EL TUNEL ROCA"
-
-######################## Fin del TUNEL ROCA ########################################################################
-
-#################################
-#REGION NUMERO 3 (ISLAS REMOLINO)#
-#################################
-
-# Pregunta N 14
-# Garantizo que este la carpeta y le agrego lo que necesito
-os.system('mkdir /home/entrenador/islas_remolino/_under')
-os.system('touch /home/entrenador/islas_remolino/_under/yoshi')
-
-# Pregunta N 17
-# Genera un archivo cOsA con permisos 700 y luego una carpera _kart con permisos 777
-os.system('touch /home/entrenador/islas_remolino/cOsA && chmod 700 /home/entrenador/islas_remolino/cOsA')
-os.system('mkdir /home/entrenador/islas_remolino/_kart')
-
-aux = respaldo_wfms
-aux1 = respaldo_wfms
-aux2 = respaldo_wfms
-
-for i in range(50):
-    os.system('touch /home/entrenador/islas_remolino/_kart/' + aux.pop())
-
+aux1 = backup
+aux2 = backup
 
 for i in range (10):
-    os.system('touch /home/entrenador/islas_remolino/_under/' + aux1.pop()[:4])
-    os.system('touch /home/entrenador/islas_remolino/_under/' + aux2.pop()[:6])
+    os.system('touch /home/entrenador/johto/islas_remolino/_under/' + aux1.pop()[:4])
+    os.system('touch /home/entrenador/johto/islas_remolino/_under/' + aux2.pop()[:6])
 
-print "---SE CARGO ISLAS REMOLINO"
-DirBasura('/home/entrenador/islas_remolino' , 800)
+# CHALLENGE 17
+os.system('touch /home/entrenador/johto/islas_remolino/tORRe && chmod 603 /home/entrenador/johto/islas_remolino/tORRe')
+os.system('mkdir /home/entrenador/johto/islas_remolino/_campana')
 
-######################## Fin de ISLAS REMOLINO ########################################################################
+aux = backup
+
+for i in range(50):
+    os.system('touch /home/entrenador/johto/islas_remolino/_campana/' + aux.pop())
+
+DirBasura('/home/entrenador/johto/islas_remolino' , 800)
 
 
-#################################
-#REGION NUMERO 4 (MONTE PLATEADO)#
-#################################
+#########################
+# ZONE 4 - monte_plateado
+#########################
 
-os.system('rm -rf /home/entrenador/monte_plateado/_Galaxy')
-os.system('rm -rf /home/entrenador/monte_plateado/_World')
-lineas = respaldo
-os.system('mkdir /home/entrenador/monte_plateado/_Galaxy')
-os.system('mkdir /home/entrenador/monte_plateado/_World')
+os.system('rm -rf /home/entrenador/johto/monte_plateado/_Galaxy')
+os.system('rm -rf /home/entrenador/johto/monte_plateado/_World')
+lineas = backup
+os.system('mkdir /home/entrenador/johto/monte_plateado/_Galaxy')
+os.system('mkdir /home/entrenador/johto/monte_plateado/_World')
 for i in range(800):
-	os.system('touch /home/entrenador/monte_plateado/_Galaxy/'+(((lineas.pop()).lower()).replace("'",":")).strip("\n"))
+	os.system('touch /home/entrenador/johto/monte_plateado/_Galaxy/'+(((lineas.pop()).lower()).replace("'",":")).strip("\n"))
 for i in range(600):
-	os.system('touch /home/entrenador/monte_plateado/_World/'+(((lineas.pop()).lower()).replace("'",":")).strip("\n"))
+	os.system('touch /home/entrenador/johto/monte_plateado/_World/'+(((lineas.pop()).lower()).replace("'",":")).strip("\n"))
 
-os.system('cp -r /home/entrenador/monte_plateado/_Galaxy/ /home/entrenador/monte_plateado/_Galaxy2')
-os.system('cp -r /home/entrenador/monte_plateado/_World/ /home/entrenador/monte_plateado/_World2')
+os.system('cp -r /home/entrenador/johto/monte_plateado/_Galaxy/ /home/entrenador/johto/monte_plateado/_Galaxy2')
+os.system('cp -r /home/entrenador/johto/monte_plateado/_World/ /home/entrenador/johto/monte_plateado/_World2')
 
 
 #archivo random que tendra 30 lineas
-os.system('rm -rf /home/entrenador/monte_plateado/bigmario')
-os.system('touch /home/entrenador/monte_plateado/bigmario')
+os.system('rm -rf /home/entrenador/johto/monte_plateado/bigmario')
+os.system('touch /home/entrenador/johto/monte_plateado/bigmario')
 for i in range(30):
-    os.system("echo Super EAS Odyssey >> /home/entrenador/monte_plateado/bigmario")
+    os.system("echo Super EAS Odyssey >> /home/entrenador/johto/monte_plateado/bigmario")
 
 #Colocandole 30K a un archivo
-os.system('mkdir -p /home/entrenador/monte_plateado/BOSS/BOWSER/IS/IN/HIS/')
-os.system('touch /home/entrenador/monte_plateado/BOSS/BOWSER/IS/IN/HIS/riegame')
+os.system('mkdir -p /home/entrenador/johto/monte_plateado/BOSS/BOWSER/IS/IN/HIS/')
+os.system('touch /home/entrenador/johto/monte_plateado/BOSS/BOWSER/IS/IN/HIS/riegame')
 for i in range(9999):
-    os.system("echo aa >> /home/entrenador/monte_plateado/BOSS/BOWSER/IS/IN/HIS/riegame")
-os.system('echo "CREETE QUE ERES SUPER EAS... DI EN VOZ ALTA: SOY EAS" >> /home/entrenador/monte_plateado/BOSS/BOWSER/IS/IN/HIS/riegame')
+    os.system("echo aa >> /home/entrenador/johto/monte_plateado/BOSS/BOWSER/IS/IN/HIS/riegame")
+os.system('echo "CREETE QUE ERES SUPER EAS... DI EN VOZ ALTA: SOY EAS" >> /home/entrenador/johto/monte_plateado/BOSS/BOWSER/IS/IN/HIS/riegame')
 
 
-os.system('rm -rf /home/entrenador/monte_plateado/drmario')
-os.system('rm -rf /home/entrenador/monte_plateado/mariotetris')
+os.system('rm -rf /home/entrenador/johto/monte_plateado/drmario')
+os.system('rm -rf /home/entrenador/johto/monte_plateado/mariotetris')
 
-os.system('touch /home/entrenador/monte_plateado/drmario')
-os.system('touch /home/entrenador/monte_plateado/mariotetris')
+os.system('touch /home/entrenador/johto/monte_plateado/drmario')
+os.system('touch /home/entrenador/johto/monte_plateado/mariotetris')
 
-words_from_masks = respaldo_wfms
+words_from_masks = backup
 for w in words_from_masks:
-    	os.system('echo '+ w + '>> /home/entrenador/monte_plateado/drmario')
+    	os.system('echo '+ w + '>> /home/entrenador/johto/monte_plateado/drmario')
 
 palabra_distinta= 'b0ws3r'
 aux = words_from_masks + [palabra_distinta]
 
 shuffle(aux)
 for w in aux:
-    	os.system('echo '+ w + '>> /home/entrenador/monte_plateado/mariotetris')
+    	os.system('echo '+ w + '>> /home/entrenador/johto/monte_plateado/mariotetris')
 
-<<<<<<< HEAD:Script/fill_world.py
-print '---SE CARGO EL CASTILLO DE (PIRANA_PLANT)'
-DirBasura('/home/entrenador/Castillo_de_Pirana_plant/' , 800)
-=======
-
-
-print '---SE CARGO EL MONTE PLATEADO'
-DirBasura('/home/entrenador/monte_plateado' , 800)
->>>>>>> features/dialogues__1:Script/gen_world.py
-
-######################## Fin del CASTILLO DE PIRANA_PLANT ###################################################################
+DirBasura('/home/entrenador/johto/monte_plateado/', 800)
