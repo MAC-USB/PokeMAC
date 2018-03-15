@@ -1,16 +1,16 @@
 import os
 
 # CONSTANTS
-USERNAME = 'entrenador'
-HELPER = 'meowth'
-PASSWORD = 'PokeMAC'
+#USERNAME = 'entrenador'
+#HELPER = 'meowth'
+#PASSWORD = 'PokeMAC'
 
 # Create the Users and add their passwords
-os.system('useradd ' + USERNAME)
-os.system('chpasswd ' + USERNAME + ':' + PASSWORD)
+os.system('useradd entrenador')
+os.system('chpasswd entrenador:PokeMAC')
 
-os.system('useradd ' + HELPER)
-os.system('chpasswd ' + HELPER + ':' + PASSWORD)
+os.system('useradd meowth')
+os.system('chpasswd meowth:PokeMAC')
 
 # DIRECTORIES (ZONES)
 os.system('cp -r $(pwd)/* /home/meowth')
