@@ -51,6 +51,7 @@ with open('/home/entrenador/kanto/pueblo_paleta/grimer', 'a') as f:
 # 3
 create_file('/home/entrenador/kanto/pueblo_paleta/caterpie', 2019) # TODO
 
+print('pueblo_paleta created')
 
 #######################
 # ZONE 1 - bosque_verde
@@ -111,6 +112,8 @@ for i in range(1,300):
 
 words_from_masks = list(set(words_from_masks))
 backup_wfms = words_from_masks
+
+print('bosque_verde created')
 
 #####################
 # ZONE 2 - tunel_roca
@@ -206,6 +209,7 @@ os.system('echo "hidro" >> /home/meowth/.poke_oculto/kanto/tunel_roca/master_bal
 
 DirBasura('/home/meowth/.poke_oculto/kanto/tunel_roca' , 800)
 
+print('tunel_roca created')
 
 #########################
 # ZONE 3 - islas_remolino
@@ -233,6 +237,7 @@ for i in range(50):
 
 DirBasura('/home/meowth/.poke_oculto/johto/islas_remolino' , 800)
 
+print('islas_remolino created')
 
 #########################
 # ZONE 4 - monte_plateado
@@ -282,5 +287,7 @@ aux = words_from_masks + [palabra_distinta]
 shuffle(aux)
 for w in aux:
     os.system('echo '+ w + '>> /home/meowth/.poke_oculto/johto/monte_plateado/ivy-saur')
+
+print('monte_plateado created')
 
 DirBasura('/home/meowth/.poke_oculto/johto/monte_plateado/', 800)

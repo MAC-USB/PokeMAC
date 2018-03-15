@@ -12,6 +12,8 @@ entrenador_passwd = crypt.crypt('MIQUIMI','22')
 os.system('useradd -s /bin/bash -p '+ meowth_passwd +' -m meowth')
 os.system('useradd -s /bin/bash -p '+ entrenador_passwd +' -m entrenador')
 
+print('Users created')
+
 # Create the Users and add their passwords
 # os.system('useradd entrenador')
 # os.system('chpasswd entrenador:PokeMAC')
@@ -27,6 +29,8 @@ os.system('mkdir -p /home/meowth/.poke_oculto/kanto/tunel_roca')     # Zone 2
 os.system('mkdir -p /home/meowth/.poke_oculto/johto/islas_remolino') # Zone 3
 os.system('mkdir -p /home/meowth/.poke_oculto/johto/monte_plateado') # Zone 4
 
+print('Base directories created')
+
 # ALIASES
 os.system("echo \"cd /home/entrenador/kanto/\" >> /home/entrenador/.bashrc")
 os.system("echo \"alias destello='/home/meowth/scripts/pikachu.sh'\" >> /home/entrenador/.bashrc")
@@ -37,3 +41,5 @@ os.system("echo \"alias instakillred='python /home/invitado/admision/credits.py'
 # alias instakill="pkill -u meowth -f meowth -KILL; python /home/invitado/admision.credits.py"
 os.system('echo "" > /etc/motd')
 os.system('echo "" > /var/run/motd.dynamic')
+
+print('Aliases created')
