@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   get 'welcome/index'
   get "welcome/positions", to: "welcome#positions", as: :positions  
-  get "pokedex/quest", to: "pokedex#quest", as: :pokedex 
-  get "pokedex/pokemon", to: "pokedex#pokemons", as: :pokemons
+  get "pokedex/quest", to: "pokedex#quest", as: :pokedex
+  get "pokedex/quest/:id", to: "pokedex#show", as: :questions
+  get "pokedex/pokelist", to: "pokedex#pokelist", as: :pokelist
+  get "pokedex/pokemon/:id", to: "pokedex#pokemons", as: :pokemons
 
   root 'welcome#index'
 
