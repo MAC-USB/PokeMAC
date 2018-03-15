@@ -26,7 +26,7 @@ function trapear {
 function inicio {
 
     clear 
-    echo "Hola preprador, mi PID es: $$"
+    #echo "Hola preprador, mi PID es: $$"
     printf "\n\n\n"
     read -p "$MENSAJE_READ"
     clear
@@ -58,21 +58,22 @@ function dormir {
 
 function go_evil {
     cat drawings/trainer.txt
-    sleep 0.3
+    printf "\nNo lograrás derrotarme. Mejor vete a hacer admisión al otro laboratorio.\n"
+    sleep 0.5
     trapear    
     while true
     do
     read -p ""
-    printf "\nNo lograras derrotarme. Mejor vete a hacer admision al otro laboratorio.\n"
+    #printf "\nNo lograras derrotarme. Mejor vete a hacer admision al otro laboratorio.\n"
     done
 }
 
 function insultar {
     if [ $((intentos % 5)) = 0 -a $intentos -ne 0 ]
         then 
-            printf "\nNo le soples tanto al cartucho... Todos sus intentos son INUTILES\n"
+            printf "\nAsh tiene más posibilidades de pasar la liga que tú.\n"
         else 
-            printf "\nBuen intento. Pero eso solo funciona en el N64.\n"
+            printf "\nEres más lento que un Slowpoke...\n"
     fi
     intentos=$((intentos+1))
     sleep 0.3
@@ -165,7 +166,12 @@ function entregar_item {
         go_evil
         ;;
     * )
-        echo "¿Que dices? No te entiendo. Asi no puedo ayudarte"
+        clear
+        cat drawings/meowth.txt
+        echo " "
+        echo "                 Meeeeeooooooooooooooowth..."
+        echo " "
+        echo "      ¿Qué dices? No te entiendo. Así no puedo ayudarte."
         ;;
     esac
 }
@@ -184,8 +190,10 @@ do
     continue
     else
     clear
-    printf "\n\n\n          Meeeeeooooooooooooooowth...\n\n\n"
     #kill -20 $$ 
     cat drawings/meowth.txt
+    echo " "
+    echo " "
+    echo "                 Meeeeeooooooooooooooowth..."
     fi
 done
