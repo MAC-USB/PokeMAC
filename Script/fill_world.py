@@ -100,13 +100,20 @@ for i in range(300):
 for i in range(50):
 	os.system('echo "' + (((lineas.pop()).lower()).replace("'",":")).strip("\n") + '" >>  /home/entrenador/kanto/bosque_verde/POKE')
 
-# CHALLENGE 6
-DirBasura("/home/entrenador/kanto/bosque_verde" , 800)
+# # CHALLENGE 6
+# #DirBasura("/home/entrenador/kanto/bosque_verde" , 800)
+# aux1 = backup_wfms
+# for i in range (100):
+#     os.system('touch /home/entrenador/kanto/bosque_verde/' + aux1.pop()[:4])
+
+# os.system('touch /home/entrenador/kanto/bosque_verde/trueno')
+
 
 # CHALLENGE 7
-masks=['oak','centro','bill','mimo','lago','pokiman','nintendo', 'ho-oh',\
-           'geodude','rattata', 'pidgey', 'caterpie']
+#masks=['oak','centro','bill','mimo','lago','pokiman','nintendo', 'ho-oh',\
+#           'geodude','rattata', 'pidgey', 'caterpie']
 
+masks=['']
 words_from_masks = []
 for i in range(1,300):
     for m in masks:
@@ -116,6 +123,14 @@ for i in range(1,300):
 
 words_from_masks = list(set(words_from_masks))
 backup_wfms = words_from_masks
+
+# CHALLENGE 6
+aux1 = backup_wfms
+for i in range (7000):
+    os.system('touch /home/entrenador/kanto/bosque_verde/' + aux1.pop()[:4])
+
+os.system('touch /home/entrenador/kanto/bosque_verde/trueno')
+
 
 print('bosque_verde created')
 

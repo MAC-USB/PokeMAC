@@ -42,6 +42,7 @@ os.system("echo \"alias instakillred='python /home/invitado/admision/credits.py'
 # alias instakill="pkill -u meowth -f meowth -KILL; python /home/invitado/admision.credits.py"
 
 os.system("echo \"[[ -r ~/.bashrc  ]] && . ~/.bashrc\" >> /home/entrenador/.bash_profile")
+os.system("echo \"[[ -r ~/.bashrc  ]] && . ~/.bashrc\" >> /home/meowth/.bash_profile")
 
 os.system('echo "" > /etc/motd')
 os.system('echo "" > /var/run/motd.dynamic')
