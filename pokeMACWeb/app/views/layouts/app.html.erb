@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Myapp</title>
+  <title>PokeMAC</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -71,16 +71,19 @@
       <%= yield %>
     </div>
     <div id="blueButtons1">
+
       <div class="blueButton"> 
-      <!-- INPUT DEL USER -->
-      <%= form_for :person do |f| %>
-  First name: <%= f.text_field :first_name %><br />
-  <%= f.submit %>
-<% end %>
+        <%= form_tag("/questions", method: "get") do %>
+          <%= label_tag(:title, "Search for:") %>
+          <%= text_field_tag(:title) %>
+          <%= submit_tag("Enviar") %>
+        <% end %>
       </div>
     </div>
     <div id="blueButtons2">
+      
     </div>
+
     <div id="miniButtonGlass4"></div>
     <div id="miniButtonGlass5"></div>
     <div id="barbutton3"></div>
@@ -89,7 +92,7 @@
     <!-- BOTON MAP Y QUESTS -->
     <div id="yellowBox1" align="center">Map & Quests</div>
     <%end%>
-    <%= link_to pokemons_path do %>
+    <%= link_to pokelist_path do %>
     <!-- BOTON POKEMONS CARACTERISTICAS -->
     <div id="yellowBox2" align="center">Pokemons</div>
     <%end%>

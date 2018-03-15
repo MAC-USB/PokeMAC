@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Started GET "/" for 127.0.0.1 at 2018-03-12 12:14:21 -0400
 Processing by Rails::WelcomeController#index as HTML
   Rendering /var/lib/gems/2.3.0/gems/railties-5.1.5/lib/rails/templates/rails/welcome/index.html.erb
@@ -5919,3 +5920,5 @@ Processing by WelcomeController#positions as HTML
 Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.3ms)
 
 
+=======
+>>>>>>> master
