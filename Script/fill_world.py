@@ -40,6 +40,7 @@ def create_file(path, n):
 ########################
 
 # 1
+os.system('touch /home/entrenador/kanto/pueblo_paleta/.ditto')
 with open('/home/entrenador/kanto/pueblo_paleta/.ditto', 'a') as f:
     f.write('Lo que buscas comienza con 159.90') # TODO
 
