@@ -6,17 +6,17 @@
             ;MMa                                                aMM7                      
           :MMX                                                    ;MMi                    
          @M7                                                        rM@                   
-       .M@                                                            @M,                 
+       .M@                        ¡FELICIDADES!                       @M,                 
       ,MS                                                              SM,                
-      MX                 FELICIDADES HAS LOGRADO RECUPERAR              XM                
-     MM                         A TODOS TUS POKEMON                      MM               
-    .M                                                                    M.              
-    ZM                                                                    M8              
-    MM                                                                    MM              
-    ZM                      Ahora debes derrotar a RED                    MZ              
-     M             para convertirte en el mejor entrenador Pokemon.       M.              
-     MM                    Pero eso no es tarea sencilla,                 MM               
-      MZ              debes encontrar su debilidad escondida...          aM                
+      MX             HAS LOGRADO RECUPERAR A TODOS TUS POKEMON          XM                
+     MM                                                                  MM               
+    .M                      Ahora debes derrotar a RED                    M.              
+    ZM             para convertirte en el mejor entrenador Pokemon.       M8              
+    MM                     Pero eso no es tarea sencilla,                 MM              
+    ZM                debes encontrar su debilidad escondida...           MZ              
+     M                                                                    M.              
+     MM                                                                   MM               
+      MZ                                                                 aM                
        MZ                                                              ZM.                
         MM                                                            MM                  
          0MS                                                        2MB                   

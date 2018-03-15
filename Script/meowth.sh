@@ -124,7 +124,8 @@ function entregar_item {
     case $1 in 
     "42" ) #Cuando encuentra a PIKACHU
         clear
-        chmod 777 -R /home/entrenador/tunel_roca
+        #chmod 777 -R /home/entrenador/tunel_roca
+        chmod +x scripts/pikachu.sh
         cat dialogues/dialogo_recupera_pikachu.txt
         printf "\n\n\n"
         read -p "$MENSAJE_READ"             
@@ -133,7 +134,8 @@ function entregar_item {
         ;;  
     "atrapado" ) #Cuando encuentra a Blastoise
         clear
-        chmod 777 -R /home/entrenador/islas_remolino
+        #chmod 777 -R /home/entrenador/islas_remolino
+        chmod +x scripts/blastoise.sh
         cat dialogues/dialogo_recupera_blastoise.txt
         printf "\n\n\n"
         read -p "$MENSAJE_READ"       
@@ -142,7 +144,8 @@ function entregar_item {
         ;;  
     "nexplant" ) #Cuando recupera a Charizard
         clear
-        chmod 777 -R /home/entrenador/monte_plateado
+        #chmod 777 -R /home/entrenador/monte_plateado
+        chmod +x scripts/charizard.sh
         cat dialogues/dialogo_recupera_charizard.txt
         printf "\n\n\n"
         read -p "$MENSAJE_READ"       
@@ -181,8 +184,8 @@ do
     continue
     else
     clear
-    printf "\n\n\n Meeeeeooooooooooooooowth..."
-    kill -20 $$ 
+    printf "\n\n\n          Meeeeeooooooooooooooowth...\n\n\n"
+    #kill -20 $$ 
     cat drawings/meowth.txt
     fi
 done
