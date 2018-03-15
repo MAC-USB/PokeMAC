@@ -1,3 +1,102 @@
+<%= stylesheet_link_tag 'signup', media: 'all', 'data-turbolinks-track' => true %>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<div id="StefTastan">
+			
+			<div class="text-center">
+				<img src="/assets/crea_tu_equipo.png" align="middle" alt="Crea tu equipo" style="margin-top: 30px;">			
+			</div>
+			<!-- pokeball container -->
+			<div id="moving-container">
+				<div id="pokeball-container">
+				<!-- pokeball -->
+					<div id="pokeball">
+						<div class="pokeball-details"></div>
+					</div>
+				</div>				
+      </div>
+
+			<div class="form_sign_up">
+					<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+						<%= devise_error_messages! %>
+
+						<div class="field">
+							<%= f.label :Nombre_de_usuario %><br />
+							<%= f.text_field :username, autofocus: true, class:"form-control" %>
+						</div>
+
+						<div class="field">
+							<%= f.label :contraseña%>
+							<% if @minimum_password_length %>
+							<em>(<%= @minimum_password_length %> caracteres mínimos)</em>
+							<% end %><br />
+							<%= f.password_field :password, autocomplete: "off", class:"form-control" %>
+						</div>
+
+						<div class="field">
+							<%= f.label :confirmación_de_la_contraseña %><br />
+							<%= f.password_field :password_confirmation, autocomplete: "off", class:"form-control" %>
+						</div>
+
+						<div class="actions" style="margin-top:30px">
+							<%= f.submit "Crear usuario", class:"btn btn-danger"%>
+						</div>
+					<% end %>
+			</div>
+
+    <!-- charmander -->
+			<div id="charmander">
+				<div id="arms"></div>
+				<div id="feet"></div>
+				<div id="body">
+					<div id="eyes"></div>
+					<div id="pupils"></div>
+					<div id="nostrils"></div>
+					<div id="mouth"></div>
+					<div id="belly"></div>
+				</div>
+				<div id="tail"></div>
+				<div id="flame"></div>
+			</div>
+
+			<!-- bulbasaur -->
+			<div id="bulbasaur">
+				<div id="head">
+					<div id="eyes"></div>
+					<div id="pupils"></div>
+					<div id="nostrils"></div>
+					<div class="mouth"></div>
+				</div>
+				<div class="ears"></div>
+				<div id="body">
+					<div class="spots spot1"></div>
+					<div class="spots spot2"></div>
+					<div class="spots spot3"></div>
+				</div>
+				<div id="front-feet"></div>
+				<div id="back-feet"></div>
+				<div id="bulb"></div>
+			</div>
+	
+			<!-- squirtle -->
+			<div id="squirtle">
+				<div id="arms"></div>
+				<div id="feet"></div>
+				<div id="head">
+					<div id="eyes"></div>
+					<div id="pupils"></div>
+					<div id="nostrils"></div>
+					<div id="mouth"></div>
+				</div>
+				<div id="body"></div>
+				<div id="shell"></div>
+				<div id="tail"></div>
+			</div>
+
+    </div>
+    
+
+<!--
 <div class="row center-xs">
     <div class="col-xs-8 col-md-6">
       <div class="box text-left">
@@ -33,3 +132,4 @@
       </div>
     </div>
   </div>
+

@@ -7,6 +7,13 @@ class PokedexController < ApplicationController
     end
 
     def pokemons
+
+    end
+
+    def pokelist
+    	@pokemons = Pokemon.all
+
+    	render layout: false
     end
 
 end

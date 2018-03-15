@@ -1,0 +1,742 @@
+
+/*
+ * POKEBALL 
+ */
+
+/* animation frame! rotation movement of the pokeball */
+@-webkit-keyframes spinning {
+    0% {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+    50% {
+      transform: rotate(325deg);
+      -webkit-transform: rotate(325deg);
+    }
+    100% {
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+    }
+  }
+  
+  @-webkit-keyframes translating {
+    0% {
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+    }
+    50% {
+      transform: translateX(50%);
+      -webkit-transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+    }
+  }
+  
+  @-webkit-keyframes color-change {
+      0%, 20%, 40%, 60%, 100% {
+          background-color: #fff;
+      }
+      10%, 30%, 50%, 70%, 90% {
+          background-color: #f00;
+      }
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+  }
+  
+  html, body {    
+    background: url(http://backgroundcheckall.com/wp-content/uploads/2017/12/pokemon-emerald-background.png) no-repeat center center fixed;    
+    -webkit-background-size: cover;   
+    -moz-background-size: cover;   
+    -o-background-size: cover;   
+    background-size: cover; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  #StefTastan {
+      width: 715px;
+      height: 500px;
+      margin: 0 auto;
+      position: relative;
+  }
+  
+  #StefTastan #moving-container {
+      width: 10em;
+      height: 10em;
+      margin: 10px auto 70px;
+      position: relative;
+      -webkit-animation: translating 5s infinite;
+  }
+  /* pokeball container */
+  #StefTastan #pokeball-container {
+      width: 10em;
+      height: 10em;
+      margin: 20px auto;
+        -webkit-animation: spinning 5s infinite;
+  }
+  
+  #StefTastan #pokeball { 
+      width: 10em;
+      height: 10em;
+      background-color: #fff;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+  }
+  
+  #StefTastan #pokeball::before {
+      content: '';
+      background-color: red;
+      border-radius: 5em 5em 0 0;
+      width: 10em;
+      height: 5em;
+      position: absolute;
+  }
+  
+  #StefTastan #pokeball .pokeball-details {
+      width: 10em;
+      height: 1em;
+      background-color: #333;
+      position: absolute;
+      top: 4.5em;
+  }
+  
+  
+  /* the pokemon's button or whatever it is */
+  #StefTastan #pokeball .pokeball-details::before {
+      content: '';
+      width: 3.5em;
+      height: 3.5em;
+      border-radius: 50%;
+      background-color: #333;
+      position: absolute;
+      top: -1.25em;
+      left: 3.25em;
+      z-index: 200;
+  }
+  
+  #StefTastan #pokeball .pokeball-details::after {
+      content: '';
+      width: 1.8em;
+      height: 1.8em;
+      border: 0.3em solid white;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      top: -0.65em;
+      left: 3.80em;
+      margin: 0 auto;
+      z-index: 250;
+      -webkit-animation: color-change 3s infinite;
+  }
+  
+  
+  /*
+   * CHARMANDER 
+   */
+  
+  #StefTastan #charmander {
+      position: relative;
+      width: 10em;
+      height: 12em;
+      float: left;
+  }
+  #StefTastan #charmander #body {
+      width: 8em;
+      height: 13em;
+      background-color: #e88923;
+      border-radius: 5em 5em 0 0;
+      z-index: 150;
+      position: relative;
+  }
+  
+  #StefTastan #charmander #feet::before {
+      content: '';
+      width: 2em;
+      height: 2em;
+      background-color: #e88923;
+      border-radius: 0 0 1em 1em;
+      position: absolute;
+      top: 12em;
+  }
+  
+  #StefTastan #charmander #feet::after {
+      content: '';
+      width: 2em;
+      height: 2em;
+      background-color: #e88923;
+      border-radius: 0 0 1em 1em;
+      position: absolute;
+      top: 12em;
+      left: 6em;
+  }
+  
+  #StefTastan #charmander #eyes::before {
+      content: '';
+      width: 1.5em;
+      height: 1.5em;
+      background-color: #fff;
+      border-radius: 1em;
+      position: absolute;
+      top: 2em;
+      left: 1em;
+  }
+  
+  #StefTastan #charmander #eyes::after {
+      content: '';
+      width: 1.5em;
+      height: 1.5em;
+      background-color: #fff;
+      border-radius: 1em;
+      position: absolute;
+      top: 2em;
+      left: 4.5em;
+  }
+  
+  #StefTastan #charmander #pupils::before {
+      content: '';
+      width: 0.75em;
+      height: 1.5em;
+      background-color: #000;
+      border-radius: 0 1em 1em 0;
+      position: absolute;
+      top: 2em;
+      left: 5.25em;
+  }
+  
+  #StefTastan #charmander #pupils::after {
+      content: '';
+      width: 0.75em;
+      height: 1.5em;
+      background-color: #000;
+      border-radius: 0 1em 1em 0;
+      position: absolute;
+      top: 2em;
+      left: 1.75em;
+  }
+  
+  #StefTastan #charmander #nostrils::before {
+      content: '';
+      width: 0.25em;
+      height: 0.25em;
+      background-color: #000;
+      border-radius: 1em;
+      position: absolute;
+      top: 3em;
+      left: 3em;
+  }
+  
+  #StefTastan #charmander #nostrils::after {
+      content: '';
+      width: 0.25em;
+      height: 0.25em;
+      background-color: #000;
+      border-radius: 1em;
+      position: absolute;
+      top: 3em;
+      left: 3.75em;
+  }
+  
+  #StefTastan #charmander #mouth::before {
+      content: '';
+      width: 1.25em;
+      height: 0.75em;
+      background-color: #942e58;
+      border-radius: 0 0 3em 3em;
+      position: absolute;
+      top: 3.75em;
+      left: 2.85em;
+  }
+  
+  #StefTastan #charmander #belly {
+      content: '';
+      width: 5.5em;
+      height: 5.5em;
+      background-color: #f8e393;
+      border-radius: 2em 2em 0 2em;
+      position: absolute;
+      top: 7.5em;
+      left: 0.5em;
+      z-index: 10;
+  }
+  
+  #StefTastan #charmander #tail::before {
+      content: '';
+      width: 3em;
+      height: 2.75em;
+      background-color: #e88923;
+      border-radius: 0 0 2em 0;
+      position: absolute;
+      top: 10em;
+      left: 8em;
+      z-index: 10;
+  }
+  
+  #StefTastan #charmander #tail::after {
+      content: '';
+      width: 1.5em;
+      height: 1.5em;
+      background-color: #f5f5f5;
+      border-radius: 0 0 50% 0;
+      position: absolute;
+      top: 9.50em;
+      left: 8em;
+      z-index: 10;
+  }
+  
+  #StefTastan #charmander #tail-tip {
+      content: '';
+      width: 1.5em;
+      height: 1.5em;
+      background-color: #e88923;
+      border-radius: 2em 2em 0 0;
+      position: absolute;
+      top: 9em;
+        left: 9.5em;
+      z-index: 30;
+  }
+  
+  #StefTastan #charmander #arms::before {
+      content: '';
+      width: 2em;
+      height: 2em;
+      background-color: #e88923;
+      border-radius: 2em 0 0 2em;
+      position: absolute;
+      top: 5.75em;
+      left: -1.5em;
+      z-index: 10;
+  }
+  
+  #StefTastan #charmander #arms::after {
+      content: '';
+      width: 2em;
+      height: 2em;
+      background-color: #e88923;
+      border-radius: 0 2em 2em 0;
+      position: absolute;
+      top: 5.75em;
+      left: 7.75em;
+      z-index: 10;
+  }
+  
+  #StefTastan #charmander #flame {
+      content: '';
+      width: 2.5em;
+      height: 2.5em;
+      overflow: hidden;
+        border-bottom-right-radius: 50%;
+       border-bottom-left-radius: 50%; 
+      border-top-left-radius: 50%;
+      -webkit-transform:rotate(-45deg);
+      background-color: #FFB800;
+      position: absolute;
+      top: 8em;
+      left: 9em;
+      z-index: 300;
+  
+  }
+  
+  /*
+   * BULBASAUR
+   */
+  
+  #StefTastan #bulbasaur {
+      position: relative;
+      float: left;
+      left: 3em;
+      width: 10em;
+      height: 12em;
+      top: 1em;
+  }
+  #StefTastan #bulbasaur #body {
+      content: '';
+      width: 12em;
+      height: 7em;
+      top: 5em;
+      left: 2em;
+      background-color: #89e1bc;
+      border-radius: 0 8em 8em 8em;
+      z-index: 150;
+      position: absolute;
+  }
+  
+  #StefTastan #bulbasaur #head {
+      width: 9em;
+      height: 7em;
+      left: 1em;
+      top: 1em;
+      background-color: #89e1bc;
+      border-radius: 1em 0 0 1em;
+      z-index: 200;
+      position: absolute;
+  }
+  
+  #StefTastan #bulbasaur #eyes::before, #StefTastan #squirtle #eyes::before {
+      content: '';
+      width: 1.5em;
+      height: 1.5em;
+      background-color: #fff;
+      border-radius: 1em;
+      position: absolute;
+      top: 2em;
+      left: 1em;
+  }
+  
+  #StefTastan #bulbasaur #eyes::after, #StefTastan #squirtle #eyes::after {
+      content: '';
+      width: 1.5em;
+      height: 1.5em;
+      background-color: #fff;
+      border-radius: 1em;
+      position: absolute;
+      top: 2em;
+      left: 4.5em;
+  }
+  
+  #StefTastan #bulbasaur #pupils::before, #StefTastan #squirtle #pupils::before {
+      content: '';
+      width: 0.75em;
+      height: 1.5em;
+      background-color: #000;
+      border-radius: 0 1em 1em 0;
+      position: absolute;
+      top: 2em;
+      left: 5.25em;
+  }
+  
+  #StefTastan #bulbasaur #pupils::after, #StefTastan #squirtle #pupils::after {
+      content: '';
+      width: 0.75em;
+      height: 1.5em;
+      background-color: #000;
+      border-radius: 0 1em 1em 0;
+      position: absolute;
+      top: 2em;
+      left: 1.75em;
+  }
+  
+  #StefTastan #bulbasaur #nostrils::before, #StefTastan #squirtle #nostrils::before {
+      content: '';
+      width: 0.25em;
+      height: 0.25em;
+      background-color: #000;
+      border-radius: 1em;
+      position: absolute;
+      top: 3em;
+      left: 3em;
+  }
+  
+  #StefTastan #bulbasaur #nostrils::after, #StefTastan #squirtle #nostrils::after {
+      content: '';
+      width: 0.25em;
+      height: 0.25em;
+      background-color: #000;
+      border-radius: 1em;
+      position: absolute;
+      top: 3em;
+      left: 3.75em;
+  }
+  
+  #StefTastan #bulbasaur .mouth, #StefTastan #squirtle #mouth {
+      content: '';
+      width: 1.25em;
+      height: 0.75em;
+      background-color: #942e58;
+      border-radius: 0 0 3em 3em;
+      position: absolute;
+      top: 3.75em;
+      left: 2.85em;
+  }
+  
+  #StefTastan #bulbasaur #front-feet::before {
+      content: '';
+      width: 2em;
+      height: 5em;
+      background-color: #89e1bc;
+      border-radius: 0 0 1em 1em;
+      position: absolute;
+      top: 8em;
+      left: 2em;
+  }
+  
+  #StefTastan #bulbasaur #front-feet::after {
+      content: '';
+      width: 2em;
+      height: 5em;
+      background-color: #89e1bc;
+      border-radius: 0 0 1em 1em;
+      position: absolute;
+      top: 8em;
+      left: 5em;
+  }
+  
+  #StefTastan #bulbasaur #back-feet::before {
+      content: '';
+      width: 2em;
+      height: 5em;
+      background-color: #89e1bc;
+      border-radius: 0 0 1em 1em;
+      position: absolute;
+      top: 8em;
+      left: 12em;
+  }
+  
+  #StefTastan #bulbasaur #back-feet::after {
+      content: '';
+      width: 2em;
+      height: 5em;
+      background-color: #89e1bc;
+      border-radius: 0 0 1em 1em;
+      position: absolute;
+      top: 8em;
+      left: 9em;
+  }
+  
+  #StefTastan #bulbasaur #bulb::before {
+      content: '';
+      width: 11em;
+      height: 11em;
+      overflow: hidden;
+        border-bottom-right-radius: 50%;
+       border-bottom-left-radius: 50%; 
+      border-top-left-radius: 50%;
+      -webkit-transform:rotate(-45deg);
+      background-color: #6aac34;
+      position: absolute;
+      top: -1em;
+      left: 5em;
+  }
+  
+  #StefTastan #bulbasaur #bulb::after {
+      content: '';
+      background-color: #6aac34;
+      border-radius: 0 0 3em 2em;
+      position: absolute;
+      top: 1em;
+      left: 5em;
+  }
+  
+  
+  #StefTastan #bulbasaur .ears::before {
+      content: '';
+      width: 1em;
+      height: 4em;
+      left: 2em;
+      top: 1em;
+      background-color: #89e1bc;
+      border-radius: 4em 4em 0 4em;
+      z-index: 150;
+      position: absolute;
+      top: 0.25em;
+      left: 2em;
+  }
+  
+  #StefTastan #bulbasaur .ears::after {
+      content: '';
+      width: 1em;
+      height: 4em;
+      background-color: #89e1bc;
+      border-radius: 4em 4em 0 4em;
+      z-index: 150;
+      position: absolute;
+      top: 0.25em;
+      left: 9em;
+  }
+  
+  #StefTastan #bulbasaur .spots {
+      content: '';
+      background-color: #006359;
+      border-radius: 1em;
+      z-index: 500;
+      position: absolute;
+  }
+  
+  .spot1 {
+      width: 1.5em;
+      height: 1.5em;
+      top: 1.25em;
+        left: 8em;
+  }
+  
+  .spot2 {
+      width: 1em;
+      height: 1em;
+      top: 2.25em;
+      left: 9.75em;
+  }
+  
+  .spot3 {
+      width: 1em;
+      height: 1em;
+      top: 3em;
+      left: 8.60em;
+  }
+  
+  /*
+   * SQUIRTLE
+   */
+  
+  #StefTastan #squirtle {
+    position: relative;
+    float: left;
+    left: 13em;
+    width: 10em;
+    height: 12em;
+    top: 0;
+  }
+  
+  #StefTastan #squirtle #body {
+      width: 8em;
+      height: 13em;
+      background-color: #ffe69c;
+      border-radius: 5em 5em 2em 4em;
+      z-index: 150;
+      position: relative;
+  }
+  
+  #StefTastan #squirtle #head {
+      content: '';
+      width: 8em;
+      height: 8em;
+      background-color: #94d5cd;
+      border-radius: 4em;
+      position: absolute;
+      top: 0em;
+      z-index: 300;
+  }
+  
+  #StefTastan #squirtle #feet::before {
+      content: '';
+      width: 2em;
+      height: 3em;
+      background-color: #94d5cd;
+      border-radius: 1em;
+      position: absolute;
+      top: 11em;
+      left: 1em;
+      z-index: 500;
+  }
+  
+  #StefTastan #squirtle #feet::after {
+      content: '';
+      width: 2em;
+      height: 3em;
+      background-color: #94d5cd;
+      border-radius: 1em;
+      position: absolute;
+      top: 11em;
+      left: 5em;
+      z-index: 400;
+  }
+  
+  #StefTastan #squirtle #arms::before {
+      content: '';
+      width: 2em;
+      height: 2em;
+      background-color: #94d5cd;
+      border-radius: 2em 0 0 2em;
+      position: absolute;
+      top: 5.75em;
+      left: -1.5em;
+      z-index: 10;
+  }
+  
+  #StefTastan #squirtle #arms::after {
+      content: '';
+      width: 2em;
+      height: 2em;
+      background-color: #94d5cd;
+      border-radius: 0 2em 2em 0;
+      position: absolute;
+      top: 5.75em;
+      left: 7.75em;
+      z-index: 50;
+  }
+  
+  #StefTastan #squirtle #shell::before {
+      content: '';
+      width: 3em;
+      height: 10em;
+      background-color: #DDDBDB;
+      border-radius: 0 2em 2em 0;
+      position: absolute;
+      top: 2.75em;
+      left: 6em;
+      z-index: 10;
+  }
+  
+  #StefTastan #squirtle #shell::after {
+      content: '';
+      width: 3em;
+      height: 8.5em;
+      background-color: #bd6a00;
+      border-radius: 0 3em 3em 0;
+      position: absolute;
+      top: 3.5em;
+      left: 8em;
+      z-index: 5;
+  }
+  
+  #StefTastan #squirtle #tail::before {
+      content: '';
+      width: 3em;
+      height: 6.5em;
+      background-color: #94d5cd;
+      border-radius: 0 3em 3em 0;
+      position: absolute;
+      top: 4.5em;
+      left: 9.5em;
+      z-index: 4;
+  }
+  
+  #StefTastan #squirtle #tail::after {
+      content: '';
+      width: 5em;
+      height: 5em;
+      background-color: #94d5cd;
+      border-radius: 3em;
+      position: absolute;
+      top: 2em;
+      left: 9em;
+      z-index: 4;
+  }  
+
+.form_sign_up{
+
+    margin-top: -70px;
+    margin-bottom: 50px;
+}
+
+.header_tag{
+    align-items: center;
+    margin-top: 30px;
+}
+
+.btn-comienza {
+  font-size: 3.5em !important;
+  margin: 30px;
+}
+
+@font-face {
+  font-family: "Pokemon";
+  src: url(/assets/Pokemon_GB.ttf) format("truetype");
+}
+
+.comienza-title {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  font-family: "Pokemon";
+  color: white;
+}
+
+.comienza-title-2 {
+  padding-bottom: 80px;
+  font-family: "Pokemon";
+  color: white;
+}

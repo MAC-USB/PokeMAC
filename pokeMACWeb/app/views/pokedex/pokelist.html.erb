@@ -1,0 +1,21 @@
+
+<head>
+	<title>Pokemones</title>
+</head>
+<body>
+	
+	<table>
+	  <tr>
+	    <th>Nombre</th>
+	    <th>Habilidad</th>
+	  </tr>
+	 
+	  <% @pokemons.each do |pokemon| %>
+	    <tr>
+	      <td><%= pokemon.name %></td>
+	      <td><%= pokemon.habilities %></td>
+	    </tr>
+	  <% end %>
+	</table>
+	
+</body>

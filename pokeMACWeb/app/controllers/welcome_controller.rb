@@ -16,4 +16,8 @@ class WelcomeController < ApplicationController
 
   def challenges
   end
+
+  def comienza
+    
+  end
 end
