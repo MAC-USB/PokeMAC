@@ -71,16 +71,19 @@
       <%= yield %>
     </div>
     <div id="blueButtons1">
+
       <div class="blueButton"> 
-      <!-- INPUT DEL USER -->
-      <%= form_for :person do |f| %>
-  First name: <%= f.text_field :first_name %><br />
-  <%= f.submit %>
-<% end %>
+        <%= form_tag("/questions", method: "get") do %>
+          <%= label_tag(:title, "Search for:") %>
+          <%= text_field_tag(:title) %>
+          <%= submit_tag("Enviar") %>
+        <% end %>
       </div>
     </div>
     <div id="blueButtons2">
+      
     </div>
+
     <div id="miniButtonGlass4"></div>
     <div id="miniButtonGlass5"></div>
     <div id="barbutton3"></div>
