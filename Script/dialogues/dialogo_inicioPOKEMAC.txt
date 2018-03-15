@@ -7,13 +7,13 @@
           :MMX                       POKEMAC                      ;MMi                    
          @M7                                                        rM@                   
        .M@                                                            @M,                 
-      ,MS                   Bienvenido a Pueblo Paleta                 SM,                
+      ,MS                      Bienvenido a Kanto                      SM,                
       MX                                                                XM                
-     MM         Mágicamente has llegado a nuestra dimensión en           MM               
-    .M       donde deberas atravesar 5 retos para lograr regresar         M.              
-    ZM           a tu propia dimensión. Debes derrotar a los 4            XD              
-    MM        bosses de cada región para recuperar a tus pokemon:         CS
-    .M            Pikachu, Blastoise, Charizard y Venusaur.               MM
+     MM         El Equipo Rocket te ha robado todos tus pokemones.       MM               
+    .M           Los inutiles me dejaron caer cuando se fueron.           M. 
+    ZM                Ademas, dejaron caer tus pokemones                  XD              
+    MM                  en diferentes zonas de la region                  CS
+    .M            Deberas explorar la 5 regiones en busca de ellos        MM
      MZ                                                                  MM              
       AA                                                                CS
        MZ       Una vez que lo logres, deberás enfrentarte a Red.      ZM.                

@@ -131,7 +131,15 @@ function entregar_item {
         clear
         cat drawings/meowth.txt
         ;;
-    "atrapado" ) #Cuando encuentra a Blastoise
+    "ip" ) #Cuando encuentra a PIKACHU
+        clear
+        cat dialogues/dialogo_meowth_ip.txt
+        printf "\n\n\n"
+        read -p "$MENSAJE_READ"
+        clear
+        cat drawings/meowth.txt
+        ;;
+    "hidro" ) #Cuando encuentra a Blastoise
         clear
         #chmod 777 -R /home/entrenador/islas_remolino
         chmod +x scripts/blastoise.sh

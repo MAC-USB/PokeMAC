@@ -9,7 +9,7 @@
        .M@                                                            @M,                 
       ,MS                                                              SM,                
       MX                   Al fin recuperaste a PIKACHU                 XM                
-     MM                      	                                           MM               
+     MM                      	                                         MM               
     .M                    Puedes buscar sus habilidades                   M.              
     ZM                           en la Pokedex.                           M8              
     MM                                                                    M8              
