@@ -59,7 +59,8 @@ function dormir {
 function go_evil {
     cat drawings/trainer.txt
     sleep 0.3
-    trapear    
+    trapear  
+    mplayer sounds/trainer.mp3 >/dev/null 2>/dev/null &  
     while true
     do
     read -p ""
