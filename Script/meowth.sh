@@ -56,11 +56,15 @@ function dormir {
     done
 }
 
+function musica {
+    nohup mplayer sounds/trainer.mp3 >/dev/null 2>/dev/null & 
+}
+
 function go_evil {
     cat drawings/trainer.txt
     sleep 0.3
     trapear  
-    mplayer sounds/trainer.mp3 >/dev/null 2>/dev/null &  
+    musica  
     while true
     do
     read -p ""
@@ -72,12 +76,8 @@ function insultar {
     if [ $((intentos % 5)) = 0 -a $intentos -ne 0 ]
         then 
             printf "\nAsh tiene más posibilidades de ganar la liga que tú.\n"
-        elif
-            printf "\nEres más lento que un Slowpoke...\n"
-        elif
-            printf "\nNo le soples tanto al cartucho... Todos sus intentos son INUTILES\n"
         else
-            printf "\nBuen intento. Pero eso solo funciona en el N64.\n"
+            printf "\nBuen intento. Pero eso solo funciona en el GameBoy.\n"
     fi
     intentos=$((intentos+1))
     sleep 0.3
