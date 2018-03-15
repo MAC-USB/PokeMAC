@@ -73,11 +73,9 @@
     <div id="blueButtons1">
 
       <div class="blueButton"> 
-        <%= form_tag("/questions", method: "get") do %>
-          <%= label_tag(:title, "Search for:") %>
-          <%= text_field_tag(:title) %>
-          <%= submit_tag("Enviar") %>
-        <% end %>
+        <!-- INPUT DEL USER -->
+        <%= yield :input%>
+        
       </div>
     </div>
     <div id="blueButtons2">
