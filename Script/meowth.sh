@@ -165,7 +165,7 @@ function entregar_item {
         go_evil
         ;;
     * )
-        echo "¿Que dices? No te entiendo. Esa frase no corresponde a ningun item"
+        echo "¿Que dices? No te entiendo. Asi no puedo ayudarte"
         ;;
     esac
 }
@@ -176,7 +176,7 @@ inicio
 
 while true ;
 do
-    printf "\n[Dime una contraseña para entregarte un item] "
+    printf "\n[Dime una contraseña para ayudarte] "
     read -t 30 pregunta
     if [ ! -z $pregunta ]
     then
