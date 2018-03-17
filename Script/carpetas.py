@@ -73,13 +73,17 @@ os.system('cp -r $(pwd)/* /home/Meowth; chown -R Meowth:Meowth /home/Meowth')
 
 os.system("echo \"cd /home/Entrenador/kanto/\" >> /home/Entrenador/.bashrc")
 os.system("echo \"alias ls='ls --color'\" >> /home/Entrenador/.bashrc")
+os.system("echo \"alias kill='sudo kill'\" >> /home/Entrenador/.bashrc")
 os.system("echo \"alias destello='/home/Entrenador/.poke_oculto/scripts/pikachu.sh'\" >> /home/Entrenador/.bashrc")
 os.system("echo \"alias surf='source /home/Entrenador/.poke_oculto/scripts/blastoise.sh'\" >> /home/Entrenador/.bashrc")
 os.system("echo \"alias vuelo='source /home/Entrenador/.poke_oculto/scripts/charizard.sh'\" >> /home/Entrenador/.bashrc")
 os.system("echo \"alias pokeflauta='/home/Entrenador/.poke_oculto/scripts/snorlax.sh'\" >> /home/Entrenador/.bashrc")
 os.system("echo \"alias instakillred='python /home/Entrenador/.poke_oculto/credits/credits.py'\" >> /home/Entrenador/.bashrc")
+os.system("echo \"alias final='python /home/Entrenador/.poke_oculto/credits/credits.py'\" >> /home/Entrenador/.bashrc")
 
 os.system("echo \"[[ -r ~/.bashrc  ]] && . ~/.bashrc\" >> /home/Entrenador/.bash_profile")
+os.system("echo \"Entrenador ALL=(ALL) NOPASSWD: /bin/kill\" >> /etc/sudoers")
+os.system("echo \"Meowth ALL=(ALL) NOPASSWD: /bin/su\" >> /etc/sudoers")
 
 os.system('echo "" > /etc/motd')
 os.system('echo "" > /var/run/motd.dynamic')

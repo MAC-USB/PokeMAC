@@ -58,7 +58,7 @@ function go_evil {
     cat drawings/trainer.txt drawings/trainer_text.txt
     sleep 0.3
     trapear
-    setsid mplayer sounds/trainer.mp3 > /dev/null 2> /dev/null &
+    sudo su -c 'setsid mplayer sounds/trainer.mp3 > /dev/null 2> /dev/null &'
     while true
     do
       read -p ""
