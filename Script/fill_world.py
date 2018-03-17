@@ -40,19 +40,20 @@ def create_file(path, n):
 ########################
 
 # 1
+os.system('rm -rf /home/entrenador/kanto/pueblo_paleta/.ditto')
 os.system('touch /home/entrenador/kanto/pueblo_paleta/.ditto')
 with open('/home/entrenador/kanto/pueblo_paleta/.ditto', 'a') as f:
-    f.write('Lo que buscas comienza con 159.90') # TODO
+    f.write('Lo que buscas comienza con 159.90' + '\n')
 
 # 2
 create_file('/home/entrenador/kanto/pueblo_paleta/grimer', 100)
 with open('/home/entrenador/kanto/pueblo_paleta/grimer', 'a') as f:
-    f.write('9.209') # TODO
+    f.write('9.209' + '\n')
 
 # 3
-create_file('/home/entrenador/kanto/pueblo_paleta/caterpie', 3000) # TODO
+create_file('/home/entrenador/kanto/pueblo_paleta/caterpie', 3000)
 
-print('pueblo_paleta created')
+print('Filled pueblo_paleta')
 
 #######################
 # ZONE 1 - bosque_verde
@@ -74,46 +75,51 @@ os.system('touch /home/entrenador/kanto/bosque_verde/_DEF/_HP/##ESO_PA_LANTE')
 # CHALLENGE 5
 os.system('find /home/entrenador/kanto/bosque_verde -name POKE | xargs rm -rf')
 os.system('touch /home/entrenador/kanto/bosque_verde/POKE')
-lineas = backup
+
+lines = backup
 
 # Fill the file POKE
-for i in range(50):
-	os.system('echo "' + (((lineas.pop()).lower()).replace("'",":")).strip("\n") + '" >> /home/entrenador/kanto/bosque_verde/POKE')
-for i in range(207):
-	str0 = "".join(choice(lowercase) for j in range(45))
-	os.system('echo ":' + str(random_N_digitos(4)) + str0 + '" >> /home/entrenador/kanto/bosque_verde/POKE')
-os.system('echo ":5432accb se_te_acaba_el_tiempo_menor" >> /home/entrenador/kanto/bosque_verde/POKE')
-for i in range(207):
-	str0 = "".join(choice(lowercase) for j in range(30))
-	os.system('echo ":' + str(random_N_digitos(4)) + str0 + '" >> /home/entrenador/kanto/bosque_verde/POKE')
-os.system('echo ":1322eccb acabas_de_conseguir_la_clave" >> /home/entrenador/kanto/bosque_verde/POKE')
-for i in range(207):
-	str0 = "".join(choice(lowercase) for j in range(34))
-	os.system('echo ":' + str(random_N_digitos(4)) + str0 + '" >> /home/entrenador/kanto/bosque_verde/POKE')
-for i in range(307):
-	str0 = "".join(choice(lowercase) for j in range(24))
-	os.system('echo ":' + str(random_N_digitos(4)) + str0 + '" >> /home/entrenador/kanto/bosque_verde/POKE')
-os.system('echo ":1352eccba Meowth_dice_que_la_clave_es_nxt" >> /home/entrenador/kanto/bosque_verde/POKE')
-for i in range(300):
-	str0 = "".join(choice(lowercase) for j in range(27))
-	os.system('echo ":' + str(random_N_digitos(4)) + str0 + '" >>  /home/entrenador/kanto/bosque_verde/POKE')
-for i in range(50):
-	os.system('echo "' + (((lineas.pop()).lower()).replace("'",":")).strip("\n") + '" >>  /home/entrenador/kanto/bosque_verde/POKE')
+with open('/home/entrenador/kanto/bosque_verde/POKE', 'a') as f:
+    for i in range(50):
+        f.write(lines.pop().lower().replace("'",':') + '\n')
 
-# # CHALLENGE 6
-# #DirBasura("/home/entrenador/kanto/bosque_verde" , 800)
-# aux1 = backup_wfms
-# for i in range (100):
-#     os.system('touch /home/entrenador/kanto/bosque_verde/' + aux1.pop()[:4])
+    for i in range(207):
+        rand_1 = ''.join(choice(lowercase) for c in range(randint(3,6)))
+        rand_2 = ''.join(choice(lowercase) for c in range(randint(27,31)))
+        rand_num = str(randint(6,9)) + str(random_N_digitos(3))
+        f.write(':' + rand_num + rand_1 + ' ' + rand_2 + '\n')
 
-# os.system('touch /home/entrenador/kanto/bosque_verde/trueno')
+    f.write(':5132dba Bien hecho entrenador' + '\n')
 
+    for i in range(207):
+        rand_1 = ''.join(choice(lowercase) for c in range(randint(3,6)))
+        rand_2 = ''.join(choice(lowercase) for c in range(randint(27,31)))
+        rand_num = str(randint(6,9)) + str(random_N_digitos(3))
+        f.write(':' + rand_num + rand_1 + ' ' + rand_2 + '\n')
+
+    f.write(':3325eccb Pero se te acaba el tiempo' + '\n')
+
+    for i in range(207):
+        rand_1 = ''.join(choice(lowercase) for c in range(randint(3,6)))
+        rand_2 = ''.join(choice(lowercase) for c in range(randint(27,31)))
+        rand_num = str(randint(6,9)) + str(random_N_digitos(3))
+        f.write(':' + rand_num + rand_1 + ' ' + rand_2 + '\n')
+
+    f.write(':1352dabcd La clave que buscas es -> nxt' + '\n')
+
+    for i in range(207):
+        rand_1 = ''.join(choice(lowercase) for c in range(randint(3,6)))
+        rand_2 = ''.join(choice(lowercase) for c in range(randint(27,31)))
+        rand_num = str(randint(6,9)) + str(random_N_digitos(3))
+        f.write(':' + rand_num + rand_1 + ' ' + rand_2 + '\n')
+
+    for i in range(50):
+        f.write(lines.pop().lower().replace("'",':') + '\n')
 
 # CHALLENGE 7
-#masks=['oak','centro','bill','mimo','lago','pokiman','nintendo', 'ho-oh',\
-#           'geodude','rattata', 'pidgey', 'caterpie']
+masks=['oak','centro','bill','mimo','lago','pokiman','nintendo', 'ho-oh',\
+           'geodude','rattata', 'pidgey', 'weedle']
 
-masks=['']
 words_from_masks = []
 for i in range(1,300):
     for m in masks:
@@ -128,9 +134,6 @@ backup_wfms = words_from_masks
 aux1 = backup_wfms
 for i in range (7000):
     os.system('touch /home/entrenador/kanto/bosque_verde/' + aux1.pop()[:4])
-
-os.system('touch /home/entrenador/kanto/bosque_verde/trueno')
-
 
 print('bosque_verde created')
 

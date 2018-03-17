@@ -1,33 +1,23 @@
 import os
-import crypt
+from crypt import crypt
 
 # CONSTANTS
-#USERNAME = 'entrenador'
-#HELPER = 'meowth'
-#PASSWORD = 'PokeMAC'
+USERNAME = 'entrenador'
+HELPER = 'meowth'
+PASSWORD = crypt('POKEMAC','22')
 
-meowth_passwd = crypt.crypt('POKEMAC','22')
-entrenador_passwd = crypt.crypt('POKEMAC','22')
-
-os.system('useradd -s /bin/bash -p '+ meowth_passwd +' -m meowth')
-os.system('useradd -s /bin/bash -p '+ entrenador_passwd +' -m entrenador')
+os.system('useradd -s /bin/bash -p ' + PASSWORD + ' -m' + HELPER)
+os.system('useradd -s /bin/bash -p ' + PASSWORD + ' -m' + USERNAME)
 
 print('Users created')
 
-# Create the Users and add their passwords
-# os.system('useradd entrenador')
-# os.system('chpasswd entrenador:PokeMAC')
-
-# os.system('useradd meowth')
-# os.system('chpasswd meowth:PokeMAC')
-
 # DIRECTORIES (ZONES)
-os.system('cp -r $(pwd)/* /home/meowth')
-os.system('mkdir -p /home/entrenador/kanto/pueblo_paleta')           # Zone 0
-os.system('mkdir -p /home/entrenador/kanto/bosque_verde')            # Zone 1
-os.system('mkdir -p /home/meowth/.poke_oculto/kanto/tunel_roca')     # Zone 2
-os.system('mkdir -p /home/meowth/.poke_oculto/johto/islas_remolino') # Zone 3
-os.system('mkdir -p /home/meowth/.poke_oculto/johto/monte_plateado') # Zone 4
+os.system('cp -r $(pwd)/* /home/meowth/')
+os.system('mkdir -p /home/entrenador/kanto/pueblo_paleta; chmod 755 /home/entrenador/kanto/pueblo_paleta')
+os.system('mkdir -p /home/entrenador/kanto/bosque_verde; chmod 700 /home/entrenador/kanto/bosque_verde')
+os.system('mkdir -p /home/meowth/.poke_oculto/kanto/tunel_roca; chmod 700 /home/meowth/.poke_oculto')
+os.system('mkdir -p /home/meowth/.poke_oculto/johto/islas_remolino')
+os.system('mkdir -p /home/meowth/.poke_oculto/johto/monte_plateado')
 
 print('Base directories created')
 
