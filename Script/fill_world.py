@@ -117,18 +117,19 @@ with open('/home/entrenador/kanto/bosque_verde/POKE', 'a') as f:
         f.write(lines.pop().lower().replace("'",':') + '\n')
 
 # CHALLENGE 7
-masks=['oak','centro','bill','mimo','lago','pokiman','nintendo', 'ho-oh',\
-           'geodude','rattata', 'pidgey', 'weedle']
+# ref_list = ['metapod', 'pidgey', 'kakuna', 'spearow', 'ekans', 'psyduck',
+#             'zubat', 'golbat', 'diglett']
+#
+# special_list = []
+# for i in range(1,300):
+#     for word in ref_list:
+#         num = i % 5
+#         if num != 0:
+#             special_list.append(word + str(random_N_digitos(int(num))))
+#
+# special_list = list(set(special_list))
 
-words_from_masks = []
-for i in range(1,300):
-    for m in masks:
-        num = i % 5
-        if num != 0:
-            words_from_masks.append(m + str(random_N_digitos(int(num))))
-
-words_from_masks = list(set(words_from_masks))
-backup_wfms = words_from_masks
+backup_wfms = special_list
 
 # CHALLENGE 6
 aux1 = backup_wfms
