@@ -24,7 +24,7 @@ function trapear {
 
 function inicio {
     clear
-    echo "Hola $USER, mi PID es: $$"
+    echo "Hola preparador, mi PID es: $$"
     printf "\n\n\n"
     read -p "$MENSAJE_READ"
     clear
@@ -121,7 +121,7 @@ function final {
 function entregar_item {
 
     case $1 in
-    "42" ) #Cuando encuentra a PIKACHU
+    "1604" ) #Cuando encuentra a PIKACHU
         clear
         #chmod 777 -R /home/entrenador/tunel_roca
         chmod +x scripts/pikachu.sh
@@ -131,7 +131,7 @@ function entregar_item {
         clear
         cat drawings/meowth.txt
         ;;
-    "ip" ) #Cuando encuentra a PIKACHU
+    "159.90.9.209:3000" ) #Cuando encuentra a PIKACHU
         clear
         cat dialogues/dialogo_meowth_ip.txt
         printf "\n\n\n"

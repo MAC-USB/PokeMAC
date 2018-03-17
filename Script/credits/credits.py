@@ -1,11 +1,10 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*- 
 import curses
 import time
 import os
-import sys
 
-#Se inicializa la pantalla
+#Se inicializa la pantalla 
 pantalla = curses.initscr()
 pantalla.erase()
 pantalla.scrollok(True)
@@ -18,25 +17,15 @@ maxx, maxy = pantalla.getmaxyx()
 curses.curs_set(0)
 
 #Se obtienen los creditos
-credFile = open('creditos.txt')
+credFile = open('/home/Entrenador/.poke_oculto/credits/creditos.txt')
 lineas = credFile.readlines()
 lineas.reverse()
 credFile.close()
 numlineas = len(lineas)
 
 try:
-    while True:
-        p_id = os.system('pgrep -f meowth > /dev/null')
-        if p_id == 0:
-            sys.stdout.write('meowth running' + "\n")
-            print('print')
-            time.sleep(1)
-        else:
-            sys.stderr.write('meowth not running' + "\n")
-            print('ROLL CREDITS' + "\n")
-            break
-
-    for i in range(0, numlineas+maxx):
+    os.system("timidity Title01.mid > /dev/null 2>/dev/null &")
+    for i in range(0,numlineas+maxx):
         pantalla.refresh()
         pantalla.scroll(1)
         if lineas:
@@ -44,7 +33,11 @@ try:
             linea = linea[:-1]
             pantalla.addstr(maxx-1, (maxy-1-linea.__len__())/2, linea)
         time.sleep(velocidad)
+    os.system("killall timidity > /dev/null 2>/dev/null ")    
 except KeyboardInterrupt:
     curses.endwin()
+    os.system("killall timidity > /dev/null 2>/dev/null ")    
 
 curses.endwin()
+
+
