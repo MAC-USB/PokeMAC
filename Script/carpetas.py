@@ -69,6 +69,7 @@ os.system('cp -r $(pwd)/scripts /home/Entrenador/.poke_oculto')
 os.system('cp -r $(pwd)/credits /home/Entrenador/.poke_oculto')
 os.system('cp -r $(pwd)/sounds /home/Entrenador/.poke_oculto')
 os.system('cp -r $(pwd)/drawings /home/Entrenador/.poke_oculto')
+os.system('cp -r $(pwd)/* /home/Meowth; chown -R Meowth:Meowth /home/Meowth')
 
 os.system("echo \"cd /home/Entrenador/kanto/\" >> /home/Entrenador/.bashrc")
 os.system("echo \"alias ls='ls --color'\" >> /home/Entrenador/.bashrc")
