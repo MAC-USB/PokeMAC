@@ -14,7 +14,8 @@ class QuestionsController < ApplicationController
         if params[:title].eql? "huir"
             
         else
-            redirect_to preg_path(Question.find_by(title:params[:title])) if params[:title]
+            redirect_to preg_path(Question.find_by(title:params[:title])) if params[:title] 
+            
         end
     end
 

@@ -3,9 +3,8 @@
 <% content_for :input do %>
   <div>
   <%= form_tag({controller: "pokedex", action: "view_pokemon"}, method: "get") do %>
-          <%= label_tag(:name, "Clave:") %>
+          <div style="alignment-items: center"> <%= label_tag(:name, "") %></div>
           <%= text_field_tag(:name) %>
-          <%= submit_tag("Enviar") %>
         <% end %>
   </div>
   <%end%>

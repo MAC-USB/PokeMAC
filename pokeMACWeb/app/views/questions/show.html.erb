@@ -1,16 +1,13 @@
-
-   
   <p>
-    <strong>Pregunta: </strong>
-    <%= @question.text %>
+    <h2>Pregunta: </h2>
+    <h3><%= @question.text %></h3>
   </p>
 
   <% content_for :input do %>
   <div>
   <%= form_tag("/questions", method: "get") do %>
-          <%= label_tag(:title, "Clave:") %>
+          <%= label_tag(:title, "") %>
           <%= text_field_tag(:title) %>
-          <%= submit_tag("Enviar") %>
         <% end %>
   </div>
   <%end%>

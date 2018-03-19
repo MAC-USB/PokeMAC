@@ -14659,3 +14659,491 @@ Migrating to Urllinktopokemon (20180315170126)
             FROM sqlite_temp_master
             WHERE name='index_users_on_reset_password_token' AND type='index'
 [0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAnswers (20180315185038)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "questions" ADD "answers" int[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180315185038"]]
+  [1m[35m (143.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_answers_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_answers_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_answers_on_question_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_answers_on_question_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAnswersUsers (20180315185246)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "answers" int[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180315185246"]]
+  [1m[35m (108.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_answers_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_answers_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_answers_on_question_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_answers_on_question_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+Started GET "/" for 159.90.9.22 at 2018-03-15 16:04:53 -0400
+Cannot render console from 159.90.9.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (155.4ms)
+Completed 200 OK in 184ms (Views: 174.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-15 16:04:55 -0400
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 65ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 159.90.9.22 at 2018-03-15 16:05:08 -0400
+Cannot render console from 159.90.9.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (47.4ms)
+Completed 200 OK in 147ms (Views: 92.7ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 159.90.9.2 at 2018-03-15 16:06:48 -0400
+Cannot render console from 159.90.9.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 159.90.9.2 at 2018-03-15 16:07:01 -0400
+Cannot render console from 159.90.9.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (29.7ms)
+Completed 200 OK in 124ms (Views: 122.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 159.90.9.2 at 2018-03-15 16:07:13 -0400
+Cannot render console from 159.90.9.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Bgsp8Xx31QrKQR3pyvdy5F7Yehk+yyactFC6emrUAsxWkr00glFI8/vlRnPMByOGlWanyCz/iEWWSG7xa2nfjw==", "user"=>{"username"=>"chupalo", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Crear usuario"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "users" ("encrypted_password", "created_at", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["encrypted_password", "$2a$11$yErQ2c5JOI9mOtw8CtDC9OTEnYm3Zmuj2oH1t455/G21Z85YlffU2"], ["created_at", "2018-03-15 20:07:13.969696"], ["updated_at", "2018-03-15 20:07:13.969696"], ["username", "chupalo"]]
+  [1m[35m (180.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = ?, "current_sign_in_at" = ?, "last_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_ip" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["sign_in_count", 1], ["current_sign_in_at", "2018-03-15 20:07:14.154759"], ["last_sign_in_at", "2018-03-15 20:07:14.154759"], ["current_sign_in_ip", "159.90.9.2"], ["last_sign_in_ip", "159.90.9.2"], ["updated_at", "2018-03-15 20:07:14.157265"], ["id", 18]]
+  [1m[35m (112.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://159.90.9.209:3000/pokedex/quest
+Completed 302 Found in 525ms (ActiveRecord: 293.2ms)
+
+
+Started GET "/pokedex/quest" for 159.90.9.2 at 2018-03-15 16:07:14 -0400
+Cannot render console from 159.90.9.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (6.8ms)
+Completed 200 OK in 84ms (Views: 80.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 159.90.9.22 at 2018-03-15 16:07:34 -0400
+Cannot render console from 159.90.9.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 97ms (Views: 93.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions?utf8=%E2%9C%93&title=INICIO" for 159.90.9.2 at 2018-03-15 16:07:35 -0400
+Cannot render console from 159.90.9.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#preg as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"INICIO"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."title" = ? LIMIT ?[0m  [["title", "INICIO"], ["LIMIT", 1]]
+Redirected to http://159.90.9.209:3000/questions/28
+Completed 302 Found in 10ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/questions/28" for 159.90.9.2 at 2018-03-15 16:07:35 -0400
+Cannot render console from 159.90.9.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (1.4ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 159.90.9.22 at 2018-03-15 16:07:37 -0400
+Cannot render console from 159.90.9.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 54ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 159.90.9.22 at 2018-03-15 16:07:38 -0400
+Cannot render console from 159.90.9.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 60ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 159.90.9.22 at 2018-03-15 16:07:38 -0400
+Cannot render console from 159.90.9.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 64ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 159.90.9.22 at 2018-03-15 16:07:39 -0400
+Cannot render console from 159.90.9.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 62ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 159.90.9.22 at 2018-03-15 16:07:43 -0400
+Cannot render console from 159.90.9.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+Started GET "/questions?utf8=%E2%9C%93&title=INICIO" for 159.90.9.2 at 2018-03-15 16:07:43 -0400
+Cannot render console from 159.90.9.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  Rendered welcome/comienza.html.erb within layouts/application (9.1ms)
+Processing by QuestionsController#preg as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"INICIO"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."title" = ? LIMIT ?[0m  [["title", "INICIO"], ["LIMIT", 1]]
+Redirected to http://159.90.9.209:3000/questions/28
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/28" for 159.90.9.2 at 2018-03-15 16:07:43 -0400
+Cannot render console from 159.90.9.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (9.5ms)
+Completed 200 OK in 166ms (Views: 163.9ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 113ms (Views: 108.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 159.90.9.22 at 2018-03-15 16:07:43 -0400
+Cannot render console from 159.90.9.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 67ms (Views: 64.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 159.90.9.22 at 2018-03-15 16:07:44 -0400
+Cannot render console from 159.90.9.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 72ms (Views: 68.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 159.90.9.22 at 2018-03-15 16:07:44 -0400
+Cannot render console from 159.90.9.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 69ms (Views: 66.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 159.90.9.22 at 2018-03-15 16:07:45 -0400
+Cannot render console from 159.90.9.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 68ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 159.90.9.22 at 2018-03-15 16:07:45 -0400
+Cannot render console from 159.90.9.22! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 80ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/quest" for 159.90.9.2 at 2018-03-15 16:07:58 -0400
+Cannot render console from 159.90.9.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (4.7ms)
+Completed 200 OK in 57ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions?utf8=%E2%9C%93&title=INICIO" for 159.90.9.2 at 2018-03-15 16:08:07 -0400
+Cannot render console from 159.90.9.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#preg as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"INICIO"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."title" = ? LIMIT ?[0m  [["title", "INICIO"], ["LIMIT", 1]]
+Redirected to http://159.90.9.209:3000/questions/28
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/28" for 159.90.9.2 at 2018-03-15 16:08:07 -0400
+Cannot render console from 159.90.9.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (4.6ms)
+Completed 200 OK in 61ms (Views: 57.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/questions?utf8=%E2%9C%93&title=DIENTE" for 159.90.9.2 at 2018-03-15 16:08:33 -0400
+Cannot render console from 159.90.9.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#preg as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"DIENTE"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."title" = ? LIMIT ?[0m  [["title", "DIENTE"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"questions", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/questions_controller.rb:17:in `preg'
+Started GET "/questions?utf8=%E2%9C%93&title=diente" for 159.90.9.2 at 2018-03-15 16:08:44 -0400
+Cannot render console from 159.90.9.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#preg as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"diente"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."title" = ? LIMIT ?[0m  [["title", "diente"], ["LIMIT", 1]]
+Redirected to http://159.90.9.209:3000/questions/26
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/questions/26" for 159.90.9.2 at 2018-03-15 16:08:44 -0400
+Cannot render console from 159.90.9.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (1.3ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pokedex/pokemons" for 159.90.9.2 at 2018-03-15 16:08:50 -0400
+Cannot render console from 159.90.9.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PokedexController#show as HTML
+  Rendering pokedex/show.html.erb within layouts/app
+  Rendered pokedex/show.html.erb within layouts/app (0.6ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/view_pokemon?utf8=%E2%9C%93&name=charizard" for 159.90.9.2 at 2018-03-15 16:08:56 -0400
+Cannot render console from 159.90.9.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PokedexController#view_pokemon as HTML
+  Parameters: {"utf8"=>"✓", "name"=>"charizard"}
+  [1m[36mPokemon Load (0.1ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."name" = ? LIMIT ?[0m  [["name", "charizard"], ["LIMIT", 1]]
+Redirected to http://159.90.9.209:3000/pokedex/view_pokemon/4
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/pokedex/view_pokemon/4" for 159.90.9.2 at 2018-03-15 16:08:56 -0400
+Cannot render console from 159.90.9.2! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PokedexController#view_pokemon_show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPokemon Load (0.2ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering pokedex/view_pokemon_show.html.erb within layouts/app
+  Rendered pokedex/view_pokemon_show.html.erb within layouts/app (0.7ms)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-16 13:17:16 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (1160.3ms)
+Completed 200 OK in 1610ms (Views: 1540.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-16 13:17:37 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+Redirected to http://localhost:3000/pokedex/quest
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 191ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-16 13:17:38 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (8.4ms)
+Completed 200 OK in 141ms (Views: 119.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions?utf8=%E2%9C%93&title=inicio" for 127.0.0.1 at 2018-03-16 13:18:16 -0400
+Processing by QuestionsController#preg as HTML
+  Parameters: {"utf8"=>"✓", "title"=>"inicio"}
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."title" = ? LIMIT ?[0m  [["title", "inicio"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/questions/27
+Completed 302 Found in 133ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/questions/27" for 127.0.0.1 at 2018-03-16 13:18:17 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mQuestion Load (0.5ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  Rendering questions/show.html.erb within layouts/app
+  Rendered questions/show.html.erb within layouts/app (5.7ms)
+Completed 200 OK in 175ms (Views: 79.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pokedex/pokemons" for 127.0.0.1 at 2018-03-16 13:18:25 -0400
+Processing by PokedexController#show as HTML
+  Rendering pokedex/show.html.erb within layouts/app
+  Rendered pokedex/show.html.erb within layouts/app (2.2ms)
+Completed 200 OK in 56ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/view_pokemon?utf8=%E2%9C%93&name=pikachu" for 127.0.0.1 at 2018-03-16 13:18:38 -0400
+Processing by PokedexController#view_pokemon as HTML
+  Parameters: {"utf8"=>"✓", "name"=>"pikachu"}
+  [1m[36mPokemon Load (0.4ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."name" = ? LIMIT ?[0m  [["name", "pikachu"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/pokedex/view_pokemon/1
+Completed 302 Found in 119ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/pokedex/view_pokemon/1" for 127.0.0.1 at 2018-03-16 13:18:39 -0400
+Processing by PokedexController#view_pokemon_show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pokedex/view_pokemon_show.html.erb within layouts/app
+  Rendered pokedex/view_pokemon_show.html.erb within layouts/app (2.5ms)
+Completed 200 OK in 119ms (Views: 56.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-16 13:18:55 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (5.5ms)
+Completed 200 OK in 63ms (Views: 60.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mPokemon Load (4.4ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pokemons" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2018-03-17 21:03:24.154882"], ["updated_at", "2018-03-17 21:03:24.154882"]]
+  [1m[35m (203.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "pokemons" SET "updated_at" = ?, "name" = ?, "habilities" = ?, "image" = ? WHERE "pokemons"."id" = ?[0m  [["updated_at", "2018-03-17 21:11:43.509042"], ["name", "Snorlax"], ["habilities", "Es muy gordo y pesado, cuando está dormido no sería mala idea usar la pokeflauta."], ["image", "http://78.media.tumblr.com/tumblr_lzkf780igk1qje612o1_500.gif"], ["id", 5]]
+  [1m[35m (192.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2018-03-17 17:11:59 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#comienza as HTML
+  Rendering welcome/comienza.html.erb within layouts/application
+  Rendered welcome/comienza.html.erb within layouts/application (584.9ms)
+Completed 200 OK in 887ms (Views: 835.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-03-17 17:12:03 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+Redirected to http://localhost:3000/pokedex/quest
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 138ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/pokedex/quest" for 127.0.0.1 at 2018-03-17 17:12:03 -0400
+Processing by PokedexController#quest as HTML
+  Rendering pokedex/quest.html.erb within layouts/app
+  Rendered pokedex/quest.html.erb within layouts/app (6.2ms)
+Completed 200 OK in 104ms (Views: 90.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/pokemons" for 127.0.0.1 at 2018-03-17 17:12:06 -0400
+Processing by PokedexController#show as HTML
+  Rendering pokedex/show.html.erb within layouts/app
+  Rendered pokedex/show.html.erb within layouts/app (2.0ms)
+Completed 200 OK in 54ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pokedex/view_pokemon?utf8=%E2%9C%93&name=Snorlax" for 127.0.0.1 at 2018-03-17 17:12:09 -0400
+Processing by PokedexController#view_pokemon as HTML
+  Parameters: {"utf8"=>"✓", "name"=>"Snorlax"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."name" = ? LIMIT ?[0m  [["name", "Snorlax"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/pokedex/view_pokemon/5
+Completed 302 Found in 32ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/pokedex/view_pokemon/5" for 127.0.0.1 at 2018-03-17 17:12:09 -0400
+Processing by PokedexController#view_pokemon_show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPokemon Load (0.5ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering pokedex/view_pokemon_show.html.erb within layouts/app
+  Rendered pokedex/view_pokemon_show.html.erb within layouts/app (2.7ms)
+Completed 200 OK in 126ms (Views: 71.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pokedex/view_pokemon?utf8=%E2%9C%93&name=pikachu" for 127.0.0.1 at 2018-03-17 17:12:30 -0400
+Processing by PokedexController#view_pokemon as HTML
+  Parameters: {"utf8"=>"✓", "name"=>"pikachu"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."name" = ? LIMIT ?[0m  [["name", "pikachu"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/pokedex/view_pokemon/1
+Completed 302 Found in 45ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/pokedex/view_pokemon/1" for 127.0.0.1 at 2018-03-17 17:12:31 -0400
+Processing by PokedexController#view_pokemon_show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPokemon Load (0.3ms)[0m  [1m[34mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pokedex/view_pokemon_show.html.erb within layouts/app
+  Rendered pokedex/view_pokemon_show.html.erb within layouts/app (3.3ms)
+Completed 200 OK in 76ms (Views: 71.5ms | ActiveRecord: 0.3ms)
+
+

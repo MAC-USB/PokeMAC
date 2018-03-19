@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180315170126) do
+ActiveRecord::Schema.define(version: 20180315185246) do
 
   create_table "answers", force: :cascade do |t|
     t.integer "question_id"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 20180315170126) do
     t.integer "selected"
     t.boolean "questions"
     t.string "username"
+    t.integer "answers"
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
