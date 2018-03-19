@@ -5,6 +5,7 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
 
@@ -88,11 +89,15 @@
     <div id="barbutton4"></div>
     <%= link_to quest_path do %>
     <!-- BOTON MAP Y QUESTS -->
-    <div id="yellowBox1" align="center">Map & Quests</div>
+    <div id="yellowBox1" align="center">
+    <p class="texto-boton-amarillo">Map & Quests</p>
+    </div>
     <%end%>
     <%= link_to pokemons_path do %>
     <!-- BOTON POKEMONS CARACTERISTICAS -->
-    <div id="yellowBox2" align="center">Pokemons</div>
+    <div id="yellowBox2" align="center"
+      <p class="texto-boton-amarillo">Pokemons</p>
+    </div>
     <%end%>
     <div id="bg_curve1_right"></div>
     <div id="bg_curve2_right"></div>

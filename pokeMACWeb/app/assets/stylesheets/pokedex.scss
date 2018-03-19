@@ -1,0 +1,40 @@
+.texto-bienvenida{
+    font-family: 'VT323', monospace;
+    text-align: center;
+    font-size: 19px; 
+
+}
+
+.titulo{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: 'VT323', monospace; 
+}
+
+#yellowBox1, #yellowBox2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto-boton-amarillo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+  }
+
+
+// POKEDEX COMO TAL ACA ABAJO
+
+.titulo-pokedex{
+    font-family: 'VT323', monospace;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.texto-pokemon{
+    font-family: 'VT323', monospace;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+}

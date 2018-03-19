@@ -1,13 +1,16 @@
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+ 
+  
   <p>
-    <h2>Pregunta: </h2>
-    <h3><%= @question.text %></h3>
+    <h2 class="titulo-pregunta">Pregunta: </h2>
+    <h3 class="texto-pregunta"><%= @question.text %></h3>
   </p>
 
   <% content_for :input do %>
-  <div>
-  <%= form_tag("/questions", method: "get") do %>
+  <div class="zona-input">
+  <%= form_tag("/questions", method: "get", class: "form") do %>
           <%= label_tag(:title, "") %>
-          <%= text_field_tag(:title) %>
+          <%= text_field_tag :title ,"",class: "input"%>
         <% end %>
   </div>
   <%end%>

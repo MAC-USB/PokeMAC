@@ -1,13 +1,15 @@
-<h1>Nombre: <%= @pokemon.name %></h1>
-<h2>Habilidades: <%= @pokemon.habilities %></h2>
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
+<h1 class="texto-pokemon">Nombre: <%= @pokemon.name %></h1>
+<h2 class="texto-pokemon">Habilidades: <%= @pokemon.habilities %></h2>
 <% content_for :image do %>
 <img src=<%= @pokemon.image %> alt=<%= @pokemon.name %> height="170" />
 <%end%>
 <% content_for :input do %>
   <div>
-  <%= form_tag({controller: "pokedex", action: "view_pokemon"}, method: "get") do %>
+  <%= form_tag({controller: "pokedex", action: "view_pokemon"}, method: "get", class: "form") do %>
           <%= label_tag(:name, "") %>
-          <%= text_field_tag(:name) %>
+          <%= text_field_tag :name, "",class: "input"%>
         <% end %>
   </div>
   <%end%>

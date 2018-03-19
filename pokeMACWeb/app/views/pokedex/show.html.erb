@@ -1,10 +1,11 @@
-<h1>Ingresa el nombre de un pokemon</h1>
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
+<h1 class="titulo-pokedex">Ingresa el nombre de un pokemon</h1>
 
 <% content_for :input do %>
   <div>
-  <%= form_tag({controller: "pokedex", action: "view_pokemon"}, method: "get") do %>
-          <div style="alignment-items: center"> <%= label_tag(:name, "") %></div>
-          <%= text_field_tag(:name) %>
+  <%= form_tag({controller: "pokedex", action: "view_pokemon"}, method: "get", class: "form") do %>
+          <%= text_field_tag :name, "", class: "input" %>
         <% end %>
   </div>
   <%end%>

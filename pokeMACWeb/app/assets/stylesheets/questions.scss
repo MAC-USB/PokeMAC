@@ -1,3 +1,44 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.titulo-pregunta{
+    font-family: 'VT323', monospace;
+    text-align: center;
+    font-size: 22px; 
+    margin-bottom: 5px;
+
+}
+
+.texto-pregunta{
+    font-size: 16px;
+    text-align: center;
+    font-family: 'VT323', monospace; 
+    font-weight: 200;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.zona-input{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.input{
+    background: -webkit-linear-gradient(top, #307bfb 0%, #0530e5 80%);
+    border-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    width: 85%;
+    height: 85%;
+    color: white;
+    font-size: 20px;
+
+}
