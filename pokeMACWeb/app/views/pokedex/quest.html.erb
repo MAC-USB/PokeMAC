@@ -1,14 +1,15 @@
+<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 
-<h2>Hola Prenuevo</h2>
-<p>Para iniciar tus aventuras escribe INICIO en la pokedex para empezar con la aventura, te sugiero
+<h2 class="titulo">Hola Prenuevo</h2>
+<p class="texto-bienvenida">Para iniciar tus aventuras escribe INICIO en la pokedex para empezar con la aventura, te sugiero
   que te dirijas a pueblo paleta para comenzar nuestra aventura
 </p>  
 
  <% content_for :input do %>
   <div>
-  <%= form_tag({controller: "questions", action: "preg"}, method: "get") do %>
+  <%= form_tag({controller: "questions", action: "preg"}, method: "get", class: "form") do %>
           <%= label_tag(:title, "") %>
-          <%= text_field_tag(:title) %>
+          <%= text_field_tag :title,"", class:"input" %>
         <% end %>
   </div>
   <%end%>
