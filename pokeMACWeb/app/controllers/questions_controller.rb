@@ -12,7 +12,7 @@ class QuestionsController < ApplicationController
 
     def preg
         if params[:title].eql? "huir"
-            
+            #redirect_to preg_path(Question.find())
         else
             redirect_to preg_path(Question.find_by(title:params[:title])) and return if Question.find_by(title:params[:title]) 
             redirect_back(fallback_location: root_path)
