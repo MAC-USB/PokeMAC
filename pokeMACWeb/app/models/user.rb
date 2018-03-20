@@ -6,6 +6,8 @@ class User < ApplicationRecord
 
   has_many :answers
 
+  before_create :set_questions_count
+
   def email_required?
     false
   end
@@ -18,4 +20,10 @@ class User < ApplicationRecord
   def will_save_change_to_email?
     false
   end
+
+  private
+
+  def set_questions_count
+		self.questions = 1
+	end
 end
