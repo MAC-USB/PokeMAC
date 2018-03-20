@@ -15,3 +15,9 @@
         <% end %>
   </div>
   <%end%>
+
+  <% content_for :image do %>
+  <div>
+    <%=image_tag(@map, alt: "Example Image", size: "250x170")%>
+  </div>
+  <%end%>
