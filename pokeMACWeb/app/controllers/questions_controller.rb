@@ -13,25 +13,35 @@ class QuestionsController < ApplicationController
     def preg
         puts params[:id]
         numero = params[:id]
-        if params[:title].eql? "huir"
+        @huir = params[:title]
+        if @huir.eql? "huir"
             redirect_to preg_path(Question.find(numero.to_i - 1))
         else
-            puts "Epalee222"
+            @huir2 = false
             if Question.find_by(title:params[:title])
+<<<<<<< HEAD
+                if !numero == 0
+=======
                 if params[:title].eql? "inicio"
                     redirect_to preg_path(Question.find(27))
                 else
                     puts "EPALEE33"
                     puts params[:title]
                     puts numero
+>>>>>>> master
                     @answer = Answer.new
                     @answer.question = Question.find(numero.to_i)
                     @answer.user = current_user
                     @answer.save
+<<<<<<< HEAD
+                end
+                redirect_to preg_path(Question.find_by(title: params[:title]))
+=======
                     redirect_to preg_path(Question.find_by(title: params[:title]))
                     puts "A VEEER"
 
                 end
+>>>>>>> master
             else
                 redirect_back(fallback_location: root_path)
             end
