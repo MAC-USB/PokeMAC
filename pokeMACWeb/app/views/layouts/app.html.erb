@@ -9,6 +9,10 @@
 </head>
 <body>
 
+<div>
+  <p><%= link_to "Puntuación", positions_path, :class => "link-positions", target: "_blank"%></p>
+</div>
+
 <div id="pokedex">
   <div id="left">
     <div id="logo"></div>
@@ -93,7 +97,7 @@
     <p class="texto-boton-amarillo">Map & Quests</p>
     </div>
     <%end%>
-    <%= link_to pokemons_path, target: "blank" do %>
+    <%= link_to pokemons_path, target: "_blank" do %>
     <!-- BOTON POKEMONS CARACTERISTICAS -->
     <div id="yellowBox2" align="center" target="_blank">
       <p class="texto-boton-amarillo">Pokemons</p>

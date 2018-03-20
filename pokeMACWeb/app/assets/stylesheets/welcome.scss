@@ -5,3 +5,24 @@
 .texto-boton-amarillo{
     font-family: 'Roboto', sans-serif;
   }
+
+.link-positions{
+  background: #ffff00;
+  padding: 20px;
+  border-radius: 20%;
+  -webkit-box-shadow: 0 0 20px #ff6600 inset;
+  font-family:  'Roboto', sans-serif;
+  text-decoration: none;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-size: 25px;
+}
+
+.link-positions:visited{
+  text-decoration: none; 
+}
+
+.link-positions:hover{
+  text-decoration: none;
+}
