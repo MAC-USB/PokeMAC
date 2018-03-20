@@ -82,7 +82,7 @@ os.system('echo ":5432accb se_te_acaba_el_tiempo" >> /home/Entrenador/kanto/Bosq
 for i in range(207):
 	str0 = "".join(choice(lowercase) for j in range(30))
 	os.system('echo ":'+str(random_N_digitos(4))+str0+'" >>  /home/Entrenador/kanto/Bosque_Verde/POKE')
-os.system('echo ":1322eccb acabas_de_conseguir_la_clave_ntx" >>  /home/Entrenador/kanto/Bosque_Verde/POKE')
+os.system('echo ":1322eccb acabas_de_conseguir_la_clave_nxt" >>  /home/Entrenador/kanto/Bosque_Verde/POKE')
 for i in range(207):
 	str0 = "".join(choice(lowercase) for j in range(34))
 	os.system('echo ":'+str(random_N_digitos(4))+str0+'" >>  /home/Entrenador/kanto/Bosque_Verde/POKE')
