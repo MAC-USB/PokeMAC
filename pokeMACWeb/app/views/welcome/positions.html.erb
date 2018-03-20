@@ -27,7 +27,7 @@
 				<% (1..23).each do |number| %>
 				<th scope="col" id="<%=number%>" class="text-center"><%=number%></th>
 				<% end %>
-				<th scope="col">Suma total </th>
+				<th scope="col" class="text-center">Score</th>
 	    </tr>
 	  </thead>
 	  <tbody>
@@ -41,7 +41,11 @@
 					<td id="<%=number%>"><i class="material-icons">check_box_outline_blank</i></th>
 					<%end%>
 					<% end %>
-					<td scope="col"><%=Answer.where(user: user1.id).count-1%></td>
+					<%if Answer.where(user: user1.id).count-1 < 0 %>
+					<td scope="col" class="text-center">0</td>
+					<% else %>
+					<td scope="col" class="text-center"><%=Answer.where(user: user1.id).count%></td>
+					<% end %>
 		  </tr>
 		<% end %>
 	  </tbody>
