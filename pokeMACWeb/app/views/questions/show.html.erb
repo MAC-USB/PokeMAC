@@ -11,6 +11,7 @@
   <%= form_tag("/questions", method: "get", class: "form") do %>
           <%= label_tag(:title, "") %>
           <%= text_field_tag :title ,"",class: "input"%>
+          <%= hidden_field_tag :id, @question.id %>
         <% end %>
   </div>
   <%end%>
