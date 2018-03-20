@@ -6,16 +6,16 @@
             ;MMa                                                aMM7                      
           :MMX                                                    ;MMi                    
          @M7         Mi nombre es Meowth, el man y yo seremos        rM@                   
-       .M@          tus guías en esta aventura. Cada BOSS que          @M,                 
-      ,MS            derrotes te entregará nuevo ITEM que te            SM,                
+       .M@      tus guías en esta aventura. Con cada Pokemon que       @M,                 
+      ,MS           recuperes obtendras una habilidad que te            SM,                
       MX       permitirá entrar a la siguiente región. Te recomiendo     XM                
-     MM           que recorras Pueblo Paleta para obtener la guía         MM               
-    .M            de cómo atravesar las regiones. A ver si no eres        MM.              
+     MM           que recorras Pueblo Paleta para obtener la pokedex      MM               
+    .M          que te ayudara a encontrarlos. A ver si no eres           MM.              
     ZM                       tan inútil como pareces...                   M8              
     MM                                                                    MM              
     ZM           Recuerda darme las CLAVES que obtengas de los            MZ              
-     M         bosses para darte los items, también DEBES poner en       MM
-      MM      la guía la clave de cada reto para pasar al siguiente.    AA
+     M       pokemones para ayudarte a avanzar, también DEBES poner en   MM
+      MM    la pokedex la clave de cada reto para pasar al siguiente.    AA
        MZ                                                              ZM.                
         MM                     ¡Meowth! ¡Suerte!                      MM                  
          0MS                                                        2MB                   

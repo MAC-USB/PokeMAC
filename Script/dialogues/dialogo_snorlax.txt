@@ -8,16 +8,15 @@
          @M7                                                        rM@                   
        .M@                                                            @M,                 
       ,MS                                                              SM,                
-      MX                   Al fin recuperaste a PIKACHU                 XM                
-     MM                      	                                         MM               
-    .M                    Puedes buscar sus habilidades                   M.              
-    ZM                           en la Pokedex.                           M8              
-    MM                                                                    M8              
-    MM                  Intenta averiguar la habilidad de                 M5              
-    ZM             cada Pokemon, algunas pueden ser de utilidad           MZ              
-     M                 para los obstáculos que encontrarás                M.              
-     MM                        en tu camino--¡Meowth!                    MM               
-      MZ                                                                aM                
+      MX                                                                XM                
+     MM                                                                  MM               
+    .M                  Un Snorlax esta dormido en el camino!             M.              
+    ZM                                                                     M8             
+    MM                                                                     MM              
+    ZM                                                                     MZ              
+     M                 ¿Por que no buscas en la Pokedex a ver              M.              
+     MM                  que podemos hacer con esa bola                   MM               
+      MZ                       de grasa dormilona?                      aM                
        MZ                                                              ZM.                
         MM                                                            MM                  
          0MS                                                        2MB                   
