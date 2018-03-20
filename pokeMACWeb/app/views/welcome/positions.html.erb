@@ -1,93 +1,103 @@
-<%= stylesheet_link_tag 'positions', media: 'all', 'data-turbolinks-track' => true %>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-			
-<div class="position-title">
-	<!-- 	<img src="/assets/tabla_posiciones.png" align="middle" alt="Tabla de Posiciones" style="margin-top: 30px;">			
-	-->
-	<h>Tabla de Posiciones</h>
-</div>
+<head>
 
-<table class="table table-hover">
-  <thead>
-    <tr>
-			<th scope="col">Equipo</th>
-			
-			<% (1..27).each do |number| %>
-			<th scope="col" id="<%=number%>"><%=number%></th>
-			<% end %>
-			<th scope="col">Suma total </th>
-    </tr>
-  </thead>
-  <tbody>
-		<% @users.each do |user1| %>
-	  <tr>
-			<td><%= user1.username %></td>
-			<% (1..27).each do |number| %>
-				<%if Answer.find_by(user: user1.id, question: number)%>
-				<td scope="col" id="<%=number%>">CHECK</th>
-				<%else%>
-				<td scope="col" id="<%=number%>"></th>
-				<%end%>
+	<title>Posiciones</title>
+
+	<%= stylesheet_link_tag 'positions', media: 'all', 'data-turbolinks-track' => true %>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+				
+</head>
+<body>
+	
+	<div class="position-title">
+		<!-- 	<img src="/assets/tabla_posiciones.png" align="middle" alt="Tabla de Posiciones" style="margin-top: 30px;">			
+		-->
+		<h>Tabla de Posiciones</h>
+	</div>
+
+	<table class="table table-hover">
+	  <thead>
+	    <tr>
+				<th scope="col">Equipo</th>
+				
+				<% (1..23).each do |number| %>
+				<th scope="col" id="<%=number%>" class="text-center"><%=number%></th>
 				<% end %>
-				<td scope="col"><%=Answer.where(user: user1.id).count-1%></td>
-	  </tr>
-	<% end %>
-  </tbody>
-</table>
+				<th scope="col">Suma total </th>
+	    </tr>
+	  </thead>
+	  <tbody>
+			<% @users.each do |user1| %>
+		  <tr>
+				<td><%= user1.username %></td>
+				<% (5..27).reverse_each do |number| %>
+					<%if Answer.find_by(user: user1.id, question: number)%>
+					<td id="<%=number%>"><i class="material-icons text-center">check_box</i></th>
+					<%else%>
+					<td id="<%=number%>"><i class="material-icons">check_box_outline_blank</i></th>
+					<%end%>
+					<% end %>
+					<td scope="col"><%=Answer.where(user: user1.id).count-1%></td>
+		  </tr>
+		<% end %>
+	  </tbody>
+	</table>
 
 
-<div id="StefTastan" class="text-center">
-			
-	<!-- charmander -->
-	<div id="charmander">
-		<div id="arms"></div>
-		<div id="feet"></div>
-		<div id="body">
-			<div id="eyes"></div>
-			<div id="pupils"></div>
-			<div id="nostrils"></div>
-			<div id="mouth"></div>
-			<div id="belly"></div>
+	<div id="StefTastan" class="text-center">
+				
+		<!-- charmander -->
+		<div id="charmander">
+			<div id="arms"></div>
+			<div id="feet"></div>
+			<div id="body">
+				<div id="eyes"></div>
+				<div id="pupils"></div>
+				<div id="nostrils"></div>
+				<div id="mouth"></div>
+				<div id="belly"></div>
+			</div>
+			<div id="tail"></div>
+			<div id="flame"></div>
 		</div>
-		<div id="tail"></div>
-		<div id="flame"></div>
+
+		<!-- bulbasaur -->
+		<div id="bulbasaur">
+			<div id="head">
+				<div id="eyes"></div>
+				<div id="pupils"></div>
+				<div id="nostrils"></div>
+				<div class="mouth"></div>
+			</div>
+			<div class="ears"></div>
+			<div id="body">
+				<div class="spots spot1"></div>
+				<div class="spots spot2"></div>
+				<div class="spots spot3"></div>
+			</div>
+			<div id="front-feet"></div>
+			<div id="back-feet"></div>
+			<div id="bulb"></div>
+		</div>
+
+		<!-- squirtle -->
+		<div id="squirtle">
+			<div id="arms"></div>
+			<div id="feet"></div>
+			<div id="head">
+				<div id="eyes"></div>
+				<div id="pupils"></div>
+				<div id="nostrils"></div>
+				<div id="mouth"></div>
+			</div>
+			<div id="body"></div>
+			<div id="shell"></div>
+			<div id="tail"></div>
+		</div>
+
 	</div>
-
-	<!-- bulbasaur -->
-	<div id="bulbasaur">
-		<div id="head">
-			<div id="eyes"></div>
-			<div id="pupils"></div>
-			<div id="nostrils"></div>
-			<div class="mouth"></div>
-		</div>
-		<div class="ears"></div>
-		<div id="body">
-			<div class="spots spot1"></div>
-			<div class="spots spot2"></div>
-			<div class="spots spot3"></div>
-		</div>
-		<div id="front-feet"></div>
-		<div id="back-feet"></div>
-		<div id="bulb"></div>
-	</div>
-
-	<!-- squirtle -->
-	<div id="squirtle">
-		<div id="arms"></div>
-		<div id="feet"></div>
-		<div id="head">
-			<div id="eyes"></div>
-			<div id="pupils"></div>
-			<div id="nostrils"></div>
-			<div id="mouth"></div>
-		</div>
-		<div id="body"></div>
-		<div id="shell"></div>
-		<div id="tail"></div>
-	</div>
-
-</div>
+</body>
