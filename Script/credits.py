@@ -17,7 +17,7 @@ maxx, maxy = pantalla.getmaxyx()
 curses.curs_set(0)
 
 #Se obtienen los creditos
-credFile = open('/home/Entrenador/.poke_oculto/credits/creditos.txt')
+credFile = open('creditos.txt')
 lineas = credFile.readlines()
 lineas.reverse()
 credFile.close()

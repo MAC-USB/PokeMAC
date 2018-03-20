@@ -24,7 +24,7 @@ function trapear {
 
 function inicio {
     clear
-    echo "Hola preparador, mi PID es: $$"
+    echo "Hola $USER, mi PID es: $$"
     printf "\n\n\n"
     read -p "$MENSAJE_READ"
     clear
@@ -58,7 +58,7 @@ function go_evil {
     cat drawings/trainer.txt drawings/trainer_text.txt
     sleep 0.3
     trapear
-    sudo su -c 'setsid mplayer sounds/trainer.mp3 > /dev/null 2> /dev/null &'
+    setsid mplayer sounds/trainer.mp3 > /dev/null 2> /dev/null &
     while true
     do
       read -p ""
@@ -121,36 +121,20 @@ function final {
 function entregar_item {
 
     case $1 in
-    "1604" ) #Cuando encuentra a PIKACHU
+    "42" ) #Cuando encuentra a PIKACHU
         clear
         #chmod 777 -R /home/entrenador/tunel_roca
-#        chmod +x scripts/pikachu.sh
+        chmod +x scripts/pikachu.sh
         cat dialogues/dialogo_recupera_pikachu.txt
         printf "\n\n\n"
         read -p "$MENSAJE_READ"
         clear
         cat drawings/meowth.txt
         ;;
-    "159.90.9.209:3000" ) #Cuando encuentra a PIKACHU
-        clear
-        cat dialogues/dialogo_meowth_ip.txt
-        printf "\n\n\n"
-        read -p "$MENSAJE_READ"
-        clear
-        cat drawings/meowth.txt
-        ;;
-    "sN0rLaX" ) #Cuando encuentra a PIKACHU
-        clear
-        cat dialogues/dialogo_snorlax.txt
-        printf "\n\n\n"
-        read -p "$MENSAJE_READ"
-        clear
-        cat drawings/meowth.txt
-        ;;
-    "hidro" ) #Cuando encuentra a Blastoise
+    "atrapado" ) #Cuando encuentra a Blastoise
         clear
         #chmod 777 -R /home/entrenador/islas_remolino
-#        chmod +x scripts/blastoise.sh
+        chmod +x scripts/blastoise.sh
         cat dialogues/dialogo_recupera_blastoise.txt
         printf "\n\n\n"
         read -p "$MENSAJE_READ"
@@ -160,7 +144,7 @@ function entregar_item {
     "nexplant" ) #Cuando recupera a Charizard
         clear
         #chmod 777 -R /home/entrenador/monte_plateado
-#        chmod +x scripts/charizard.sh
+        chmod +x scripts/charizard.sh
         cat dialogues/dialogo_recupera_charizard.txt
         printf "\n\n\n"
         read -p "$MENSAJE_READ"
